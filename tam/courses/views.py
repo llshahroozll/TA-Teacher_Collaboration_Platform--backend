@@ -1,36 +1,54 @@
 from django.shortcuts import render, redirect
 from .models import Course
 from .forms import CourseForm
-from django.core import serializers
 from django.http import HttpResponse, JsonResponse
-# Create your views here.
+
 
 def json_ret(courseObj):
     course_data = {'name': courseObj.name,
                    'class_time': courseObj.class_time,
-                   'class location': courseObj.class_location,
-                   'class exam time': courseObj.exam_time,
-                   'class status': courseObj.status,
+                   'class_location': courseObj.class_location,
+                   'class_exam_time': courseObj.exam_time,
+                   'id': courseObj.id,
                    }
-    
+
     response = JsonResponse(course_data)
     response['Access-Control-Allow-Origin'] = '*'
     return response
 
+
+def course_data(courseObj):
+    course_data = {'name': courseObj.name,
+                   'class_time': courseObj.class_time,
+                   'class_location': courseObj.class_location,
+                   'class_exam_time': courseObj.exam_time,
+                   'id': courseObj.id,
+                   }
+    return course_data
+
+
+def json_ret_all(courses):
+    courses_list = list()
+    for course in courses:
+        if course.status == False:
+            continue
+        courses_list.append(course_data(course))
+
+    response = JsonResponse(courses_list, safe=False)
+    response['Access-Control-Allow-Origin'] = '*'
+    return response
+
+
 def courses(request):
     courses = Course.objects.all()
-    # return HttpResponse(courses.values)
-    # contxt = serializers.serialize("json", courses)
-    # data = {'courses': contxt}
-    # return JsonResponse(data)
-    return render(request, 'courses/courses.html',  {'courses': courses})
+    # return render(request, 'courses/courses.html',  {'courses': courses})
+    return json_ret_all(courses)
 
 
 def course(request, pk):
     courseObj = Course.objects.get(id=pk)
-    return json_ret(courseObj)
-
     # return render(request, 'courses/course.html', {'course': courseObj})
+    return json_ret(courseObj)
 
 
 def createCourse(request):
@@ -41,9 +59,6 @@ def createCourse(request):
         if form.is_valid():
             form.save()
             return redirect('courses')
-    # contxt = serializers.serialize("json", form)
-    # data = {"somemodeljson" : contxt}
-    # return JsonResponse(data)
     return render(request, 'courses/course_form.html', {'form': form})
 
 

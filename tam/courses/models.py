@@ -18,4 +18,3 @@ class Course(models.Model):
 
     def __str__(self):
         return self.name
-        # return {'name': self.name, 'class time': self.class_time, 'class location': self.class_location}
