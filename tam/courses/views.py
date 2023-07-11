@@ -41,14 +41,14 @@ def json_ret_all(courses):
 
 def courses(request):
     courses = Course.objects.all()
-    # return render(request, 'courses/courses.html',  {'courses': courses})
     return json_ret_all(courses)
+    # return render(request, 'courses/courses.html',  {'courses': courses})
 
 
 def course(request, pk):
     courseObj = Course.objects.get(id=pk)
-    # return render(request, 'courses/course.html', {'course': courseObj})
     return json_ret(courseObj)
+    # return render(request, 'courses/course.html', {'course': courseObj})
 
 
 def createCourse(request):
