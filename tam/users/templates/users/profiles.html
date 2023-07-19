@@ -1,0 +1,25 @@
+{% extends 'main.html' %} {% block content %}
+
+<h1>profiles template</h1>
+
+<br />
+<br />
+<table>
+  <tr>
+    <th>username</th>
+    <th>name</th>
+    <th>nationalID</th>
+    <th>email</th>
+  </tr>
+  {% for profile in profiles %}
+  <tr>
+    <td>{{profile.user.username}}</td>
+    <td>{{profile.name}}</td>
+    <td>{{profile.nationalID}}</td>
+    <td>{{profile.email}}</td>
+    <td><a href="{% url 'user-profile' profile.id %}">view</a></td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock content %}

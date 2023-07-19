@@ -9,7 +9,7 @@ class Course(models.Model):
     name = models.CharField(max_length=200)
     class_time = models.CharField(max_length=300, blank=True, null=True)
     class_location = models.CharField(max_length=200, blank=True, null=True)
-    exam_time = models.DateTimeField(blank=True, null=True)
+    exam_time = models.CharField(max_length=200, blank=True, null=True)
     status = models.BooleanField()
     created = models.DateTimeField(auto_now_add=True)
     id = models.IntegerField(primary_key=True, unique=True)
