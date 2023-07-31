@@ -1,54 +1,26 @@
 from django.shortcuts import render, redirect
 from .models import Course
 from .forms import CourseForm
-from django.http import HttpResponse, JsonResponse
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
+from .serializers import CourseSerializer
 
 
-def json_ret(courseObj):
-    course_data = {'name': courseObj.name,
-                   'class_time': courseObj.class_time,
-                   'class_location': courseObj.class_location,
-                   'class_exam_time': courseObj.exam_time,
-                   'id': courseObj.id,
-                   }
-
-    response = JsonResponse(course_data)
-    response['Access-Control-Allow-Origin'] = '*'
-    return response
-
-
-def course_data(courseObj):
-    course_data = {'name': courseObj.name,
-                   'class_time': courseObj.class_time,
-                   'class_location': courseObj.class_location,
-                   'class_exam_time': courseObj.exam_time,
-                   'id': courseObj.id,
-                   }
-    return course_data
-
-
-def json_ret_all(courses):
-    courses_list = list()
-    for course in courses:
-        if course.status == False:
-            continue
-        courses_list.append(course_data(course))
-
-    response = JsonResponse(courses_list, safe=False)
-    response['Access-Control-Allow-Origin'] = '*'
-    return response
-
-
-def courses(request):
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def getCourses(request):
     courses = Course.objects.all()
-    return json_ret_all(courses)
-    # return render(request, 'courses/courses.html',  {'courses': courses})
+    serializer = CourseSerializer(courses, many=True)
+    return Response(serializer.data)
 
 
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def course(request, pk):
-    courseObj = Course.objects.get(id=pk)
-    return json_ret(courseObj)
-    # return render(request, 'courses/course.html', {'course': courseObj})
+    course = Course.objects.get(id=pk)
+    serializer = CourseSerializer(course, many=False)
+    return Response(serializer.data)
 
 
 def createCourse(request):

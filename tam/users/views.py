@@ -1,30 +1,21 @@
-from django.shortcuts import render, redirect
-
-from django.http import HttpResponse, JsonResponse
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
 from .models import Profile
-from django.contrib import messages
+from .serializers import ProfileSerializer
 # Create your views here.
 
 
-def loginUser(request):
-    print("our request")
-    print(request)
-    return HttpResponse()
-    # response = JsonResponse({'request': request}, safe=False)
-    # response['Access-Control-Allow-Origin'] = '*'
-    # return response
-    # return HttpResponse(request)
-    # print(request)
-    # return render(request, 'users/loginPage.html')
-
-
-def profiles(request):
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def getProfiles(request):
     profiles = Profile.objects.all()
-    context = {'profiles': profiles}
-    return render(request, 'users/profiles.html', context)
+    serializer = ProfileSerializer(profiles, many=True)
+    return Response(serializer.data)
 
-
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def profile(request, pk):
     profile = Profile.objects.get(id=pk)
-    context = {'profile': profile}
-    return render(request, 'users/profile.html', context)
+    serializer = ProfileSerializer(profile, many=False)
+    return Response(serializer.data)
