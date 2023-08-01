@@ -6,6 +6,8 @@ from users.models import Profile
 class Course(models.Model):
     owner = models.ForeignKey(
         Profile, null=True, blank=True, on_delete=models.CASCADE)
+    taProfiles = models.ManyToManyField(Profile, blank=True, related_name="taCourses")
+    studentProfiles = models.ManyToManyField(Profile, blank=True, related_name="studentCourses")
     name = models.CharField(max_length=200)
     class_time = models.CharField(max_length=300, blank=True, null=True)
     class_location = models.CharField(max_length=200, blank=True, null=True)
