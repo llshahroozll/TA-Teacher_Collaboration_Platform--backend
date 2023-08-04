@@ -10,10 +10,10 @@ class Profile(models.Model):
     name = models.CharField(max_length=400, blank=True, null=True)
     email = models.EmailField(blank=True, null=True)
     profile_image = models.ImageField(
-        default='default_profile', upload_to='images/profiles')
+        default='default_profile', upload_to='images/profiles/')
     student_tag = models.BooleanField()
     teacher_tag = models.BooleanField()
-    ta_tag = models.BooleanField()
+    assistant_tag = models.BooleanField()
     social_github = models.CharField(max_length=200, blank=True, null=True)
     social_linkedIn = models.CharField(max_length=200, blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True)

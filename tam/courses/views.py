@@ -4,7 +4,7 @@ from .forms import CourseForm
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
-from .serializers import CourseTitleSerializer
+from .serializers import CourseSerializer
 
 
 # @api_view(['GET'])
@@ -15,12 +15,12 @@ from .serializers import CourseTitleSerializer
 #     return Response(serializer.data)
 
 
-# @api_view(['GET'])
-# @permission_classes([IsAuthenticated])
-# def course(request, pk):
-#     course = Course.objects.get(id=pk)
-#     serializer = CourseTitleSerializer(course, many=False)
-#     return Response(serializer.data)
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def getCourse(request, pk):
+    course = Course.objects.get(id=pk)
+    serializer = CourseSerializer(course, many=False)
+    return Response(serializer.data)
 
 
 # def createCourse(request):

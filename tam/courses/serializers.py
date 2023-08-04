@@ -1,16 +1,19 @@
 from rest_framework import serializers
 from .models import Course
-from users.models import Profile
-from users.serializers import ProfileSerializer
+from users.serializers import ProfileSerializer, ProfileTitleSerializer
 
 
 class CourseTitleSerializer(serializers.ModelSerializer):
-    # owner = ProfileSerializer(many=False)
-    # taProfiles = ProfileSerializer(many=True)
-    # studentProfiles = ProfileSerializer(many=True)
     class Meta:
         model = Course
         fields = ['name', 'id']
         
         
+class CourseSerializer(serializers.ModelSerializer):
+    owner = ProfileTitleSerializer(many=False)
+    assistantProfiles = ProfileTitleSerializer(many=True)
+    studentProfiles = ProfileTitleSerializer(many=True)
+    class Meta:
+        model = Course
+        exclude = ['created']
 

@@ -31,13 +31,13 @@ def profile(request):
         
     else:
         studentCourses = profile.studentCourses.all()
-        taCourses = profile.taCourses.all()
+        assistantCourses = profile.assistantCourses.all()
         
         studentCourseSerializer = CourseTitleSerializer(studentCourses, many=True)
-        taCoursesSerializer = CourseTitleSerializer(taCourses, many=True)
+        assistantCoursesSerializer = CourseTitleSerializer(assistantCourses, many=True)
         
         
         return Response({"profile": profileSerializer.data,
                         "studentCourses": studentCourseSerializer.data,
-                        "taCourses": taCoursesSerializer.data,
+                        "taCourses": assistantCoursesSerializer.data,
                         })
