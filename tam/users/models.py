@@ -6,7 +6,7 @@ import uuid
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    nationalID = models.CharField(max_length=100, blank=True, null=True)
+    national_id = models.CharField(max_length=100, blank=True, null=True)
     name = models.CharField(max_length=400, blank=True, null=True)
     email = models.EmailField(blank=True, null=True)
     profile_image = models.ImageField(
@@ -15,7 +15,7 @@ class Profile(models.Model):
     teacher_tag = models.BooleanField()
     assistant_tag = models.BooleanField()
     social_github = models.CharField(max_length=200, blank=True, null=True)
-    social_linkedIn = models.CharField(max_length=200, blank=True, null=True)
+    social_linkedin = models.CharField(max_length=200, blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True)
     id = models.UUIDField(default=uuid.uuid4,
                           primary_key=True, unique=True, editable=False)

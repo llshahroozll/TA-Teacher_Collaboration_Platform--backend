@@ -11,8 +11,8 @@ class CourseTitleSerializer(serializers.ModelSerializer):
         
 class CourseSerializer(serializers.ModelSerializer):
     owner = ProfileTitleSerializer(many=False)
-    assistantProfiles = ProfileTitleSerializer(many=True)
-    studentProfiles = ProfileTitleSerializer(many=True)
+    assistant_profiles = ProfileTitleSerializer(many=True)
+    student_profiles = ProfileTitleSerializer(many=True)
     class Meta:
         model = Course
         exclude = ['created']

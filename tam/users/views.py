@@ -19,25 +19,25 @@ from courses.serializers import CourseTitleSerializer
 @permission_classes([IsAuthenticated])
 def profile(request):
     profile = request.user.profile
-    profileSerializer = ProfileSerializer(profile, many=False)
+    profile_serializer = ProfileSerializer(profile, many=False)
     
     if profile.teacher_tag : 
-        teacherCourses = profile.course_set.all()
-        teacherCoursesSerializer = CourseTitleSerializer(teacherCourses, many=True)
+        teacher_courses = profile.course_set.all()
+        teacher_courses_serializer = CourseTitleSerializer(teacher_courses, many=True)
         
-        return Response({"profile": profileSerializer.data,
-                        "teacherCourses": teacherCoursesSerializer.data,
+        return Response({"profile": profile_serializer.data,
+                        "teacher_courses": teacher_courses_serializer.data,
                         })
         
     else:
-        studentCourses = profile.studentCourses.all()
-        assistantCourses = profile.assistantCourses.all()
+        student_courses = profile.student_courses.all()
+        assistant_courses = profile.assistant_courses.all()
         
-        studentCourseSerializer = CourseTitleSerializer(studentCourses, many=True)
-        assistantCoursesSerializer = CourseTitleSerializer(assistantCourses, many=True)
+        student_course_serializer = CourseTitleSerializer(student_courses, many=True)
+        assistant_courses_serializer = CourseTitleSerializer(assistant_courses, many=True)
         
         
-        return Response({"profile": profileSerializer.data,
-                        "studentCourses": studentCourseSerializer.data,
-                        "taCourses": assistantCoursesSerializer.data,
+        return Response({"profile": profile_serializer.data,
+                        "student_courses": student_course_serializer.data,
+                        "assistant_courses": assistant_courses_serializer.data,
                         })
