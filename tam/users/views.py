@@ -1,7 +1,8 @@
+from django.http import HttpResponse
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
-from .models import Profile
+from .form import ProfileForm
 from .serializers import ProfileSerializer
 from courses.serializers import CourseTitleSerializer
 # Create your views here.
@@ -41,3 +42,25 @@ def profile(request):
                         "student_courses": student_course_serializer.data,
                         "assistant_courses": assistant_courses_serializer.data,
                         })
+
+
+
+@api_view(['GET', 'POST'])
+@permission_classes([IsAuthenticated])
+def update_profile(request):
+    profile = request.user.profile
+
+    if request.method == 'GET':
+        serializer = ProfileSerializer(profile, many=False)
+        return Response(serializer.data)
+
+    if request.method == 'POST':
+        profile.name = request.data['name']
+        profile.email = request.data['email']
+        profile.profile_image = request.data['profile_image']
+        profile.social_github = request.data['social_github']
+        profile.social_linkedin = request.data['social_linkedin']
+        profile.save()
+        serializer = ProfileSerializer(profile, many=False)
+        return Response(serializer.data)
+        
