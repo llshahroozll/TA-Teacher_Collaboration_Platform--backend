@@ -6,8 +6,12 @@ def get_route(request):
     route= [
 
         {'GET':'/user-profile-courses'},
+        {'GET':'/course/:id'},
         
         {'POST':'/login'},
+        {'POST':'/update-profile'},
+        
+        
 
     ]    
     

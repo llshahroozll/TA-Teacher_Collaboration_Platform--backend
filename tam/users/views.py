@@ -19,7 +19,7 @@ from courses.serializers import CourseTitleSerializer
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def profile(request):
-    profile = request.user.profile
+    profile = request.user.profile 
     profile_serializer = ProfileSerializer(profile, many=False)
     
     if profile.teacher_tag : 
@@ -56,6 +56,7 @@ def update_profile(request):
 
     if request.method == 'POST':
         profile.name = request.data['name']
+        profile.national_id = request.data['national_id']
         profile.email = request.data['email']
         profile.profile_image = request.data['profile_image']
         profile.social_github = request.data['social_github']

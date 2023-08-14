@@ -19,7 +19,6 @@ from rest_framework.views import exception_handler
 @permission_classes([IsAuthenticated])
 def get_course(request, pk):
     profile = request.user.profile
-    
     try:
         if profile.teacher_tag:
             course = profile.course_set.get(id =pk)
