@@ -19,13 +19,19 @@ from rest_framework.views import exception_handler
 @permission_classes([IsAuthenticated])
 def get_course(request, pk):
     profile = request.user.profile
+    
     try:
-        if profile.teacher_tag:
-            course = profile.course_set.get(id =pk)
+        if profile.student_tag and profile.assistant_tag:
+            if profile.assistant_courses.filter(id=pk).exists():
+                course = profile.assistant_courses.get(id=pk)
+            else:
+                course = profile.student_courses.get(id=pk)
         elif profile.student_tag:
             course = profile.student_courses.get(id=pk)
-        else:
+        elif profile.assistant_tag:
             course = profile.assistant_courses.get(id=pk)
+        else:
+            course = profile.course_set.get(id =pk)
     except :
         return Response("Permission Denied", 403)
     
