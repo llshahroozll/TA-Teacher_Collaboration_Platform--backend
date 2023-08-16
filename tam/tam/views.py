@@ -11,8 +11,9 @@ def get_route(request):
         {'POST':'/login'},
         {'POST':'/update-profile'},
         
+        {'POST':'/change-password'},
+        {'POST':'/reset-password'},
         
-
     ]    
     
     return Response(route)
