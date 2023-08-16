@@ -2,8 +2,9 @@ from django.http import HttpResponse
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
-from .form import ProfileForm
-from .serializers import ProfileSerializer
+from rest_framework import status
+from django.contrib.auth import update_session_auth_hash
+from .serializers import ProfileSerializer, ChangePasswordSerializer
 from courses.serializers import CourseTitleSerializer
 # Create your views here.
 
@@ -55,13 +56,31 @@ def update_profile(request):
         return Response(serializer.data)
 
     if request.method == 'POST':
-        profile.name = request.data['name']
-        profile.national_id = request.data['national_id']
         profile.email = request.data['email']
+        profile.bio = request.data['bio']
         profile.profile_image = request.data['profile_image']
         profile.social_github = request.data['social_github']
         profile.social_linkedin = request.data['social_linkedin']
         profile.save()
         serializer = ProfileSerializer(profile, many=False)
         return Response(serializer.data)
-        
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def change_password(request):
+    if request.method == 'POST':
+        serializer = ChangePasswordSerializer(data=request.data)
+        if serializer.is_valid():
+            user = request.user
+            if user.check_password(serializer.data.get('old_password')):
+                if serializer.data['new_password'] != serializer.data['old_password']:
+                    if serializer.data['new_password'] == serializer.data['confirm_password']:
+                        user.set_password(serializer.data.get('new_password'))
+                        user.save()
+                        update_session_auth_hash(request, user)  # To update session after password change
+                        return Response({'message': 'Password changed successfully.'}, status=status.HTTP_200_OK)
+                    return Response({'error': "Password fields didn't match."}, status=status.HTTP_400_BAD_REQUEST)
+                return Response({'error': "Old password and new password are same."}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({'error': 'Incorrect old password.'}, status=status.HTTP_400_BAD_REQUEST)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

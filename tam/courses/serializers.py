@@ -17,3 +17,4 @@ class CourseSerializer(serializers.ModelSerializer):
         model = Course
         exclude = ['created']
 
+

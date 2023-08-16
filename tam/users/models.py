@@ -8,6 +8,7 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     national_id = models.CharField(max_length=100, blank=True, null=True)
     name = models.CharField(max_length=400, blank=True, null=True)
+    bio = models.CharField(default="سلام، من یک کاربر سامانه تام هستم",max_length=400, blank=True, null=True)
     email = models.EmailField(blank=True, null=True)
     profile_image = models.ImageField(
         default='images/profiles/default_profile.png', upload_to='images/profiles/')
