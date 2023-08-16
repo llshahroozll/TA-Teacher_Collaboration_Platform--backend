@@ -6,7 +6,6 @@ import uuid
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    national_id = models.CharField(max_length=100, blank=True, null=True)
     name = models.CharField(max_length=400, blank=True, null=True)
     bio = models.CharField(default="سلام، من یک کاربر سامانه تام هستم",max_length=400, blank=True, null=True)
     email = models.EmailField(blank=True, null=True)
@@ -18,8 +17,7 @@ class Profile(models.Model):
     social_github = models.CharField(max_length=200, blank=True, null=True)
     social_linkedin = models.CharField(max_length=200, blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True)
-    id = models.UUIDField(default=uuid.uuid4,
-                          primary_key=True, unique=True, editable=False)
+    id = models.CharField(max_length=16, primary_key=True, unique=True, editable=False)
 
     def __str__(self):
         return str(self.name)
