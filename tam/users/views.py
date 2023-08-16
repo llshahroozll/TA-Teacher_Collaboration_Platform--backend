@@ -73,14 +73,10 @@ def change_password(request):
         serializer = ChangePasswordSerializer(data=request.data)
         if serializer.is_valid():
             user = request.user
-            if user.check_password(serializer.data.get('old_password')):
-                if serializer.data['new_password'] != serializer.data['old_password']:
-                    if serializer.data['new_password'] == serializer.data['confirm_password']:
-                        user.set_password(serializer.data.get('new_password'))
-                        user.save()
-                        update_session_auth_hash(request, user)  # To update session after password change
-                        return Response({'message': 'Password changed successfully.'}, status=status.HTTP_200_OK)
-                    return Response({'error': "Password fields didn't match."}, status=status.HTTP_400_BAD_REQUEST)
-                return Response({'error': "Old password and new password are same."}, status=status.HTTP_400_BAD_REQUEST)
+            if user.check_password(serializer.data.get('old_password')):            
+                user.set_password(serializer.data.get('new_password'))
+                user.save()
+                update_session_auth_hash(request, user)  # To update session after password change
+                return Response({'message': 'Password changed successfully.'}, status=status.HTTP_200_OK)
             return Response({'error': 'Incorrect old password.'}, status=status.HTTP_400_BAD_REQUEST)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
