@@ -1,0 +1,13 @@
+INFO 2023-08-17 20:11:38,033 basehttp 11096 10988 "GET / HTTP/1.1" 200 5486
+WARNING 2023-08-17 20:12:27,188 log 11096 14128 Method Not Allowed: /login/
+WARNING 2023-08-17 20:12:27,189 basehttp 11096 14128 "GET /login/ HTTP/1.1" 405 7716
+WARNING 2023-08-17 20:12:30,116 log 11096 14128 Unauthorized: /login/
+WARNING 2023-08-17 20:12:30,117 basehttp 11096 14128 "POST /login/ HTTP/1.1" 401 7656
+INFO 2023-08-17 20:12:48,110 basehttp 11096 9832 "POST /login/ HTTP/1.1" 200 8163
+INFO 2023-08-17 20:12:59,569 basehttp 11096 13652 "GET /course/14021002 HTTP/1.1" 301 0
+INFO 2023-08-17 20:12:59,594 basehttp 11096 9468 "GET /course/14021002/ HTTP/1.1" 200 343
+INFO 2023-08-17 20:13:12,471 basehttp 11096 9468 "GET /course/14021002/members HTTP/1.1" 200 276
+INFO 2023-08-17 20:21:02,411 autoreload 11096 11760 D:\Our TAM project\Backend\tam\tam\settings.py changed, reloading.
+INFO 2023-08-17 20:21:03,100 autoreload 10476 13652 Watching for file changes with StatReloader
+INFO 2023-08-17 20:21:52,901 autoreload 10476 13652 D:\Our TAM project\Backend\tam\tam\settings.py changed, reloading.
+INFO 2023-08-17 20:21:53,587 autoreload 11460 13560 Watching for file changes with StatReloader
