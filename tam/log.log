@@ -1,0 +1,4 @@
+INFO 2023-08-17 18:38:22,741 autoreload 9892 7124 Watching for file changes with StatReloader
+INFO 2023-08-17 18:38:25,454 autoreload 9892 7124 D:\Our TAM project\Backend\tam\tam\settings.py changed, reloading.
+INFO 2023-08-17 18:38:26,097 autoreload 3820 6040 Watching for file changes with StatReloader
+INFO 2023-08-17 18:38:28,746 autoreload 3820 6040 D:\Our TAM project\Backend\tam\tam\settings.py changed, reloading.

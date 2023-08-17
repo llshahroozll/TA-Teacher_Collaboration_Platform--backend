@@ -1,11 +1,9 @@
 from django.shortcuts import render, redirect
-from .models import Course
-from .forms import CourseForm
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
-from .serializers import CourseSerializer
-from rest_framework.views import exception_handler
+from .serializers import CourseSerializer, CourseMembersSerializer
+from rest_framework import status
 
 # @api_view(['GET'])
 # @permission_classes([IsAuthenticated])
@@ -15,11 +13,9 @@ from rest_framework.views import exception_handler
 #     return Response(serializer.data)
 
 
-@api_view(['GET'])
-@permission_classes([IsAuthenticated])
-def get_course(request, pk):
-    profile = request.user.profile
+def check_course_permission(request, pk):
     
+    profile = request.user.profile
     try:
         if profile.student_tag and profile.assistant_tag:
             if profile.assistant_courses.filter(id=pk).exists():
@@ -32,14 +28,37 @@ def get_course(request, pk):
             course = profile.assistant_courses.get(id=pk)
         else:
             course = profile.course_set.get(id =pk)
+            
+        return course
+    
     except :
-        return Response("Permission Denied", 403)
+        return None
+    
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_course(request, pk):
+
+    course = check_course_permission(request, pk)
+    
+    if course is None:
+        return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
     
     serializer = CourseSerializer(course, many=False)
     return Response(serializer.data)
 
  
-
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_course_members(request, pk):
+    
+    course = check_course_permission(request, pk)
+    
+    if course is None:
+        return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+    
+    serializer = CourseMembersSerializer(course, many=False)
+    return Response(serializer.data)
 
 
 # def createCourse(request):
