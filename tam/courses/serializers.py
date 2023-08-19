@@ -7,8 +7,13 @@ class CourseTitleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Course
         fields = ['name', 'id']
-        
-        
+
+class UpdateCourseSerializer(serializers.ModelSerializer):
+    class Meta:
+        model= Course
+        fields = ['assistant_profiles', 'class_time', 'class_location', 
+                  'group_capacity', 'projects_phase']        
+
 class CourseSerializer(serializers.ModelSerializer):
     owner = ProfileTitleSerializer(many=False)
     assistant_profiles = ProfileTitleSerializer(many=True)

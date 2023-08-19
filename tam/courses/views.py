@@ -1,16 +1,22 @@
 from django.shortcuts import render, redirect
 from rest_framework.decorators import api_view, permission_classes
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.response import Response
-from .serializers import CourseSerializer, CourseMembersSerializer
+from .models import Course
 from rest_framework import status
+from .serializers import (
+    CourseSerializer, 
+    CourseMembersSerializer, 
+    UpdateCourseSerializer, 
+    CourseTitleSerializer 
+)
 
-# @api_view(['GET'])
-# @permission_classes([IsAuthenticated])
-# def getCourses(request):
-#     courses = Course.objects.all()
-#     serializer = CourseTitleSerializer(courses, many=True)
-#     return Response(serializer.data)
+@api_view(['GET'])
+@permission_classes([IsAdminUser])
+def get_courses(request):
+    courses = Course.objects.all()
+    serializer = CourseTitleSerializer(courses, many=True)
+    return Response(serializer.data)
 
 
 def check_course_permission(request, pk):
@@ -61,36 +67,30 @@ def get_course_members(request, pk):
     return Response(serializer.data)
 
 
-# def createCourse(request):
-#     form = CourseForm()
 
-#     if request.method == 'POST':
-#         form = CourseForm(request.POST)
-#         if form.is_valid():
-#             form.save()
-#             return redirect('courses')
-#     return render(request, 'courses/course_form.html', {'form': form})
+@api_view(['GET', 'POST'])
+@permission_classes([IsAuthenticated])
+def course_setting(request, pk):
+    profile = request.user.profile
 
+    if profile.teacher_tag:
+        if profile.course_set.filter(id=pk).exists():
+            course = profile.course_set.get(id=pk)
+        else:
+            return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+    else:
+        return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
 
-# def updateCourse(request, pk):
-#     CourseObj = Course.objects.get(id=pk)
-#     form = CourseForm(instance=CourseObj)
-
-#     if request.method == 'POST':
-#         form = CourseForm(request.POST, instance=CourseObj)
-#         if form.is_valid():
-#             form.save()
-#             return redirect('courses')
-#     context = {'form': form}
-#     return render(request, 'courses/course_form.html', context)
-
-
-# def deleteCourse(request, pk):
-#     course = Course.objects.get(id=pk)
-
-#     if request.method == 'POST':
-#         course.delete()
-#         return redirect('courses')
-
-#     context = {'object': course}
-#     return render(request, 'courses/delete_template.html', context)
+    
+    if request.method == 'GET':
+        serializer = UpdateCourseSerializer(course, many=False)
+        return Response(serializer.data)
+    
+    if request.method == 'POST':
+        course.class_time = request.data['class_time']
+        course.class_location = request.data['class_location']
+        course.group_capacity = request.data['group_capacity']
+        course.projects_phase = request.data['projects_phase']
+        course.save()
+        serializer = UpdateCourseSerializer(course, many=False)
+        return Response(serializer.data) 

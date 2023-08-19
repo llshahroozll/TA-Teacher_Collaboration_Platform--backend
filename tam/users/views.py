@@ -1,20 +1,21 @@
 from django.http import HttpResponse
 from rest_framework.decorators import api_view, permission_classes
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.response import Response
 from rest_framework import status
 from django.contrib.auth import update_session_auth_hash
+from .models import Profile
 from .serializers import ProfileSerializer, ChangePasswordSerializer
 from courses.serializers import CourseTitleSerializer
 # Create your views here.
 
 
-# @api_view(['GET'])
-# @permission_classes([IsAuthenticated])
-# def getProfiles(request):
-#     profiles = Profile.objects.all()
-#     serializer = ProfileSerializer(profiles, many=True)
-#     return Response(serializer.data)
+@api_view(['GET'])
+@permission_classes([IsAdminUser])
+def get_profiles(request):
+    profiles = Profile.objects.all()
+    serializer = ProfileSerializer(profiles, many=True)
+    return Response(serializer.data)
 
 
 @api_view(['GET'])
@@ -58,7 +59,8 @@ def update_profile(request):
     if request.method == 'POST':
         profile.email = request.data['email']
         profile.bio = request.data['bio']
-        profile.profile_image = request.data['profile_image']
+        if request.data['profile_image'] is not None:
+            profile.profile_image = request.data['profile_image']
         profile.social_github = request.data['social_github']
         profile.social_linkedin = request.data['social_linkedin']
         profile.save()
