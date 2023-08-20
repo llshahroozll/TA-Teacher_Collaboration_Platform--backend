@@ -10,7 +10,7 @@ class Profile(models.Model):
     bio = models.CharField(default="سلام، من یک کاربر سامانه تام هستم",max_length=400, blank=True, null=True)
     email = models.EmailField(blank=True, null=True)
     profile_image = models.ImageField(
-        default='images/profiles/default_profile.png', upload_to='images/profiles/')
+        default='images/profiles/default_profile.png', upload_to='images/profiles/', blank=True, null=True)
     student_tag = models.BooleanField(default=False)
     teacher_tag = models.BooleanField(default=False)
     assistant_tag = models.BooleanField(default=False)
