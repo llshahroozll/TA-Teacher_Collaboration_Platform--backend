@@ -9,6 +9,7 @@ class CourseTitleSerializer(serializers.ModelSerializer):
         fields = ['name', 'id']
 
 class UpdateCourseSerializer(serializers.ModelSerializer):
+    assistant_profiles = ProfileTitleSerializer(many=True)
     class Meta:
         model= Course
         fields = ['assistant_profiles', 'class_time', 'class_location', 
