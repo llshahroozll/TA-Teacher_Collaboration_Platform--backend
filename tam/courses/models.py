@@ -26,7 +26,8 @@ class Course(models.Model):
 class Group(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
     creator = models.ForeignKey(Profile, on_delete=models.CASCADE)
-    name = models.CharField(max_length=250)
+    name = models.CharField(max_length=250, unique=True)
+    description = models.TextField(null=True, blank=True)
     members = models.ManyToManyField(Profile, blank=True, related_name="members")
     created = models.DateTimeField(auto_now_add=True)
     id = models.UUIDField(default=uuid.uuid4, primary_key=True, unique=True, editable=False)

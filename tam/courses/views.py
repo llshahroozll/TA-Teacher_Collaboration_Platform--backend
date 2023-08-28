@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.response import Response
-from .models import Course
+from .models import Course, Group
 from users.models import Profile
 from users.serializers import ProfileTitleSerializer
 from rest_framework import status
@@ -10,8 +10,18 @@ from .serializers import (
     CourseSerializer, 
     CourseMembersSerializer, 
     UpdateCourseSerializer, 
-    CourseTitleSerializer 
+    CourseTitleSerializer,
+    CheckCourseGroupSerilaizer,
+    GroupSerializer,
 )
+
+
+
+
+
+
+
+
 
 @api_view(['GET'])
 @permission_classes([IsAdminUser])
@@ -22,18 +32,22 @@ def get_courses(request):
 
 
 def check_course_permission(request, pk):
-    
     profile = request.user.profile
+
     try:
         if profile.student_tag and profile.assistant_tag:
             if profile.assistant_courses.filter(id=pk).exists():
                 course = profile.assistant_courses.get(id=pk)
+
             else:
                 course = profile.student_courses.get(id=pk)
+                    
         elif profile.student_tag:
             course = profile.student_courses.get(id=pk)
+    
         elif profile.assistant_tag:
             course = profile.assistant_courses.get(id=pk)
+            
         else:
             course = profile.course_set.get(id =pk)
             
@@ -43,17 +57,57 @@ def check_course_permission(request, pk):
         return None
     
 
+def check_user_status(request, pk):
+    profile = request.user.profile
+    try:
+        if profile.student_tag and profile.assistant_tag:
+            if profile.assistant_courses.filter(id=pk).exists():
+                course = profile.assistant_courses.get(id=pk)
+                group_status = 1      # 1 means user is assistant or teacher
+            else:
+                course = profile.student_courses.get(id=pk)
+                if course.group_set.filter(creator=profile):
+                    group_status = 2  # 2 means user is student and has group
+                elif course.group_set.filter(members=profile):
+                    group_status = 3  # 3 means user is student and has group
+                else:
+                    group_status = 4  # 4 means user is student and has not group
+                        
+        elif profile.student_tag:
+            course = profile.student_courses.get(id=pk)
+            if course.group_set.filter(creator=profile):
+                group_status = 2  # 2 means user is student and has group
+            elif course.group_set.filter(members=profile):
+                group_status = 3  # 3 means user is student and has group
+            else:
+                group_status = 4  # 4 means user is student and has not group
+                
+        elif profile.assistant_tag:
+            course = profile.assistant_courses.get(id=pk)
+            group_status = 1      # 1 means user is assistant or teacher
+            
+        else:
+            course = profile.course_set.get(id =pk)
+            group_status = 1      # 1 means user is assistant or teacher
+            
+        return course, group_status
+    except: 
+        return None, 0
+
+  
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def get_course(request, pk):
-
-    course = check_course_permission(request, pk)
+    
+    course, group_status = check_user_status(request, pk)
     
     if course is None:
         return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
-    
+  
     serializer = CourseSerializer(course, many=False)
-    return Response(serializer.data)
+    return Response({"course":serializer.data,
+                    "group_status": group_status})
+
 
  
 @api_view(['GET'])
@@ -68,6 +122,157 @@ def get_course_members(request, pk):
     serializer = CourseMembersSerializer(course, many=False)
     return Response(serializer.data)
 
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def check_course_group(request, pk):
+
+    course, group_status = check_user_status(request, pk)
+    
+    if course is None:
+        return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+
+    
+    return Response({"group_status": group_status})
+    
+ 
+ 
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_group_list(request, pk):
+    
+    try:
+        profile = request.user.profile
+        
+        if profile.assistant_tag:
+            course = profile.assistant_courses.get(id=pk)
+            
+        else:
+            course = profile.course_set.get(id =pk)
+            
+        group_list = course.group_set.all()
+        serializer = GroupSerializer(group_list, many=True)
+        return Response(serializer.data) 
+            
+    except :
+        return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_head_data(request, pk):
+    try:
+        profile = request.user.profile
+        course = profile.student_courses.get(id=pk)
+        if not course.group_set.filter(creator=profile) or  not course.group_set.filter(members=profile):
+            serializer = CheckCourseGroupSerilaizer(course, many=False)
+            return Response(serializer.data)
+    except:
+        return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_group_detail(request, pk):
+    try:
+        profile = request.user.profile
+        course = profile.student_courses.get(id=pk)
+        if course.group_set.filter(creator=profile):
+            group = course.group_set.get(creator=profile)
+            group_status = 1
+        else:
+            group = course.group_set.get(members=profile)
+            group_status = 2
+        
+        course_serializer = CheckCourseGroupSerilaizer(course, many=False)
+        group_serializer = GroupSerializer(group, many=False)
+        return Response({"group":group_serializer.data,
+                         "course": course_serializer.data,
+                         "group_status": group_status})
+            
+    except:
+        return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+        
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def remove_group(request, pk):
+    if request.method == 'POST':
+        try:
+            profile = request.user.profile
+            
+            if profile.assistant_tag:
+                course = profile.assistant_courses.get(id=pk)
+                
+            else:
+                course = profile.course_set.get(id =pk)
+                
+            group_id = request.data['id']
+            group = course.group_set.get(id=group_id)
+            group.delete()
+            return Response({"message":"success"}, status=status.HTTP_200_OK)
+                
+        except :
+            return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+     
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def create_group(request, pk):
+    if request.method == 'POST':
+        try:
+            profile = request.user.profile
+            course = profile.student_courses.get(id=pk)
+            
+            if course.group_set.filter(creator = profile) or course.group_set.filter(members = profile):
+                return Response({"error": "You already hava a group."}, status=status.HTTP_405_METHOD_NOT_ALLOWED)
+            
+            try:
+                Group.objects.create(
+                    course = course,
+                    creator = profile,
+                    name = request.data["name"],
+                    description = request.data["description"],
+                )
+                return Response({"message":"success"}, status=status.HTTP_200_OK)
+            
+            except:
+                return Response({"error": "This name already exist, insert another name for your group"}, status=status.HTTP_409_CONFLICT)
+                    
+        except :
+            return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def check_group_member(request, pk):
+    if request.method == 'POST':
+        pass
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def add_group_member(request, pk):
+    if request.method == 'POST':
+        try:
+            profile = request.user.profile
+            course = profile.student_courses.get(id=pk)
+            group = profile.group_set.get(course=course)
+            
+            group.members.add()
+            
+            
+            return Response({"message":"success"}, status=status.HTTP_200_OK)
+        except:
+            return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+              
+      
+        
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def update_group(request, pk):
+    pass  
+        
+   
 
 
 def check_teacher_permission(request, pk):

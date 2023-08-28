@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Course
+from .models import Course, Group
 from users.serializers import ProfileTitleSerializer
 
 
@@ -31,3 +31,19 @@ class CourseMembersSerializer(serializers.ModelSerializer):
     class Meta:
         model = Course
         fields = ['owner', 'assistant_profiles', 'student_profiles']
+
+class CheckCourseGroupSerilaizer(serializers.ModelSerializer):
+    owner = ProfileTitleSerializer(many=False)
+    class Meta:
+        model = Course
+        fields = ['owner', 'name', 'id']
+        
+        
+class GroupSerializer(serializers.ModelSerializer):
+    creator = ProfileTitleSerializer(many=False)
+    members = ProfileTitleSerializer(many=True)
+    class Meta:
+        model = Group
+        exclude = ['created', 'course']
+        
+    
