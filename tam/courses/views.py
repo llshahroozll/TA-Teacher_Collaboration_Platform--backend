@@ -201,16 +201,20 @@ def remove_group(request, pk):
         try:
             profile = request.user.profile
             
-            if profile.assistant_tag:
-                course = profile.assistant_courses.get(id=pk)
-                
-            else:
-                course = profile.course_set.get(id =pk)
-                
+            course, group_status = check_user_status(request, pk)
+            if course is None:
+                return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+            
             group_id = request.data['id']
-            group = course.group_set.get(id=group_id)
-            group.delete()
-            return Response({"message":"success"}, status=status.HTTP_200_OK)
+            
+            if group_status == 1:
+                group = course.group_set.get(id=group_id)
+                group.delete()
+                return Response({"message":"success"}, status=status.HTTP_200_OK)
+            else:
+                group = profile.group_set.get(id=group_id)
+                group.delete()
+                return Response({"message":"success"}, status=status.HTTP_200_OK)
                 
         except :
             return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
