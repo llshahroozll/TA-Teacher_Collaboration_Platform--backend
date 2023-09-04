@@ -19,6 +19,7 @@ urlpatterns = [
     path('course/<str:pk>/create-group/', views.create_group),
     path('course/<str:pk>/check-group-member/', views.check_group_member),
     path('course/<str:pk>/add-group-member/', views.add_group_member),
+    path('course/<str:pk>/remove-group-member/', views.remove_group_member),
     path('course/<str:pk>/update-group/', views.update_group),
     
 ]

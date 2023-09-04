@@ -8781,3 +8781,147 @@ INFO 2023-09-03 21:26:03,336 basehttp 6012 6280 "POST /admin/courses/course/1402
 INFO 2023-09-03 21:26:03,438 basehttp 6012 6280 "GET /admin/courses/course/ HTTP/1.1" 200 10588
 INFO 2023-09-03 21:26:03,469 basehttp 6012 6280 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
 INFO 2023-09-03 21:26:05,351 basehttp 6012 6280 "GET /admin/ HTTP/1.1" 200 11615
+INFO 2023-09-04 22:16:50,399 autoreload 4496 12168 Watching for file changes with StatReloader
+INFO 2023-09-04 22:17:05,107 autoreload 4496 12168 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-04 22:17:05,801 autoreload 10856 10120 Watching for file changes with StatReloader
+INFO 2023-09-04 22:17:09,415 basehttp 10856 1160 "GET / HTTP/1.1" 200 5755
+INFO 2023-09-04 22:17:09,620 basehttp 10856 5540 "GET /admin/ HTTP/1.1" 200 11615
+WARNING 2023-09-04 22:17:09,830 log 10856 5540 Not Found: /favicon.ico
+WARNING 2023-09-04 22:17:09,831 basehttp 10856 5540 "GET /favicon.ico HTTP/1.1" 404 6570
+WARNING 2023-09-04 22:17:09,839 log 10856 1160 Not Found: /favicon.ico
+WARNING 2023-09-04 22:17:09,840 basehttp 10856 1160 "GET /favicon.ico HTTP/1.1" 404 6570
+INFO 2023-09-04 22:17:48,931 basehttp 10856 8444 "GET /admin/ HTTP/1.1" 200 11615
+INFO 2023-09-04 22:26:47,571 basehttp 10856 7264 "GET /admin/courses/group/ HTTP/1.1" 200 10495
+INFO 2023-09-04 22:26:47,601 basehttp 10856 7264 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:26:50,559 basehttp 10856 12328 "GET /admin/courses/group/7a973589-bcc7-4e79-98e5-574c0f92b0d7/change/ HTTP/1.1" 200 16077
+INFO 2023-09-04 22:26:50,583 basehttp 10856 12328 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:26:58,494 basehttp 10856 12328 "POST /admin/courses/group/7a973589-bcc7-4e79-98e5-574c0f92b0d7/change/ HTTP/1.1" 302 0
+INFO 2023-09-04 22:26:58,539 basehttp 10856 12328 "GET /admin/courses/group/ HTTP/1.1" 200 10760
+INFO 2023-09-04 22:26:58,563 basehttp 10856 12328 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:27:51,434 autoreload 10856 10120 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-04 22:27:52,258 autoreload 12476 12536 Watching for file changes with StatReloader
+INFO 2023-09-04 22:28:02,023 autoreload 12476 12536 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-04 22:28:02,665 autoreload 11492 12764 Watching for file changes with StatReloader
+INFO 2023-09-04 22:28:08,215 autoreload 11492 12764 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-04 22:28:08,750 autoreload 8292 12788 Watching for file changes with StatReloader
+INFO 2023-09-04 22:29:13,951 autoreload 8292 12788 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-04 22:29:14,815 autoreload 4912 11800 Watching for file changes with StatReloader
+INFO 2023-09-04 22:29:21,203 autoreload 4912 11800 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-04 22:29:21,894 autoreload 4696 7088 Watching for file changes with StatReloader
+INFO 2023-09-04 22:29:33,548 autoreload 4696 7088 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-04 22:29:34,219 autoreload 2892 10616 Watching for file changes with StatReloader
+INFO 2023-09-04 22:29:39,948 autoreload 2892 10616 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-04 22:29:40,554 autoreload 2276 12116 Watching for file changes with StatReloader
+INFO 2023-09-04 22:29:48,026 autoreload 2276 12116 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-04 22:29:48,703 autoreload 12820 12120 Watching for file changes with StatReloader
+INFO 2023-09-04 22:29:51,350 autoreload 12820 12120 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-04 22:29:52,053 autoreload 12480 12684 Watching for file changes with StatReloader
+INFO 2023-09-04 22:29:54,266 autoreload 12480 12684 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-04 22:29:54,913 autoreload 11888 872 Watching for file changes with StatReloader
+INFO 2023-09-04 22:30:01,241 autoreload 11888 872 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-04 22:30:01,914 autoreload 8660 12644 Watching for file changes with StatReloader
+INFO 2023-09-04 22:30:08,103 autoreload 8660 12644 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-04 22:30:08,793 autoreload 12692 9172 Watching for file changes with StatReloader
+INFO 2023-09-04 22:30:11,333 autoreload 12692 9172 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-04 22:30:11,955 autoreload 660 8484 Watching for file changes with StatReloader
+INFO 2023-09-04 22:30:16,221 autoreload 660 8484 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-04 22:30:16,919 autoreload 6064 8416 Watching for file changes with StatReloader
+INFO 2023-09-04 22:30:23,693 autoreload 6064 8416 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-04 22:30:24,366 autoreload 11828 1788 Watching for file changes with StatReloader
+INFO 2023-09-04 22:30:32,991 autoreload 11828 1788 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-04 22:30:33,673 autoreload 11888 7280 Watching for file changes with StatReloader
+INFO 2023-09-04 22:30:38,008 autoreload 11888 7280 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-04 22:30:38,654 autoreload 6504 12644 Watching for file changes with StatReloader
+INFO 2023-09-04 22:36:47,167 basehttp 6504 10552 "GET /admin/courses/group/ HTTP/1.1" 200 10495
+INFO 2023-09-04 22:36:47,205 basehttp 6504 10552 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:36:48,412 basehttp 6504 10552 "GET /admin/courses/group/7a973589-bcc7-4e79-98e5-574c0f92b0d7/change/ HTTP/1.1" 200 16077
+INFO 2023-09-04 22:36:48,438 basehttp 6504 10552 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:36:52,669 basehttp 6504 10552 "GET /admin/courses/course/14021002/change/?_to_field=id HTTP/1.1" 200 19919
+INFO 2023-09-04 22:36:52,776 basehttp 6504 10552 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:37:00,586 basehttp 6504 10552 "GET /admin/ HTTP/1.1" 200 11606
+INFO 2023-09-04 22:37:05,007 basehttp 6504 10552 "GET /admin/auth/user/ HTTP/1.1" 200 15058
+INFO 2023-09-04 22:37:05,034 basehttp 6504 10552 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:37:05,043 basehttp 6504 10552 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2023-09-04 22:37:05,043 basehttp 6504 456 "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+INFO 2023-09-04 22:37:05,062 basehttp 6504 456 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+INFO 2023-09-04 22:37:11,131 basehttp 6504 456 "GET /admin/ HTTP/1.1" 200 11606
+INFO 2023-09-04 22:38:49,610 basehttp 6504 456 "GET /admin/courses/group/ HTTP/1.1" 200 10495
+INFO 2023-09-04 22:38:49,647 basehttp 6504 456 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:38:50,714 basehttp 6504 456 "GET /admin/courses/group/7a973589-bcc7-4e79-98e5-574c0f92b0d7/change/ HTTP/1.1" 200 16077
+INFO 2023-09-04 22:38:50,741 basehttp 6504 456 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:38:58,196 basehttp 6504 456 "GET /admin/ HTTP/1.1" 200 11606
+INFO 2023-09-04 22:39:24,723 basehttp 6504 456 "GET /admin/courses/group/ HTTP/1.1" 200 10495
+INFO 2023-09-04 22:39:24,759 basehttp 6504 456 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:39:30,968 basehttp 6504 456 "GET /admin/ HTTP/1.1" 200 11606
+INFO 2023-09-04 22:39:32,148 basehttp 6504 456 "GET /admin/courses/course/ HTTP/1.1" 200 10363
+INFO 2023-09-04 22:39:32,175 basehttp 6504 456 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:39:33,076 basehttp 6504 456 "GET /admin/courses/course/14021002/change/ HTTP/1.1" 200 19870
+INFO 2023-09-04 22:39:33,112 basehttp 6504 456 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:39:36,240 basehttp 6504 456 "GET /admin/ HTTP/1.1" 200 11606
+INFO 2023-09-04 22:41:43,757 basehttp 6504 13172 "POST /login/ HTTP/1.1" 200 486
+WARNING 2023-09-04 22:42:22,199 log 6504 13172 Forbidden: /course/14021001/check-group-member/
+WARNING 2023-09-04 22:42:22,200 basehttp 6504 13172 "POST /course/14021001/check-group-member/ HTTP/1.1" 403 29
+WARNING 2023-09-04 22:43:13,314 log 6504 13172 Forbidden: /course/14021001/check-group-member/
+WARNING 2023-09-04 22:43:13,314 basehttp 6504 13172 "POST /course/14021001/check-group-member/ HTTP/1.1" 403 29
+WARNING 2023-09-04 22:43:16,457 log 6504 13172 Forbidden: /course/14021001/check-group-member/
+WARNING 2023-09-04 22:43:16,458 basehttp 6504 13172 "POST /course/14021001/check-group-member/ HTTP/1.1" 403 29
+WARNING 2023-09-04 22:43:21,745 log 6504 13172 Method Not Allowed: /course/14021002/check-group-member/
+WARNING 2023-09-04 22:43:21,746 basehttp 6504 13172 "POST /course/14021002/check-group-member/ HTTP/1.1" 405 39
+INFO 2023-09-04 22:43:35,182 basehttp 6504 456 "GET /admin/courses/course/ HTTP/1.1" 200 10363
+INFO 2023-09-04 22:43:35,218 basehttp 6504 456 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:43:36,374 basehttp 6504 456 "GET /admin/courses/course/14021002/change/ HTTP/1.1" 200 19870
+INFO 2023-09-04 22:43:36,405 basehttp 6504 456 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:43:43,411 basehttp 6504 456 "POST /admin/courses/course/14021002/change/ HTTP/1.1" 302 0
+INFO 2023-09-04 22:43:43,456 basehttp 6504 456 "GET /admin/courses/course/ HTTP/1.1" 200 10594
+INFO 2023-09-04 22:43:43,486 basehttp 6504 456 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:43:45,590 basehttp 6504 456 "GET /admin/courses/course/14021001/change/ HTTP/1.1" 200 19847
+INFO 2023-09-04 22:43:45,619 basehttp 6504 456 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:43:51,217 basehttp 6504 456 "GET /admin/ HTTP/1.1" 200 11572
+INFO 2023-09-04 22:43:52,135 basehttp 6504 456 "GET /admin/courses/group/ HTTP/1.1" 200 10495
+INFO 2023-09-04 22:43:52,160 basehttp 6504 456 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:43:53,403 basehttp 6504 456 "GET /admin/courses/group/7a973589-bcc7-4e79-98e5-574c0f92b0d7/change/ HTTP/1.1" 200 16077
+INFO 2023-09-04 22:43:53,429 basehttp 6504 456 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:43:58,512 basehttp 6504 456 "POST /admin/courses/group/7a973589-bcc7-4e79-98e5-574c0f92b0d7/change/ HTTP/1.1" 302 0
+INFO 2023-09-04 22:43:58,608 basehttp 6504 456 "GET /admin/courses/group/ HTTP/1.1" 200 10760
+INFO 2023-09-04 22:43:58,634 basehttp 6504 456 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+WARNING 2023-09-04 22:44:04,052 log 6504 13172 Conflict: /course/14021002/check-group-member/
+WARNING 2023-09-04 22:44:04,053 basehttp 6504 13172 "POST /course/14021002/check-group-member/ HTTP/1.1" 409 40
+WARNING 2023-09-04 22:44:07,921 log 6504 13172 Conflict: /course/14021002/check-group-member/
+WARNING 2023-09-04 22:44:07,922 basehttp 6504 13172 "POST /course/14021002/check-group-member/ HTTP/1.1" 409 40
+INFO 2023-09-04 22:44:10,780 basehttp 6504 456 "GET /admin/courses/group/7a973589-bcc7-4e79-98e5-574c0f92b0d7/change/ HTTP/1.1" 200 16077
+INFO 2023-09-04 22:44:10,808 basehttp 6504 456 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:44:15,744 basehttp 6504 456 "POST /admin/courses/group/7a973589-bcc7-4e79-98e5-574c0f92b0d7/change/ HTTP/1.1" 302 0
+INFO 2023-09-04 22:44:15,810 basehttp 6504 456 "GET /admin/courses/group/ HTTP/1.1" 200 10760
+INFO 2023-09-04 22:44:15,819 basehttp 6504 456 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:44:17,129 basehttp 6504 456 "GET /admin/courses/group/7a973589-bcc7-4e79-98e5-574c0f92b0d7/change/ HTTP/1.1" 200 16077
+INFO 2023-09-04 22:44:17,155 basehttp 6504 456 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:44:19,056 basehttp 6504 456 "POST /admin/courses/group/7a973589-bcc7-4e79-98e5-574c0f92b0d7/change/ HTTP/1.1" 302 0
+INFO 2023-09-04 22:44:19,100 basehttp 6504 456 "GET /admin/courses/group/ HTTP/1.1" 200 10760
+INFO 2023-09-04 22:44:19,132 basehttp 6504 456 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:44:22,231 basehttp 6504 13172 "POST /course/14021002/check-group-member/ HTTP/1.1" 200 39
+INFO 2023-09-04 22:44:30,681 basehttp 6504 456 "GET /admin/courses/group/7a973589-bcc7-4e79-98e5-574c0f92b0d7/change/ HTTP/1.1" 200 16068
+INFO 2023-09-04 22:44:30,710 basehttp 6504 456 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-04 22:44:33,845 basehttp 6504 456 "POST /admin/courses/group/7a973589-bcc7-4e79-98e5-574c0f92b0d7/change/ HTTP/1.1" 302 0
+INFO 2023-09-04 22:44:33,886 basehttp 6504 456 "GET /admin/courses/group/ HTTP/1.1" 200 10760
+INFO 2023-09-04 22:44:33,909 basehttp 6504 456 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+WARNING 2023-09-04 22:44:50,025 log 6504 13172 Forbidden: /course/14021001/check-group-member/
+WARNING 2023-09-04 22:44:50,026 basehttp 6504 13172 "POST /course/14021001/check-group-member/ HTTP/1.1" 403 29
+WARNING 2023-09-04 22:44:58,477 log 6504 13172 Conflict: /course/14021002/check-group-member/
+WARNING 2023-09-04 22:44:58,478 basehttp 6504 13172 "POST /course/14021002/check-group-member/ HTTP/1.1" 409 40
+WARNING 2023-09-04 22:45:30,768 log 6504 13172 Forbidden: /course/14021001/check-group-member/
+WARNING 2023-09-04 22:45:30,768 basehttp 6504 13172 "POST /course/14021001/check-group-member/ HTTP/1.1" 403 29
+WARNING 2023-09-04 22:45:50,966 log 6504 13172 Conflict: /course/14021002/add-group-member/
+WARNING 2023-09-04 22:45:50,967 basehttp 6504 13172 "POST /course/14021002/add-group-member/ HTTP/1.1" 409 40
+INFO 2023-09-04 22:45:59,446 basehttp 6504 13172 "POST /course/14021002/remove-group-member/ HTTP/1.1" 200 21
+INFO 2023-09-04 22:46:03,051 basehttp 6504 13172 "POST /course/14021002/check-group-member/ HTTP/1.1" 200 39
+INFO 2023-09-04 22:46:05,791 basehttp 6504 13172 "POST /course/14021002/add-group-member/ HTTP/1.1" 200 21
+WARNING 2023-09-04 22:46:10,464 log 6504 13172 Conflict: /course/14021002/check-group-member/
+WARNING 2023-09-04 22:46:10,465 basehttp 6504 13172 "POST /course/14021002/check-group-member/ HTTP/1.1" 409 40
+WARNING 2023-09-04 22:46:13,462 log 6504 13172 Conflict: /course/14021002/add-group-member/
+WARNING 2023-09-04 22:46:13,463 basehttp 6504 13172 "POST /course/14021002/add-group-member/ HTTP/1.1" 409 40
+INFO 2023-09-04 22:46:16,980 basehttp 6504 13172 "POST /course/14021002/remove-group-member/ HTTP/1.1" 200 21
+INFO 2023-09-04 22:46:26,653 basehttp 6504 13172 "POST /course/14021002/check-group-member/ HTTP/1.1" 200 39
+INFO 2023-09-04 22:46:30,136 basehttp 6504 13172 "POST /course/14021002/add-group-member/ HTTP/1.1" 200 21
+INFO 2023-09-04 22:46:35,025 basehttp 6504 13172 "POST /course/14021002/remove-group-member/ HTTP/1.1" 200 21
+WARNING 2023-09-04 22:46:44,201 log 6504 13172 Forbidden: /course/14021002/remove-group-member/
+WARNING 2023-09-04 22:46:44,202 basehttp 6504 13172 "POST /course/14021002/remove-group-member/ HTTP/1.1" 403 29
