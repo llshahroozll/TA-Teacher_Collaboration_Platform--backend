@@ -6,7 +6,7 @@ urlpatterns = [
     path('course/<str:pk>/', views.get_course),
     path('course/<str:pk>/members/', views.get_course_members),
 
-    path('course/<str:pk>/setting/', views.course_setting),
+    path('course/<str:pk>/update-course/', views.update_course),
     path('course/<str:pk>/check-assistant/', views.course_check_assistant),
     path('course/<str:pk>/add-assistant/', views.course_add_assistant),
     path('course/<str:pk>/remove-assistant/', views.course_remove_assistant),
@@ -21,5 +21,6 @@ urlpatterns = [
     path('course/<str:pk>/add-group-member/', views.add_group_member),
     path('course/<str:pk>/remove-group-member/', views.remove_group_member),
     path('course/<str:pk>/update-group/', views.update_group),
+    path('course/<str:pk>/leave-member/', views.leave_member),
     
 ]

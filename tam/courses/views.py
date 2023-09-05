@@ -13,6 +13,7 @@ from .serializers import (
     CourseTitleSerializer,
     CheckCourseGroupSerilaizer,
     GroupSerializer,
+    UpdateGroupSerializer,
 )
 
 
@@ -139,7 +140,7 @@ def get_course_members(request, pk):
 
 @api_view(['GET', 'POST'])
 @permission_classes([IsAuthenticated])
-def course_setting(request, pk):
+def update_course(request, pk):
     course = check_teacher_permission(request, pk)
     if course is None:
         return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
@@ -430,13 +431,50 @@ def remove_group_member(request, pk):
 
       
         
-@api_view(['POST'])
+@api_view(['GET', 'POST'])
 @permission_classes([IsAuthenticated])
 def update_group(request, pk):
-    pass  
+    try:
+        profile = request.user.profile
+        course = profile.student_courses.get(id=pk)
+        group = profile.group_set.get(course=course)
         
+        if request.method == 'GET':
+            serializer = UpdateGroupSerializer(group, many=False)
+            return Response(serializer.data)
+        
+        if request.method == 'POST':
+            try:    
+                group.name = request.data["name"]
+                group.description = request.data["description"]
+                group.save()
+                
+                serializer = UpdateGroupSerializer(group, many=False)
+                return Response(serializer.data)
+            
+            except:
+                return Response({"error": "This name already exist"}, status=status.HTTP_409_CONFLICT)
+            
+    except:
+        return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
    
 
-
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def leave_member(request, pk):
+    if request.method == "Post":
+        try:
+            profile = request.user.profile
+            
+            group_id = request.data["group_id"]
+            group = Group.objects.get(id=group_id)
+            
+            profile = group.members.get(id=profile.id)
+            group.members.remove(profile)
+            return Response({"message":"success"}, status=status.HTTP_200_OK)
+            
+        except:
+            return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+            
 
 

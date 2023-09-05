@@ -36,7 +36,7 @@ class CheckCourseGroupSerilaizer(serializers.ModelSerializer):
     owner = ProfileTitleSerializer(many=False)
     class Meta:
         model = Course
-        fields = ['owner', 'name', 'id']
+        fields = ['owner', 'name', 'id', 'group_capacity']
         
         
 class GroupSerializer(serializers.ModelSerializer):
@@ -46,4 +46,7 @@ class GroupSerializer(serializers.ModelSerializer):
         model = Group
         exclude = ['created', 'course']
         
-    
+class UpdateGroupSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Group
+        fields = ['name', 'description']
