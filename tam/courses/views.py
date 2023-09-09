@@ -462,7 +462,7 @@ def update_group(request, pk):
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def leave_member(request, pk):
-    if request.method == "Post":
+    if request.method == "POST":
         try:
             profile = request.user.profile
             
