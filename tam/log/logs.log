@@ -9213,3 +9213,75 @@ INFO 2023-09-05 22:13:48,299 basehttp 13176 10088 "GET /admin/jsi18n/ HTTP/1.1" 
 INFO 2023-09-05 22:13:50,861 basehttp 13176 10088 "POST /admin/courses/group/7a973589-bcc7-4e79-98e5-574c0f92b0d7/change/ HTTP/1.1" 302 0
 INFO 2023-09-05 22:13:50,893 basehttp 13176 10088 "GET /admin/courses/group/ HTTP/1.1" 200 10760
 INFO 2023-09-05 22:13:50,910 basehttp 13176 10088 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-09 10:11:38,330 autoreload 9808 12292 Watching for file changes with StatReloader
+INFO 2023-09-09 10:11:42,096 basehttp 9808 7868 "GET / HTTP/1.1" 200 5755
+INFO 2023-09-09 10:11:42,391 basehttp 9808 1532 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2023-09-09 10:11:42,396 basehttp 9808 13304 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2023-09-09 10:11:42,408 basehttp 9808 7868 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2023-09-09 10:11:42,411 basehttp 9808 7536 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2023-09-09 10:11:42,411 basehttp 9808 2852 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2023-09-09 10:11:42,463 basehttp 9808 7536 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2023-09-09 10:11:42,463 basehttp 9808 1532 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2023-09-09 10:11:42,469 basehttp 9808 2852 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2023-09-09 10:11:42,482 basehttp 9808 7868 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2023-09-09 10:11:42,503 basehttp 9808 13304 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2023-09-09 10:11:42,534 basehttp 9808 7940 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+WARNING 2023-09-09 10:11:42,993 log 9808 7940 Not Found: /favicon.ico
+WARNING 2023-09-09 10:11:42,993 basehttp 9808 7940 "GET /favicon.ico HTTP/1.1" 404 6758
+INFO 2023-09-09 10:12:09,136 basehttp 9808 7940 "GET /admin HTTP/1.1" 301 0
+INFO 2023-09-09 10:12:09,281 basehttp 9808 13304 "GET /admin/ HTTP/1.1" 200 11537
+INFO 2023-09-09 10:12:09,324 basehttp 9808 13304 "GET /static/admin/css/base.css HTTP/1.1" 200 21207
+INFO 2023-09-09 10:12:09,329 basehttp 9808 2852 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+INFO 2023-09-09 10:12:09,340 basehttp 9808 13304 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2023-09-09 10:12:09,343 basehttp 9808 2852 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18533
+INFO 2023-09-09 10:12:09,353 basehttp 9808 7868 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+INFO 2023-09-09 10:12:09,364 basehttp 9808 13304 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2023-09-09 10:12:09,369 basehttp 9808 2852 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2023-09-09 10:12:09,391 basehttp 9808 13304 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2023-09-09 10:12:09,392 basehttp 9808 7868 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2023-09-09 10:12:09,392 basehttp 9808 2852 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2023-09-09 10:12:12,935 basehttp 9808 2852 "GET /admin/ HTTP/1.1" 200 11537
+INFO 2023-09-09 10:12:21,760 basehttp 9808 2852 "GET /admin/django_rest_passwordreset/resetpasswordtoken/ HTTP/1.1" 200 9106
+INFO 2023-09-09 10:12:21,788 basehttp 9808 7868 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-09 10:12:21,795 basehttp 9808 2852 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+INFO 2023-09-09 10:12:21,802 basehttp 9808 7536 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2023-09-09 10:12:21,809 basehttp 9808 1532 "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+INFO 2023-09-09 10:12:21,813 basehttp 9808 13852 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+INFO 2023-09-09 10:12:21,843 basehttp 9808 2852 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2023-09-09 10:12:21,845 basehttp 9808 7868 "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO 2023-09-09 10:12:21,846 basehttp 9808 7536 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2023-09-09 10:12:21,915 basehttp 9808 13304 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+INFO 2023-09-09 10:12:21,923 basehttp 9808 1532 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2023-09-09 10:12:21,951 basehttp 9808 1532 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2023-09-09 10:12:21,963 basehttp 9808 1532 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2023-09-09 10:12:23,128 basehttp 9808 1532 "GET /admin/ HTTP/1.1" 200 11537
+INFO 2023-09-09 10:18:25,979 autoreload 9808 12292 D:\Our TAM project\Backend\tam\users\urls.py changed, reloading.
+INFO 2023-09-09 10:18:26,844 autoreload 11568 9196 Watching for file changes with StatReloader
+INFO 2023-09-09 10:18:29,502 autoreload 11568 9196 D:\Our TAM project\Backend\tam\users\urls.py changed, reloading.
+INFO 2023-09-09 10:18:30,453 autoreload 12700 9116 Watching for file changes with StatReloader
+INFO 2023-09-09 10:18:48,881 autoreload 12700 9116 D:\Our TAM project\Backend\tam\users\urls.py changed, reloading.
+INFO 2023-09-09 10:18:49,638 autoreload 9008 11356 Watching for file changes with StatReloader
+INFO 2023-09-09 10:18:52,431 autoreload 9008 11356 D:\Our TAM project\Backend\tam\users\urls.py changed, reloading.
+INFO 2023-09-09 10:18:53,417 autoreload 13020 7876 Watching for file changes with StatReloader
+INFO 2023-09-09 10:25:22,362 autoreload 13020 7876 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-09 10:25:23,227 autoreload 5084 12400 Watching for file changes with StatReloader
+INFO 2023-09-09 10:25:42,231 autoreload 5084 12400 D:\Our TAM project\Backend\tam\courses\models.py changed, reloading.
+INFO 2023-09-09 10:25:43,130 autoreload 11840 12548 Watching for file changes with StatReloader
+INFO 2023-09-09 10:28:50,212 autoreload 11840 12548 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-09 10:28:51,121 autoreload 12880 4060 Watching for file changes with StatReloader
+INFO 2023-09-09 10:35:37,994 autoreload 12880 4060 D:\Our TAM project\Backend\tam\courses\urls.py changed, reloading.
+INFO 2023-09-09 10:35:38,782 autoreload 8556 7264 Watching for file changes with StatReloader
+INFO 2023-09-09 10:35:42,809 autoreload 8556 7264 D:\Our TAM project\Backend\tam\courses\urls.py changed, reloading.
+INFO 2023-09-09 10:35:43,580 autoreload 2784 11860 Watching for file changes with StatReloader
+INFO 2023-09-09 10:35:45,913 autoreload 2784 11860 D:\Our TAM project\Backend\tam\courses\urls.py changed, reloading.
+INFO 2023-09-09 10:35:46,666 autoreload 5216 10392 Watching for file changes with StatReloader
+INFO 2023-09-09 10:35:59,910 autoreload 5216 10392 D:\Our TAM project\Backend\tam\courses\urls.py changed, reloading.
+INFO 2023-09-09 10:36:00,693 autoreload 8716 1384 Watching for file changes with StatReloader
+INFO 2023-09-09 10:37:11,755 autoreload 8716 1384 D:\Our TAM project\Backend\tam\courses\urls.py changed, reloading.
+INFO 2023-09-09 10:37:12,536 autoreload 6664 2248 Watching for file changes with StatReloader
+INFO 2023-09-09 10:37:15,151 autoreload 6664 2248 D:\Our TAM project\Backend\tam\courses\urls.py changed, reloading.
+INFO 2023-09-09 10:37:16,043 autoreload 11032 11492 Watching for file changes with StatReloader
+INFO 2023-09-09 10:37:20,431 autoreload 11032 11492 D:\Our TAM project\Backend\tam\courses\urls.py changed, reloading.
+INFO 2023-09-09 10:37:21,293 autoreload 13244 12256 Watching for file changes with StatReloader
+INFO 2023-09-09 10:37:27,498 autoreload 13244 12256 D:\Our TAM project\Backend\tam\courses\urls.py changed, reloading.
+INFO 2023-09-09 10:37:28,296 autoreload 4312 13968 Watching for file changes with StatReloader

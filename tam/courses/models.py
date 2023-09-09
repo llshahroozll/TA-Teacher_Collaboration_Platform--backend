@@ -15,7 +15,6 @@ class Course(models.Model):
     exam_time = models.CharField(max_length=200, blank=True, null=True)
     status = models.BooleanField(default=True)
     group_capacity = models.IntegerField(default=3)
-    projects_phase = models.IntegerField(default=1)
     created = models.DateTimeField(auto_now_add=True)
     id = models.IntegerField(primary_key=True, unique=True)
 

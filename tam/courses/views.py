@@ -290,10 +290,10 @@ def get_group_detail(request, pk):
         course = profile.student_courses.get(id=pk)
         if course.group_set.filter(creator=profile):
             group = course.group_set.get(creator=profile)
-            group_status = 1
+            group_status = 2
         else:
             group = course.group_set.get(members=profile)
-            group_status = 2
+            group_status = 3
         
         course_serializer = CheckCourseGroupSerilaizer(course, many=False)
         group_serializer = GroupSerializer(group, many=False)
