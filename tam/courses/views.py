@@ -52,33 +52,42 @@ def check_user_status(request, pk):
             if profile.assistant_courses.filter(id=pk).exists():
                 course = profile.assistant_courses.get(id=pk)
                 group_status = 1      # 1 means user is assistant or teacher
+                user_role = "A"
             else:
                 course = profile.student_courses.get(id=pk)
                 if course.group_set.filter(creator=profile):
                     group_status = 2  # 2 means user is student and has group
+                    user_role = "S"
                 elif course.group_set.filter(members=profile):
                     group_status = 3  # 3 means user is student and has group
+                    user_role = "S"
                 else:
                     group_status = 4  # 4 means user is student and has not group
+                    user_role = "S"
                         
         elif profile.student_tag:
             course = profile.student_courses.get(id=pk)
             if course.group_set.filter(creator=profile):
                 group_status = 2  # 2 means user is student and has group
+                user_role = "S"
             elif course.group_set.filter(members=profile):
                 group_status = 3  # 3 means user is student and has group
+                user_role = "S"
             else:
                 group_status = 4  # 4 means user is student and has not group
-                
+                user_role = "S"
+                  
         elif profile.assistant_tag:
             course = profile.assistant_courses.get(id=pk)
             group_status = 1      # 1 means user is assistant or teacher
+            user_role = "A"
             
         else:
             course = profile.course_set.get(id =pk)
             group_status = 1      # 1 means user is assistant or teacher
+            user_role = "T"
             
-        return course, group_status
+        return course, group_status, user_role
     except: 
         return None, 0
 
@@ -112,14 +121,22 @@ def get_courses(request):
 @permission_classes([IsAuthenticated])
 def get_course(request, pk):
     
-    course, group_status = check_user_status(request, pk)
+    course, group_status, user_role = check_user_status(request, pk)
     
     if course is None:
         return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
-  
+    
+    #check project status 
+    project_status = False
+    if course.project is not None:
+        if course.project.status:
+            project_status = True
+
+            
     serializer = CourseSerializer(course, many=False)
     return Response({"course":serializer.data,
-                    "group_status": group_status})
+                    "group_status": group_status,
+                    "project_status": project_status})
 
 
  

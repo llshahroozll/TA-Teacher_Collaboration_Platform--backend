@@ -23,4 +23,5 @@ urlpatterns = [
     path('course/<str:pk>/update-group/', views.update_group),
     path('course/<str:pk>/leave-member/', views.leave_member),
     
+    # path('course/<str:pk>/project/', views.project)
 ]

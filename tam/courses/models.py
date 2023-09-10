@@ -1,14 +1,28 @@
 from django.db import models
 from users.models import Profile
 import uuid
+import os
 # Create your models here.
 
+class Project(models.Model):
+    name = models.CharField(max_length=300)
+    description = models.TextField(null=True, blank=True)
+    project_file = models.FileField(upload_to='projects/course_projects/', blank=True, null=True)
+    status = models.BooleanField(default=False)
+    created = models.DateTimeField(auto_now_add=True)
+    id = models.UUIDField(default=uuid.uuid4, primary_key=True, unique=True, editable=False)
+
+    def __str__(self):
+        return self.name
+    
+    
 
 class Course(models.Model):
     owner = models.ForeignKey(
         Profile, null=True, blank=True, on_delete=models.CASCADE)
     assistant_profiles = models.ManyToManyField(Profile, blank=True, related_name="assistant_courses")
     student_profiles = models.ManyToManyField(Profile, blank=True, related_name="student_courses")
+    project = models.OneToOneField(Project, null=True, blank=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=200)
     class_time = models.CharField(max_length=300, blank=True, null=True)
     class_location = models.CharField(max_length=200, blank=True, null=True)
@@ -36,5 +50,23 @@ class Group(models.Model):
         
     def __str__(self):
         return self.name + " - " + self.creator.name
+    
+    
+
+
+def get_upload_path(instance, filename):
+    return os.path.join("projects/student_projects/%s/" %(instance), filename)
+
+class UploadProject(models.Model):
+    
+    sender = models.ForeignKey(Profile, on_delete=models.CASCADE)
+    group = models.ForeignKey(Group, on_delete=models.CASCADE)
+    project = models.ForeignKey(Project, on_delete=models.CASCADE)
+    file = models.FileField(upload_to=get_upload_path)
+    created = models.DateTimeField(auto_now_add=True)
+    id = models.UUIDField(default=uuid.uuid4, primary_key=True, unique=True, editable=False)
+    
+    def __str__(self):
+        return self.group.course.name
     
     
