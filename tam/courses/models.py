@@ -7,7 +7,7 @@ import os
 class Project(models.Model):
     name = models.CharField(max_length=300)
     description = models.TextField(null=True, blank=True)
-    project_file = models.FileField(upload_to='projects/course_projects/', blank=True, null=True)
+    project_file = models.FileField(default=None, upload_to='projects/course_projects/', blank=True, null=True)
     status = models.BooleanField(default=False)
     created = models.DateTimeField(auto_now_add=True)
     id = models.UUIDField(default=uuid.uuid4, primary_key=True, unique=True, editable=False)

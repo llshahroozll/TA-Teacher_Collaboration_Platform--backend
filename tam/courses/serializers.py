@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Course, Group
+from .models import Course, Group, Project, UploadProject
 from users.serializers import ProfileTitleSerializer
 
 
@@ -50,3 +50,14 @@ class UpdateGroupSerializer(serializers.ModelSerializer):
     class Meta:
         model = Group
         fields = ['name', 'description']
+        
+        
+class ProjectSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Project
+        exclude = ['created']
+        
+class UploadProjectTitleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UploadProject
+        fields = ['group']

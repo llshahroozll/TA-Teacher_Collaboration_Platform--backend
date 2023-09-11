@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.response import Response
-from .models import Course, Group
+from .models import Course, Group, Project, UploadProject
 from users.models import Profile
 from users.serializers import ProfileTitleSerializer
 from rest_framework import status
@@ -14,6 +14,7 @@ from .serializers import (
     CheckCourseGroupSerilaizer,
     GroupSerializer,
     UpdateGroupSerializer,
+    ProjectSerializer,
 )
 
 
@@ -89,7 +90,7 @@ def check_user_status(request, pk):
             
         return course, group_status, user_role
     except: 
-        return None, 0
+        return None, 0, ""
 
 
 
@@ -172,7 +173,6 @@ def update_course(request, pk):
         course.class_time = request.data['class_time']
         course.class_location = request.data['class_location']
         course.group_capacity = request.data['group_capacity']
-        course.projects_phase = request.data['projects_phase']
         course.save()
         serializer = UpdateCourseSerializer(course, many=False)
         return Response(serializer.data) 
@@ -254,7 +254,7 @@ def course_remove_assistant(request, pk):
 @permission_classes([IsAuthenticated])
 def check_course_group(request, pk):
 
-    course, group_status = check_user_status(request, pk)
+    course, group_status, user_role = check_user_status(request, pk)
     
     if course is None:
         return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
@@ -328,7 +328,7 @@ def remove_group(request, pk):
         try:
             profile = request.user.profile
             
-            course, group_status = check_user_status(request, pk)
+            course, group_status, user_role = check_user_status(request, pk)
             if course is None:
                 return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
             
@@ -493,5 +493,105 @@ def leave_member(request, pk):
         except:
             return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
             
+
+################# project section #########################
+
+
+@api_view(['GET', 'POST'])
+@permission_classes([IsAuthenticated])
+def update_project(request, pk):
+    try:
+        course = check_teacher_permission(request, pk)
+        if course is None:
+            return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+        
+        if request.method == 'GET':
+            project = course.project
+            serializer = ProjectSerializer(project, many=False)
+            return Response(serializer.data)
+            
+        if request.method == 'POST':
+            project = course.project
+            
+            project.name = request.data["name"]
+            project.description = request.data["description"]
+            if request.data["project_file"] != "":
+                project.project_file = request.data["project_file"]
+            project.status = request.data["status"]
+            project.save()
+            
+            serializer = ProjectSerializer(course.project, many=False)
+            return Response(serializer.data)
+        
+    except:
+        return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def get_project(request, pk):
+    try:
+        profile = request.user.profile
+        course = profile.student_courses.get(id=pk)
+        if not course.project.status:
+            return Response({"error": "project has not been defined yet"}, status=status.HTTP_40)
+            
+    except:
+        return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+        
+        
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def upload_project(request, pk):
+    if request.mehtod == 'POST':
+        try:
+            profile = request.user.profile
+            course = profile.student_courses.get(id=pk)
+            project = course.project
+            
+            if course.group_set.filter(creator=profile):
+                group = course.group_set.get(creator=profile)
+            elif course.group_set.filter(members=profile):
+                group = course.group_set.get(members=profile)
+            else:
+                return Response({"error": "You don't have any group, JOIN A GROUP OR CREATE ONE"}, status=status.HTTP_405_METHOD_NOT_ALLOWED)
+            
+            UploadProject.objects.create(
+                sender = profile,
+                group = group,
+                project = project,
+                file = request.data["file"]
+            )
+            
+            return Response({"message":"success"}, status=status.HTTP_200_OK)
+            
+                
+        except:
+            return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+            
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def uploaded_project_list(request, pk):
+    pass
+
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def get_uploaded_project(request, pk):
+    pass
+
+
+
+# @api_view(['POST'])
+# @permission_classes([IsAuthenticated])
+# def project_all(request, pk):
+#     pass
+
 
 
