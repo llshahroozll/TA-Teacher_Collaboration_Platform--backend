@@ -15,6 +15,10 @@ from .serializers import (
     GroupSerializer,
     UpdateGroupSerializer,
     ProjectSerializer,
+    GetProjectSerializer,
+    GetUploadProjectSerializer,
+    UploadProjectTitleSerializer,
+    UploadProjectSerializer,
 )
 
 
@@ -271,11 +275,10 @@ def get_group_list(request, pk):
     try:
         profile = request.user.profile
         
-        if profile.assistant_tag:
-            course = profile.assistant_courses.get(id=pk)
-            
-        else:
+        if profile.course_set.filter(id=pk):
             course = profile.course_set.get(id =pk)
+        else:
+            course = profile.assistant_courses.get(id=pk)
             
         group_list = course.group_set.all()
         serializer = GroupSerializer(group_list, many=True)
@@ -528,45 +531,69 @@ def update_project(request, pk):
 
 
 
-@api_view(['POST'])
+@api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def get_project(request, pk):
-    try:
-        profile = request.user.profile
-        course = profile.student_courses.get(id=pk)
-        if not course.project.status:
-            return Response({"error": "project has not been defined yet"}, status=status.HTTP_40)
+    if request.method == 'GET':
+        try:
+            profile = request.user.profile
+            course = profile.student_courses.get(id=pk)
+            if not course.project.status:
+                return Response({"error": "project has not been defined yet"}, status=status.HTTP_410_GONE)
             
-    except:
-        return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
-        
+            project = course.project
+            project_seralizer = GetProjectSerializer(project, many=False)
+            
+            if course.group_set.filter(creator=profile):
+                group = course.group_set.get(creator=profile)
+                group_id = group.id
+            elif course.group_set.filter(members=profile):
+                group = course.group_set.get(members=profile)
+                group_id = group.id
+            else:
+                group_id = None
+            
+            if group_id is not None:
+                group_uploaded_project = group.uploadproject_set.all()
+                group_uploaded_project_serializer = GetUploadProjectSerializer(group_uploaded_project, many=True)
+                return Response({"project_detail" : project_seralizer.data,
+                                "group_id" : group_id,
+                                "group_uploaded_project" : group_uploaded_project_serializer.data
+                                })
+                
+            else:
+                return Response({"project_detail" : project_seralizer.data})
+                
+        except:
+            return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+            
         
 
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def upload_project(request, pk):
-    if request.mehtod == 'POST':
         try:
-            profile = request.user.profile
-            course = profile.student_courses.get(id=pk)
-            project = course.project
-            
-            if course.group_set.filter(creator=profile):
-                group = course.group_set.get(creator=profile)
-            elif course.group_set.filter(members=profile):
-                group = course.group_set.get(members=profile)
-            else:
-                return Response({"error": "You don't have any group, JOIN A GROUP OR CREATE ONE"}, status=status.HTTP_405_METHOD_NOT_ALLOWED)
-            
-            UploadProject.objects.create(
-                sender = profile,
-                group = group,
-                project = project,
-                file = request.data["file"]
-            )
-            
-            return Response({"message":"success"}, status=status.HTTP_200_OK)
+            if request.mehtod == 'POST':
+                profile = request.user.profile
+                course = profile.student_courses.get(id=pk)
+                project = course.project
+                
+                if course.group_set.filter(creator=profile):
+                    group = course.group_set.get(creator=profile)
+                elif course.group_set.filter(members=profile):
+                    group = course.group_set.get(members=profile)
+                else:
+                    return Response({"error": "You don't have any group, JOIN A GROUP OR CREATE ONE"}, status=status.HTTP_405_METHOD_NOT_ALLOWED)
+                
+                UploadProject.objects.create(
+                    sender = profile,
+                    group = group,
+                    project = project,
+                    file = request.data["file"]
+                )
+                
+                return Response({"message":"success"}, status=status.HTTP_200_OK)
             
                 
         except:
@@ -574,19 +601,51 @@ def upload_project(request, pk):
             
 
 
-@api_view(['POST'])
+@api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def uploaded_project_list(request, pk):
-    pass
+    try:
+        if request.method == 'GET':
+            
+            profile = request.user.profile
 
+            if profile.course_set.filter(id=pk):
+                course = profile.course_set.get(id =pk)
+            else:
+                course = profile.assistant_courses.get(id=pk)
+
+            project = course.project
+            uploaded_project_list = project.uploadproject_set.all()
+            serializer = UploadProjectTitleSerializer(uploaded_project_list, many=True)
+            return Response(serializer.data)
+            
+    except:
+        return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+        
 
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def get_uploaded_project(request, pk):
-    pass
-
-
+    try:
+        if request.method == 'POST':
+            profile = request.user.profile
+            if profile.course_set.filter(id=pk):
+                course = profile.course_set.get(id =pk)
+            else:
+                course = profile.assistant_courses.get(id=pk)
+            
+            project = course.project
+    
+            upload_project_id = request.data["upload_project_id"]
+            
+            upload_project = project.uploadproject_set.get(id=upload_project_id)
+            serializer = UploadProjectSerializer(upload_project, many=False)
+            return Response(serializer.data)
+            
+    except:
+        return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+            
 
 # @api_view(['POST'])
 # @permission_classes([IsAuthenticated])

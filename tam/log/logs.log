@@ -13150,3 +13150,638 @@ INFO 2023-09-11 22:03:10,570 autoreload 3804 14156 Watching for file changes wit
 INFO 2023-09-11 22:03:37,069 autoreload 3804 14156 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
 INFO 2023-09-11 22:03:37,917 autoreload 7176 9760 Watching for file changes with StatReloader
 INFO 2023-09-11 22:03:41,798 basehttp 7176 9916 "GET /course/14021003/check-group/ HTTP/1.1" 200 18
+INFO 2023-09-11 22:07:42,264 autoreload 7176 9760 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-11 22:07:43,185 autoreload 14996 17668 Watching for file changes with StatReloader
+INFO 2023-09-12 18:15:06,024 autoreload 9600 14896 Watching for file changes with StatReloader
+INFO 2023-09-12 18:15:09,510 basehttp 9600 12704 "GET / HTTP/1.1" 200 5755
+WARNING 2023-09-12 18:15:09,991 log 9600 12704 Not Found: /favicon.ico
+WARNING 2023-09-12 18:15:09,992 basehttp 9600 12704 "GET /favicon.ico HTTP/1.1" 404 7677
+INFO 2023-09-12 18:15:14,111 basehttp 9600 5744 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-09-12 18:15:14,369 basehttp 9600 5744 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+INFO 2023-09-12 18:15:14,564 basehttp 9600 5744 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2023-09-12 18:15:17,951 basehttp 9600 5744 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2023-09-12 18:15:18,050 basehttp 9600 5744 "GET /admin/ HTTP/1.1" 200 12274
+INFO 2023-09-12 18:15:21,355 basehttp 9600 5744 "GET /admin/courses/uploadproject/ HTTP/1.1" 200 10874
+INFO 2023-09-12 18:15:21,390 basehttp 9600 5744 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 18:15:22,926 basehttp 9600 5744 "GET /admin/courses/uploadproject/fb28ad5a-dfbf-4e27-a16e-c2ba1da1fc32/change/ HTTP/1.1" 200 16694
+INFO 2023-09-12 18:15:22,975 basehttp 9600 5744 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 18:15:25,199 basehttp 9600 5744 "GET /admin/ HTTP/1.1" 200 12274
+INFO 2023-09-12 18:18:19,659 autoreload 9600 14896 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:18:20,442 autoreload 7980 5440 Watching for file changes with StatReloader
+INFO 2023-09-12 18:18:22,997 autoreload 7980 5440 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:18:23,783 autoreload 6892 16744 Watching for file changes with StatReloader
+INFO 2023-09-12 18:18:33,211 autoreload 6892 16744 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:18:34,008 autoreload 12228 16240 Watching for file changes with StatReloader
+INFO 2023-09-12 18:18:40,133 autoreload 12228 16240 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:18:40,878 autoreload 16360 12452 Watching for file changes with StatReloader
+INFO 2023-09-12 18:18:46,770 autoreload 16360 12452 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:18:47,537 autoreload 8724 14544 Watching for file changes with StatReloader
+INFO 2023-09-12 18:18:56,997 autoreload 8724 14544 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:18:57,736 autoreload 2484 1436 Watching for file changes with StatReloader
+INFO 2023-09-12 18:19:02,018 autoreload 2484 1436 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:19:02,814 autoreload 12140 3840 Watching for file changes with StatReloader
+INFO 2023-09-12 18:19:05,003 autoreload 12140 3840 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:19:05,767 autoreload 16456 3024 Watching for file changes with StatReloader
+INFO 2023-09-12 18:19:08,239 autoreload 16456 3024 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:19:09,045 autoreload 17720 17576 Watching for file changes with StatReloader
+INFO 2023-09-12 18:19:13,108 autoreload 17720 17576 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:19:13,845 autoreload 16728 1868 Watching for file changes with StatReloader
+INFO 2023-09-12 18:19:28,911 autoreload 16728 1868 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:19:29,660 autoreload 14240 13712 Watching for file changes with StatReloader
+INFO 2023-09-12 18:19:37,398 autoreload 14240 13712 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:19:38,130 autoreload 12168 18088 Watching for file changes with StatReloader
+INFO 2023-09-12 18:19:45,918 autoreload 12168 18088 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:19:46,698 autoreload 7368 5404 Watching for file changes with StatReloader
+INFO 2023-09-12 18:19:49,113 autoreload 7368 5404 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:19:49,973 autoreload 18304 1028 Watching for file changes with StatReloader
+INFO 2023-09-12 18:19:55,783 autoreload 18304 1028 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:19:56,560 autoreload 7504 2704 Watching for file changes with StatReloader
+INFO 2023-09-12 18:19:58,766 autoreload 7504 2704 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:19:59,424 autoreload 16820 13372 Watching for file changes with StatReloader
+INFO 2023-09-12 18:20:05,443 autoreload 16820 13372 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:20:06,213 autoreload 12060 18308 Watching for file changes with StatReloader
+INFO 2023-09-12 18:20:12,616 autoreload 12060 18308 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:20:13,373 autoreload 1952 9468 Watching for file changes with StatReloader
+INFO 2023-09-12 18:20:17,455 autoreload 1952 9468 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:20:18,219 autoreload 12676 18428 Watching for file changes with StatReloader
+INFO 2023-09-12 18:20:22,376 autoreload 12676 18428 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:20:23,121 autoreload 2748 12172 Watching for file changes with StatReloader
+INFO 2023-09-12 18:20:27,152 autoreload 2748 12172 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:20:27,922 autoreload 11940 1572 Watching for file changes with StatReloader
+INFO 2023-09-12 18:20:30,411 autoreload 11940 1572 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:20:31,200 autoreload 14160 9828 Watching for file changes with StatReloader
+INFO 2023-09-12 18:20:35,306 autoreload 14160 9828 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:20:36,059 autoreload 10588 3476 Watching for file changes with StatReloader
+INFO 2023-09-12 18:20:45,193 autoreload 10588 3476 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:20:45,986 autoreload 16316 12292 Watching for file changes with StatReloader
+INFO 2023-09-12 18:20:53,500 autoreload 16316 12292 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:20:54,300 autoreload 17556 15828 Watching for file changes with StatReloader
+INFO 2023-09-12 18:20:56,541 autoreload 17556 15828 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:20:57,318 autoreload 10816 3800 Watching for file changes with StatReloader
+INFO 2023-09-12 18:20:59,704 autoreload 10816 3800 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:21:00,569 autoreload 16124 6304 Watching for file changes with StatReloader
+INFO 2023-09-12 18:21:19,070 autoreload 16124 6304 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:21:19,795 autoreload 1428 17440 Watching for file changes with StatReloader
+INFO 2023-09-12 18:21:22,190 autoreload 1428 17440 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:21:23,084 autoreload 15676 4624 Watching for file changes with StatReloader
+INFO 2023-09-12 18:21:34,656 autoreload 15676 4624 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:21:35,554 autoreload 5876 16120 Watching for file changes with StatReloader
+INFO 2023-09-12 18:21:38,137 autoreload 5876 16120 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:21:38,915 autoreload 2760 6856 Watching for file changes with StatReloader
+INFO 2023-09-12 18:21:43,243 autoreload 2760 6856 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:21:44,092 autoreload 16880 13168 Watching for file changes with StatReloader
+INFO 2023-09-12 18:21:46,588 autoreload 16880 13168 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:21:47,318 autoreload 15112 11888 Watching for file changes with StatReloader
+INFO 2023-09-12 18:21:50,093 autoreload 15112 11888 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:21:50,831 autoreload 3640 17960 Watching for file changes with StatReloader
+INFO 2023-09-12 18:22:07,302 autoreload 3640 17960 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:22:08,033 autoreload 15680 13448 Watching for file changes with StatReloader
+INFO 2023-09-12 18:22:47,541 autoreload 15680 13448 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:22:48,295 autoreload 10112 5348 Watching for file changes with StatReloader
+INFO 2023-09-12 18:22:50,649 autoreload 10112 5348 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:22:51,732 autoreload 7068 17360 Watching for file changes with StatReloader
+INFO 2023-09-12 18:23:41,136 autoreload 7068 17360 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:23:41,969 autoreload 9928 9540 Watching for file changes with StatReloader
+INFO 2023-09-12 18:23:55,596 autoreload 9928 9540 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:23:56,457 autoreload 12344 14244 Watching for file changes with StatReloader
+INFO 2023-09-12 18:23:58,861 autoreload 12344 14244 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:23:59,733 autoreload 3784 10348 Watching for file changes with StatReloader
+INFO 2023-09-12 18:24:04,173 autoreload 3784 10348 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:24:05,023 autoreload 16972 8100 Watching for file changes with StatReloader
+INFO 2023-09-12 18:24:09,606 autoreload 16972 8100 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:24:10,340 autoreload 5020 9824 Watching for file changes with StatReloader
+INFO 2023-09-12 18:24:12,927 autoreload 5020 9824 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:24:13,831 autoreload 13072 11892 Watching for file changes with StatReloader
+INFO 2023-09-12 18:24:17,828 autoreload 13072 11892 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:24:18,731 autoreload 4736 12736 Watching for file changes with StatReloader
+INFO 2023-09-12 18:24:24,425 autoreload 4736 12736 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:24:25,237 autoreload 8592 16192 Watching for file changes with StatReloader
+INFO 2023-09-12 18:24:32,382 autoreload 8592 16192 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:24:33,298 autoreload 15852 11056 Watching for file changes with StatReloader
+INFO 2023-09-12 18:24:35,824 autoreload 15852 11056 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:24:36,671 autoreload 13860 14796 Watching for file changes with StatReloader
+INFO 2023-09-12 18:24:39,356 autoreload 13860 14796 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:24:40,105 autoreload 13616 7944 Watching for file changes with StatReloader
+INFO 2023-09-12 18:24:42,414 autoreload 13616 7944 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:24:43,283 autoreload 6496 11908 Watching for file changes with StatReloader
+INFO 2023-09-12 18:24:45,689 autoreload 6496 11908 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:24:46,482 autoreload 17340 15164 Watching for file changes with StatReloader
+INFO 2023-09-12 18:24:54,037 autoreload 17340 15164 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:24:54,822 autoreload 16656 3068 Watching for file changes with StatReloader
+INFO 2023-09-12 18:25:00,786 autoreload 16656 3068 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:25:01,709 autoreload 9344 3164 Watching for file changes with StatReloader
+INFO 2023-09-12 18:25:04,125 autoreload 9344 3164 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:25:04,879 autoreload 1252 8460 Watching for file changes with StatReloader
+INFO 2023-09-12 18:25:12,664 autoreload 1252 8460 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:25:13,619 autoreload 17688 2264 Watching for file changes with StatReloader
+INFO 2023-09-12 18:25:15,828 autoreload 17688 2264 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:25:16,688 autoreload 7968 8300 Watching for file changes with StatReloader
+INFO 2023-09-12 18:25:18,883 autoreload 7968 8300 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:25:19,634 autoreload 15628 10100 Watching for file changes with StatReloader
+INFO 2023-09-12 18:25:21,883 autoreload 15628 10100 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:25:22,606 autoreload 3804 12760 Watching for file changes with StatReloader
+INFO 2023-09-12 18:25:24,838 autoreload 3804 12760 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:25:25,698 autoreload 15152 14372 Watching for file changes with StatReloader
+INFO 2023-09-12 18:25:27,927 autoreload 15152 14372 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:25:28,644 autoreload 13356 11520 Watching for file changes with StatReloader
+INFO 2023-09-12 18:25:30,985 autoreload 13356 11520 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:25:31,890 autoreload 9948 1976 Watching for file changes with StatReloader
+INFO 2023-09-12 18:25:36,606 autoreload 9948 1976 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:25:37,442 autoreload 11980 11468 Watching for file changes with StatReloader
+INFO 2023-09-12 18:25:43,775 autoreload 11980 11468 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:25:44,486 autoreload 11244 6352 Watching for file changes with StatReloader
+INFO 2023-09-12 18:26:25,500 autoreload 11244 6352 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:26:26,252 autoreload 18000 14936 Watching for file changes with StatReloader
+INFO 2023-09-12 18:26:47,874 autoreload 18000 14936 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:26:48,795 autoreload 8664 17252 Watching for file changes with StatReloader
+INFO 2023-09-12 18:26:53,167 autoreload 8664 17252 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:26:54,009 autoreload 12868 6520 Watching for file changes with StatReloader
+INFO 2023-09-12 18:26:56,947 autoreload 12868 6520 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:26:57,728 autoreload 14968 12708 Watching for file changes with StatReloader
+INFO 2023-09-12 18:27:01,957 autoreload 14968 12708 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:27:02,700 autoreload 17228 9680 Watching for file changes with StatReloader
+INFO 2023-09-12 18:27:22,751 autoreload 17228 9680 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:27:23,609 autoreload 6124 11852 Watching for file changes with StatReloader
+INFO 2023-09-12 18:27:26,182 autoreload 6124 11852 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:27:27,018 autoreload 5612 8144 Watching for file changes with StatReloader
+INFO 2023-09-12 18:27:42,879 autoreload 5612 8144 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:27:43,759 autoreload 14052 13892 Watching for file changes with StatReloader
+INFO 2023-09-12 18:28:10,894 autoreload 14052 13892 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:28:11,812 autoreload 10856 13508 Watching for file changes with StatReloader
+INFO 2023-09-12 18:28:17,812 autoreload 10856 13508 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:28:18,614 autoreload 3820 2520 Watching for file changes with StatReloader
+INFO 2023-09-12 18:28:22,648 autoreload 3820 2520 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:28:23,456 autoreload 2212 8904 Watching for file changes with StatReloader
+INFO 2023-09-12 18:28:26,057 autoreload 2212 8904 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:28:26,791 autoreload 3056 13564 Watching for file changes with StatReloader
+INFO 2023-09-12 18:28:43,879 autoreload 3056 13564 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:28:44,700 autoreload 15420 3484 Watching for file changes with StatReloader
+INFO 2023-09-12 18:29:50,166 autoreload 15420 3484 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:29:50,974 autoreload 1768 16788 Watching for file changes with StatReloader
+INFO 2023-09-12 18:31:00,747 basehttp 1768 17068 "POST /login/ HTTP/1.1" 200 486
+WARNING 2023-09-12 18:31:33,546 log 1768 17068 Method Not Allowed: /login/
+WARNING 2023-09-12 18:31:33,547 basehttp 1768 17068 "GET /login/ HTTP/1.1" 405 40
+WARNING 2023-09-12 18:32:19,337 log 1768 17068 Unauthorized: /course/14021002/get-project/
+WARNING 2023-09-12 18:32:19,338 basehttp 1768 17068 "GET /course/14021002/get-project/ HTTP/1.1" 401 183
+WARNING 2023-09-12 18:32:23,854 log 1768 17068 Forbidden: /course/14021002/get-project/
+WARNING 2023-09-12 18:32:23,856 basehttp 1768 17068 "GET /course/14021002/get-project/ HTTP/1.1" 403 29
+WARNING 2023-09-12 18:32:41,746 log 1768 17068 Forbidden: /course/14021001/get-project/
+WARNING 2023-09-12 18:32:41,748 basehttp 1768 17068 "GET /course/14021001/get-project/ HTTP/1.1" 403 29
+WARNING 2023-09-12 18:32:44,671 log 1768 17068 Forbidden: /course/14021002/get-project/
+WARNING 2023-09-12 18:32:44,672 basehttp 1768 17068 "GET /course/14021002/get-project/ HTTP/1.1" 403 29
+INFO 2023-09-12 18:33:20,752 autoreload 1768 16788 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:33:21,771 autoreload 11536 16944 Watching for file changes with StatReloader
+INFO 2023-09-12 18:33:24,505 autoreload 11536 16944 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:33:25,407 autoreload 12832 9020 Watching for file changes with StatReloader
+WARNING 2023-09-12 18:33:27,548 log 12832 6828 Forbidden: /course/14021002/get-project/
+WARNING 2023-09-12 18:33:27,550 basehttp 12832 6828 "GET /course/14021002/get-project/ HTTP/1.1" 403 29
+INFO 2023-09-12 18:33:28,453 autoreload 12832 9020 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:33:29,361 autoreload 8100 7772 Watching for file changes with StatReloader
+WARNING 2023-09-12 18:33:32,873 log 8100 5420 Forbidden: /course/14021002/get-project/
+WARNING 2023-09-12 18:33:32,874 basehttp 8100 5420 "GET /course/14021002/get-project/ HTTP/1.1" 403 29
+INFO 2023-09-12 18:33:58,004 autoreload 8100 7772 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:33:58,935 autoreload 10196 8228 Watching for file changes with StatReloader
+INFO 2023-09-12 18:34:01,759 autoreload 10196 8228 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:34:02,611 autoreload 9520 13268 Watching for file changes with StatReloader
+INFO 2023-09-12 18:34:07,509 autoreload 9520 13268 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:34:08,470 autoreload 9352 12208 Watching for file changes with StatReloader
+WARNING 2023-09-12 18:34:10,121 log 9352 14660 Forbidden: /course/14021002/get-project/
+WARNING 2023-09-12 18:34:10,122 basehttp 9352 14660 "GET /course/14021002/get-project/ HTTP/1.1" 403 29
+WARNING 2023-09-12 18:34:18,390 log 9352 14660 Forbidden: /course/14021002/get-project/
+WARNING 2023-09-12 18:34:18,392 basehttp 9352 14660 "GET /course/14021002/get-project/ HTTP/1.1" 403 29
+INFO 2023-09-12 18:34:18,406 autoreload 9352 12208 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:34:19,306 autoreload 15404 5068 Watching for file changes with StatReloader
+WARNING 2023-09-12 18:34:21,646 log 15404 16736 Forbidden: /course/14021002/get-project/
+WARNING 2023-09-12 18:34:21,647 basehttp 15404 16736 "GET /course/14021002/get-project/ HTTP/1.1" 403 29
+INFO 2023-09-12 18:35:05,937 autoreload 15404 5068 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:35:07,003 autoreload 15340 18036 Watching for file changes with StatReloader
+INFO 2023-09-12 18:35:09,889 autoreload 15340 18036 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:35:10,745 autoreload 17476 10100 Watching for file changes with StatReloader
+WARNING 2023-09-12 18:37:02,896 log 17476 12800 Forbidden: /course/14021002/get-project/
+WARNING 2023-09-12 18:37:02,898 basehttp 17476 12800 "GET /course/14021002/get-project/ HTTP/1.1" 403 29
+INFO 2023-09-12 18:37:19,149 basehttp 17476 16280 "GET /admin/courses/project/ HTTP/1.1" 200 11453
+INFO 2023-09-12 18:37:19,196 basehttp 17476 16280 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 18:37:21,943 basehttp 17476 16280 "GET /admin/courses/project/c360b40d-2842-46ca-89da-a2a8dfedc025/change/ HTTP/1.1" 200 12871
+INFO 2023-09-12 18:37:21,976 basehttp 17476 16280 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 18:37:27,432 basehttp 17476 16280 "POST /admin/courses/project/c360b40d-2842-46ca-89da-a2a8dfedc025/change/ HTTP/1.1" 302 0
+INFO 2023-09-12 18:37:27,522 basehttp 17476 16280 "GET /admin/courses/project/ HTTP/1.1" 200 11725
+INFO 2023-09-12 18:37:27,554 basehttp 17476 16280 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 18:37:32,898 basehttp 17476 16280 "GET /admin/courses/ HTTP/1.1" 200 6374
+INFO 2023-09-12 18:37:33,962 basehttp 17476 16280 "GET /admin/courses/course/ HTTP/1.1" 200 11224
+INFO 2023-09-12 18:37:33,990 basehttp 17476 16280 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 18:37:35,053 basehttp 17476 16280 "GET /admin/courses/course/14021002/change/ HTTP/1.1" 200 22030
+INFO 2023-09-12 18:37:35,088 basehttp 17476 16280 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 18:37:37,344 basehttp 17476 16280 "POST /admin/courses/course/14021002/change/ HTTP/1.1" 302 0
+INFO 2023-09-12 18:37:37,443 basehttp 17476 16280 "GET /admin/courses/course/ HTTP/1.1" 200 11455
+INFO 2023-09-12 18:37:37,466 basehttp 17476 16280 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 18:37:50,435 autoreload 17476 10100 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:37:51,392 autoreload 17912 15896 Watching for file changes with StatReloader
+WARNING 2023-09-12 18:37:53,306 log 17912 13252 Forbidden: /course/14021002/get-project/
+WARNING 2023-09-12 18:37:53,307 basehttp 17912 13252 "GET /course/14021002/get-project/ HTTP/1.1" 403 29
+INFO 2023-09-12 18:38:03,338 autoreload 17912 15896 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:38:04,182 autoreload 8144 9424 Watching for file changes with StatReloader
+INFO 2023-09-12 18:38:08,656 autoreload 8144 9424 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:38:09,642 autoreload 11512 16892 Watching for file changes with StatReloader
+INFO 2023-09-12 18:38:12,538 autoreload 11512 16892 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:38:13,432 autoreload 3300 18252 Watching for file changes with StatReloader
+WARNING 2023-09-12 18:38:42,181 log 3300 11252 Forbidden: /course/14021002/get-project/
+WARNING 2023-09-12 18:38:42,182 basehttp 3300 11252 "GET /course/14021002/get-project/ HTTP/1.1" 403 29
+INFO 2023-09-12 18:39:46,291 autoreload 3300 18252 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 18:39:47,186 autoreload 9544 13916 Watching for file changes with StatReloader
+INFO 2023-09-12 18:39:49,547 basehttp 9544 13740 "GET /course/14021002/get-project/ HTTP/1.1" 200 511
+INFO 2023-09-12 18:39:59,280 autoreload 9544 13916 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:40:00,097 autoreload 14920 13876 Watching for file changes with StatReloader
+INFO 2023-09-12 18:40:30,790 basehttp 14920 5328 "GET /files/projects/student_projects/%D9%85%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%DA%A9%D8%AA%D8%B1%D9%88%D9%86%DB%8C%DA%A9%DB%8C/MC_HW01Solution.pdf HTTP/1.1" 200 710257
+INFO 2023-09-12 18:44:38,385 autoreload 14920 13876 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:44:39,147 autoreload 8376 10340 Watching for file changes with StatReloader
+INFO 2023-09-12 18:44:43,563 autoreload 8376 10340 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:44:44,320 autoreload 13480 3684 Watching for file changes with StatReloader
+INFO 2023-09-12 18:44:46,843 autoreload 13480 3684 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:44:47,676 autoreload 12920 6776 Watching for file changes with StatReloader
+INFO 2023-09-12 18:44:49,974 autoreload 12920 6776 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:44:50,926 autoreload 3624 14800 Watching for file changes with StatReloader
+INFO 2023-09-12 18:44:57,103 autoreload 3624 14800 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:44:57,868 autoreload 13128 12996 Watching for file changes with StatReloader
+INFO 2023-09-12 18:45:05,963 autoreload 13128 12996 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:45:06,757 autoreload 8488 2952 Watching for file changes with StatReloader
+INFO 2023-09-12 18:45:15,024 autoreload 8488 2952 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:45:15,839 autoreload 15900 18380 Watching for file changes with StatReloader
+INFO 2023-09-12 18:45:18,260 autoreload 15900 18380 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:45:19,081 autoreload 3384 10112 Watching for file changes with StatReloader
+INFO 2023-09-12 18:45:21,392 autoreload 3384 10112 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:45:22,239 autoreload 12456 16568 Watching for file changes with StatReloader
+INFO 2023-09-12 18:45:24,490 autoreload 12456 16568 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:45:25,314 autoreload 8032 15480 Watching for file changes with StatReloader
+INFO 2023-09-12 18:45:27,592 autoreload 8032 15480 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:45:28,492 autoreload 7104 1360 Watching for file changes with StatReloader
+INFO 2023-09-12 18:45:32,775 autoreload 7104 1360 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:45:33,638 autoreload 18316 13524 Watching for file changes with StatReloader
+INFO 2023-09-12 18:45:39,900 autoreload 18316 13524 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:45:40,715 autoreload 10652 17940 Watching for file changes with StatReloader
+INFO 2023-09-12 18:45:45,307 autoreload 10652 17940 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:45:46,122 autoreload 18072 17916 Watching for file changes with StatReloader
+INFO 2023-09-12 18:45:50,545 autoreload 18072 17916 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:45:51,349 autoreload 17376 8948 Watching for file changes with StatReloader
+INFO 2023-09-12 18:46:01,491 autoreload 17376 8948 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:46:02,461 autoreload 3516 13056 Watching for file changes with StatReloader
+INFO 2023-09-12 18:46:06,752 autoreload 3516 13056 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:46:07,566 autoreload 10816 13384 Watching for file changes with StatReloader
+INFO 2023-09-12 18:48:28,491 autoreload 10816 13384 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:48:29,285 autoreload 5068 15404 Watching for file changes with StatReloader
+INFO 2023-09-12 18:48:31,775 autoreload 5068 15404 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:48:32,502 autoreload 8292 3992 Watching for file changes with StatReloader
+INFO 2023-09-12 18:48:34,750 autoreload 8292 3992 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:48:35,556 autoreload 3904 16784 Watching for file changes with StatReloader
+INFO 2023-09-12 18:49:24,533 autoreload 3904 16784 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:49:25,475 autoreload 13616 2264 Watching for file changes with StatReloader
+INFO 2023-09-12 18:49:30,094 autoreload 13616 2264 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:49:30,905 autoreload 16152 6420 Watching for file changes with StatReloader
+INFO 2023-09-12 18:49:33,278 autoreload 16152 6420 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:49:34,042 autoreload 12760 15176 Watching for file changes with StatReloader
+INFO 2023-09-12 18:49:52,347 autoreload 12760 15176 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:49:53,090 autoreload 7288 15152 Watching for file changes with StatReloader
+INFO 2023-09-12 18:49:57,384 autoreload 7288 15152 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:49:58,213 autoreload 13356 12944 Watching for file changes with StatReloader
+INFO 2023-09-12 18:50:02,513 autoreload 13356 12944 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:50:03,215 autoreload 4780 16204 Watching for file changes with StatReloader
+INFO 2023-09-12 18:50:05,789 autoreload 4780 16204 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:50:06,535 autoreload 5520 12176 Watching for file changes with StatReloader
+INFO 2023-09-12 18:50:09,142 autoreload 5520 12176 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:50:09,860 autoreload 8716 5752 Watching for file changes with StatReloader
+INFO 2023-09-12 18:50:48,216 autoreload 8716 5752 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:50:49,304 autoreload 10444 15300 Watching for file changes with StatReloader
+INFO 2023-09-12 18:50:53,766 autoreload 10444 15300 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:50:54,630 autoreload 11988 15664 Watching for file changes with StatReloader
+INFO 2023-09-12 18:50:57,123 autoreload 11988 15664 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:50:57,869 autoreload 3452 16084 Watching for file changes with StatReloader
+INFO 2023-09-12 18:51:02,149 autoreload 3452 16084 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:51:02,933 autoreload 3800 1144 Watching for file changes with StatReloader
+INFO 2023-09-12 18:51:07,346 autoreload 3800 1144 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:51:08,185 autoreload 10476 2092 Watching for file changes with StatReloader
+INFO 2023-09-12 18:51:12,396 autoreload 10476 2092 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:51:13,321 autoreload 12268 2028 Watching for file changes with StatReloader
+INFO 2023-09-12 18:51:17,944 autoreload 12268 2028 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:51:18,704 autoreload 4612 3112 Watching for file changes with StatReloader
+INFO 2023-09-12 18:51:21,031 autoreload 4612 3112 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:51:21,700 autoreload 7960 9456 Watching for file changes with StatReloader
+INFO 2023-09-12 18:51:24,546 autoreload 7960 9456 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:51:25,288 autoreload 9608 9732 Watching for file changes with StatReloader
+INFO 2023-09-12 18:53:09,866 autoreload 9608 9732 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:53:10,626 autoreload 14712 10280 Watching for file changes with StatReloader
+INFO 2023-09-12 18:53:14,527 autoreload 14712 10280 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:53:15,265 autoreload 2772 4044 Watching for file changes with StatReloader
+INFO 2023-09-12 18:53:17,704 autoreload 2772 4044 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 18:53:18,450 autoreload 14928 8188 Watching for file changes with StatReloader
+INFO 2023-09-12 20:34:31,767 autoreload 14928 8188 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:34:33,903 autoreload 6500 17324 Watching for file changes with StatReloader
+INFO 2023-09-12 20:35:39,661 autoreload 6500 17324 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:35:40,466 autoreload 13964 4356 Watching for file changes with StatReloader
+INFO 2023-09-12 20:35:48,619 autoreload 13964 4356 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:35:49,219 autoreload 5324 14088 Watching for file changes with StatReloader
+INFO 2023-09-12 20:35:57,107 autoreload 5324 14088 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:35:57,855 autoreload 10120 17504 Watching for file changes with StatReloader
+INFO 2023-09-12 20:36:00,448 autoreload 10120 17504 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:36:01,093 autoreload 4336 3800 Watching for file changes with StatReloader
+INFO 2023-09-12 20:36:07,336 autoreload 4336 3800 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:36:07,990 autoreload 15472 8604 Watching for file changes with StatReloader
+INFO 2023-09-12 20:36:17,749 autoreload 15472 8604 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:36:18,402 autoreload 16152 15480 Watching for file changes with StatReloader
+INFO 2023-09-12 20:36:24,810 autoreload 16152 15480 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:36:25,470 autoreload 11332 13860 Watching for file changes with StatReloader
+INFO 2023-09-12 20:36:35,106 autoreload 11332 13860 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:36:35,854 autoreload 4296 16096 Watching for file changes with StatReloader
+INFO 2023-09-12 20:36:42,331 autoreload 4296 16096 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:36:43,066 autoreload 15136 13952 Watching for file changes with StatReloader
+INFO 2023-09-12 20:39:07,058 autoreload 15136 13952 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:39:07,678 autoreload 12596 10712 Watching for file changes with StatReloader
+INFO 2023-09-12 20:39:09,898 autoreload 12596 10712 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:39:10,433 autoreload 15664 4344 Watching for file changes with StatReloader
+INFO 2023-09-12 20:41:31,359 autoreload 15664 4344 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:41:32,096 autoreload 14928 12708 Watching for file changes with StatReloader
+INFO 2023-09-12 20:41:34,255 autoreload 14928 12708 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:41:34,811 autoreload 7192 1900 Watching for file changes with StatReloader
+INFO 2023-09-12 20:41:40,331 autoreload 7192 1900 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:41:40,947 autoreload 17780 15756 Watching for file changes with StatReloader
+INFO 2023-09-12 20:42:25,381 autoreload 17780 15756 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:42:26,040 autoreload 14008 15156 Watching for file changes with StatReloader
+INFO 2023-09-12 20:42:33,974 autoreload 14008 15156 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:42:34,759 autoreload 17520 14856 Watching for file changes with StatReloader
+INFO 2023-09-12 20:42:37,291 autoreload 17520 14856 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:42:37,931 autoreload 8304 3376 Watching for file changes with StatReloader
+INFO 2023-09-12 20:42:40,568 autoreload 8304 3376 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:42:41,246 autoreload 15436 11908 Watching for file changes with StatReloader
+INFO 2023-09-12 20:42:45,489 autoreload 15436 11908 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:42:46,302 autoreload 9040 15304 Watching for file changes with StatReloader
+INFO 2023-09-12 20:42:48,980 autoreload 9040 15304 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:42:49,727 autoreload 15628 13964 Watching for file changes with StatReloader
+INFO 2023-09-12 20:42:52,395 autoreload 15628 13964 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:42:53,172 autoreload 10700 16256 Watching for file changes with StatReloader
+INFO 2023-09-12 20:42:55,653 autoreload 10700 16256 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:42:56,268 autoreload 8264 8680 Watching for file changes with StatReloader
+INFO 2023-09-12 20:43:00,600 autoreload 8264 8680 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:43:01,243 autoreload 15364 11924 Watching for file changes with StatReloader
+INFO 2023-09-12 20:43:05,655 autoreload 15364 11924 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:43:06,469 autoreload 13984 10648 Watching for file changes with StatReloader
+INFO 2023-09-12 20:43:14,318 autoreload 13984 10648 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:43:14,981 autoreload 17892 3944 Watching for file changes with StatReloader
+INFO 2023-09-12 20:43:19,439 autoreload 17892 3944 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:43:20,097 autoreload 18352 448 Watching for file changes with StatReloader
+INFO 2023-09-12 20:43:24,483 autoreload 18352 448 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 20:43:25,233 autoreload 13532 10176 Watching for file changes with StatReloader
+INFO 2023-09-12 20:45:08,750 autoreload 13532 10176 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:45:09,470 autoreload 15384 1196 Watching for file changes with StatReloader
+INFO 2023-09-12 20:45:13,956 autoreload 15384 1196 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:45:14,629 autoreload 17708 14936 Watching for file changes with StatReloader
+INFO 2023-09-12 20:46:06,250 autoreload 17708 14936 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:46:07,241 autoreload 13072 9020 Watching for file changes with StatReloader
+INFO 2023-09-12 20:46:09,597 autoreload 13072 9020 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:46:10,214 autoreload 3280 8880 Watching for file changes with StatReloader
+INFO 2023-09-12 20:46:17,627 autoreload 3280 8880 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:46:18,257 autoreload 14340 17316 Watching for file changes with StatReloader
+INFO 2023-09-12 20:46:20,503 autoreload 14340 17316 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:46:21,123 autoreload 16004 11004 Watching for file changes with StatReloader
+INFO 2023-09-12 20:46:23,508 autoreload 16004 11004 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:46:24,182 autoreload 10476 8096 Watching for file changes with StatReloader
+INFO 2023-09-12 20:46:26,375 autoreload 10476 8096 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:46:26,990 autoreload 14416 15676 Watching for file changes with StatReloader
+INFO 2023-09-12 20:46:50,062 autoreload 14416 15676 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:46:50,784 autoreload 13056 14620 Watching for file changes with StatReloader
+INFO 2023-09-12 20:46:52,959 autoreload 13056 14620 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:46:53,521 autoreload 11752 10164 Watching for file changes with StatReloader
+INFO 2023-09-12 20:46:57,568 autoreload 11752 10164 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:46:58,203 autoreload 13600 17168 Watching for file changes with StatReloader
+INFO 2023-09-12 20:47:07,941 autoreload 13600 17168 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:47:08,654 autoreload 12912 13528 Watching for file changes with StatReloader
+INFO 2023-09-12 20:47:34,045 autoreload 12912 13528 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:47:34,689 autoreload 15304 12128 Watching for file changes with StatReloader
+INFO 2023-09-12 20:47:36,956 autoreload 15304 12128 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:47:37,692 autoreload 11544 17052 Watching for file changes with StatReloader
+INFO 2023-09-12 20:47:39,879 autoreload 11544 17052 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:47:40,529 autoreload 16280 2100 Watching for file changes with StatReloader
+INFO 2023-09-12 20:47:44,664 autoreload 16280 2100 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:47:45,293 autoreload 11672 8680 Watching for file changes with StatReloader
+INFO 2023-09-12 20:48:12,790 autoreload 11672 8680 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:48:13,497 autoreload 12212 16140 Watching for file changes with StatReloader
+INFO 2023-09-12 20:48:15,887 autoreload 12212 16140 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:48:16,659 autoreload 3940 11636 Watching for file changes with StatReloader
+INFO 2023-09-12 20:48:18,886 autoreload 3940 11636 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:48:19,474 autoreload 4256 11676 Watching for file changes with StatReloader
+INFO 2023-09-12 20:48:23,497 autoreload 4256 11676 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:48:24,126 autoreload 10244 7524 Watching for file changes with StatReloader
+INFO 2023-09-12 20:48:28,330 autoreload 10244 7524 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:48:28,880 autoreload 10048 4392 Watching for file changes with StatReloader
+INFO 2023-09-12 20:48:32,979 autoreload 10048 4392 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:48:33,597 autoreload 7352 17488 Watching for file changes with StatReloader
+INFO 2023-09-12 20:48:41,037 autoreload 7352 17488 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:48:41,739 autoreload 4532 14656 Watching for file changes with StatReloader
+INFO 2023-09-12 20:48:44,140 autoreload 4532 14656 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:48:44,770 autoreload 4172 17672 Watching for file changes with StatReloader
+INFO 2023-09-12 20:48:50,511 autoreload 4172 17672 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:48:51,119 autoreload 7272 14320 Watching for file changes with StatReloader
+INFO 2023-09-12 20:49:53,228 autoreload 7272 14320 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:49:53,937 autoreload 7136 16304 Watching for file changes with StatReloader
+INFO 2023-09-12 20:49:59,921 autoreload 7136 16304 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:50:00,628 autoreload 16320 6172 Watching for file changes with StatReloader
+INFO 2023-09-12 20:50:02,862 autoreload 16320 6172 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:50:03,485 autoreload 11980 11540 Watching for file changes with StatReloader
+INFO 2023-09-12 20:50:07,408 autoreload 11980 11540 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:50:08,170 autoreload 3420 11036 Watching for file changes with StatReloader
+INFO 2023-09-12 20:50:12,219 autoreload 3420 11036 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:50:12,946 autoreload 6328 8476 Watching for file changes with StatReloader
+INFO 2023-09-12 20:50:17,060 autoreload 6328 8476 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:50:17,683 autoreload 8796 2780 Watching for file changes with StatReloader
+INFO 2023-09-12 20:50:21,830 autoreload 8796 2780 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:50:22,571 autoreload 7692 12736 Watching for file changes with StatReloader
+INFO 2023-09-12 20:50:25,091 autoreload 7692 12736 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:50:25,751 autoreload 13788 15384 Watching for file changes with StatReloader
+INFO 2023-09-12 20:50:29,971 autoreload 13788 15384 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:50:30,592 autoreload 2228 14780 Watching for file changes with StatReloader
+INFO 2023-09-12 20:50:34,575 autoreload 2228 14780 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:50:35,292 autoreload 9248 14676 Watching for file changes with StatReloader
+INFO 2023-09-12 20:50:37,510 autoreload 9248 14676 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:50:38,179 autoreload 18296 1652 Watching for file changes with StatReloader
+INFO 2023-09-12 20:52:36,671 autoreload 16452 1940 Watching for file changes with StatReloader
+INFO 2023-09-12 20:53:32,894 autoreload 16452 1940 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:53:33,676 autoreload 15452 10816 Watching for file changes with StatReloader
+INFO 2023-09-12 20:53:37,865 autoreload 15452 10816 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:53:38,466 autoreload 11972 9628 Watching for file changes with StatReloader
+INFO 2023-09-12 20:54:01,503 basehttp 11972 6464 "POST /login/ HTTP/1.1" 200 486
+INFO 2023-09-12 20:54:29,041 basehttp 11972 6464 "GET /course/14021001/uploaded-project-list/ HTTP/1.1" 200 2
+INFO 2023-09-12 20:56:17,759 basehttp 11972 6464 "POST /login/ HTTP/1.1" 200 486
+INFO 2023-09-12 20:56:30,982 basehttp 11972 6464 "GET /course/14021002/uploaded-project-list/ HTTP/1.1" 200 182
+INFO 2023-09-12 20:57:56,764 autoreload 11972 9628 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:57:57,524 autoreload 14096 3860 Watching for file changes with StatReloader
+INFO 2023-09-12 20:58:05,248 basehttp 14096 8744 "GET /course/14021002/uploaded-project-list/ HTTP/1.1" 200 142
+INFO 2023-09-12 20:58:24,227 autoreload 14096 3860 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:58:24,890 autoreload 11036 14524 Watching for file changes with StatReloader
+INFO 2023-09-12 20:58:27,117 autoreload 11036 14524 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:58:27,824 autoreload 15004 13532 Watching for file changes with StatReloader
+INFO 2023-09-12 20:58:30,481 autoreload 15004 13532 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:58:31,304 autoreload 8796 9016 Watching for file changes with StatReloader
+INFO 2023-09-12 20:58:33,893 autoreload 8796 9016 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:58:34,633 autoreload 9380 4336 Watching for file changes with StatReloader
+INFO 2023-09-12 20:58:37,027 basehttp 9380 1196 "GET /course/14021002/uploaded-project-list/ HTTP/1.1" 200 187
+INFO 2023-09-12 20:58:37,332 autoreload 9380 4336 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 20:58:37,992 autoreload 13644 11844 Watching for file changes with StatReloader
+INFO 2023-09-12 21:06:50,921 autoreload 13644 11844 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:06:51,657 autoreload 11972 10948 Watching for file changes with StatReloader
+INFO 2023-09-12 21:06:53,819 autoreload 11972 10948 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:06:54,368 autoreload 12812 448 Watching for file changes with StatReloader
+INFO 2023-09-12 21:06:59,857 autoreload 12812 448 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:07:00,641 autoreload 14780 16000 Watching for file changes with StatReloader
+INFO 2023-09-12 21:07:02,935 autoreload 14780 16000 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:07:03,669 autoreload 1128 7216 Watching for file changes with StatReloader
+INFO 2023-09-12 21:07:07,778 autoreload 1128 7216 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:07:08,674 autoreload 3632 13628 Watching for file changes with StatReloader
+INFO 2023-09-12 21:07:10,958 autoreload 3632 13628 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:07:11,621 autoreload 9004 13700 Watching for file changes with StatReloader
+INFO 2023-09-12 21:07:16,070 autoreload 9004 13700 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:07:16,803 autoreload 12020 13128 Watching for file changes with StatReloader
+INFO 2023-09-12 21:07:24,711 autoreload 12020 13128 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:07:25,418 autoreload 7308 12392 Watching for file changes with StatReloader
+INFO 2023-09-12 21:07:27,739 autoreload 7308 12392 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:07:28,373 autoreload 3184 15420 Watching for file changes with StatReloader
+INFO 2023-09-12 21:07:30,608 autoreload 3184 15420 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:07:31,309 autoreload 15608 3404 Watching for file changes with StatReloader
+INFO 2023-09-12 21:07:33,615 autoreload 15608 3404 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:07:34,295 autoreload 10516 1576 Watching for file changes with StatReloader
+INFO 2023-09-12 21:07:38,344 autoreload 10516 1576 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:07:39,154 autoreload 12892 3136 Watching for file changes with StatReloader
+INFO 2023-09-12 21:07:43,388 autoreload 12892 3136 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:07:44,264 autoreload 3076 14864 Watching for file changes with StatReloader
+INFO 2023-09-12 21:07:48,945 autoreload 3076 14864 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:07:49,670 autoreload 7176 9900 Watching for file changes with StatReloader
+INFO 2023-09-12 21:07:54,087 autoreload 7176 9900 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:07:54,732 autoreload 14216 716 Watching for file changes with StatReloader
+INFO 2023-09-12 21:07:57,204 autoreload 14216 716 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:07:57,899 autoreload 14244 15784 Watching for file changes with StatReloader
+INFO 2023-09-12 21:08:11,264 autoreload 14244 15784 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:08:11,875 autoreload 11300 6024 Watching for file changes with StatReloader
+INFO 2023-09-12 21:08:46,181 autoreload 11300 6024 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:08:46,834 autoreload 4276 8404 Watching for file changes with StatReloader
+INFO 2023-09-12 21:08:49,348 autoreload 4276 8404 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:08:49,939 autoreload 4780 17504 Watching for file changes with StatReloader
+INFO 2023-09-12 21:08:52,236 autoreload 4780 17504 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:08:52,787 autoreload 13296 13080 Watching for file changes with StatReloader
+INFO 2023-09-12 21:09:02,472 autoreload 13296 13080 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:09:03,026 autoreload 8756 9020 Watching for file changes with StatReloader
+INFO 2023-09-12 21:09:05,592 autoreload 8756 9020 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:09:06,372 autoreload 9868 12272 Watching for file changes with StatReloader
+INFO 2023-09-12 21:09:10,914 autoreload 9868 12272 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:09:11,631 autoreload 12676 1736 Watching for file changes with StatReloader
+INFO 2023-09-12 21:09:13,807 autoreload 12676 1736 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:09:14,541 autoreload 8680 6196 Watching for file changes with StatReloader
+INFO 2023-09-12 21:09:16,846 autoreload 8680 6196 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:09:17,564 autoreload 1692 13100 Watching for file changes with StatReloader
+INFO 2023-09-12 21:09:21,881 autoreload 1692 13100 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:09:22,604 autoreload 10176 18004 Watching for file changes with StatReloader
+INFO 2023-09-12 21:09:29,272 autoreload 10176 18004 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:09:30,012 autoreload 2184 9544 Watching for file changes with StatReloader
+INFO 2023-09-12 21:09:32,550 autoreload 2184 9544 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:09:33,174 autoreload 7804 7068 Watching for file changes with StatReloader
+INFO 2023-09-12 21:09:37,487 autoreload 7804 7068 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:09:38,099 autoreload 13740 16656 Watching for file changes with StatReloader
+INFO 2023-09-12 21:09:42,237 autoreload 13740 16656 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:09:42,905 autoreload 3116 2192 Watching for file changes with StatReloader
+INFO 2023-09-12 21:09:47,077 autoreload 3116 2192 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:09:47,872 autoreload 13420 16272 Watching for file changes with StatReloader
+INFO 2023-09-12 21:09:52,290 autoreload 13420 16272 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:09:53,068 autoreload 6576 1232 Watching for file changes with StatReloader
+INFO 2023-09-12 21:09:57,365 autoreload 6576 1232 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:09:58,146 autoreload 7220 13284 Watching for file changes with StatReloader
+INFO 2023-09-12 21:10:02,411 autoreload 7220 13284 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:10:03,069 autoreload 16800 7664 Watching for file changes with StatReloader
+INFO 2023-09-12 21:10:07,335 autoreload 16800 7664 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:10:08,027 autoreload 12492 8380 Watching for file changes with StatReloader
+INFO 2023-09-12 21:10:10,541 autoreload 12492 8380 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:10:11,165 autoreload 5324 2248 Watching for file changes with StatReloader
+INFO 2023-09-12 21:11:04,859 autoreload 5324 2248 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:11:05,763 autoreload 13764 4264 Watching for file changes with StatReloader
+INFO 2023-09-12 21:11:10,096 autoreload 13764 4264 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:11:10,744 autoreload 3644 4388 Watching for file changes with StatReloader
+INFO 2023-09-12 21:11:16,644 autoreload 3644 4388 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:11:17,318 autoreload 14216 10708 Watching for file changes with StatReloader
+INFO 2023-09-12 21:11:19,636 autoreload 14216 10708 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:11:20,283 autoreload 15340 14640 Watching for file changes with StatReloader
+INFO 2023-09-12 21:11:22,759 autoreload 15340 14640 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:11:23,389 autoreload 11296 17660 Watching for file changes with StatReloader
+INFO 2023-09-12 21:11:27,503 autoreload 11296 17660 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:11:28,197 autoreload 10232 13176 Watching for file changes with StatReloader
+INFO 2023-09-12 21:11:34,152 autoreload 10232 13176 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:11:34,832 autoreload 18140 15472 Watching for file changes with StatReloader
+INFO 2023-09-12 21:11:51,944 autoreload 18140 15472 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:11:52,633 autoreload 5672 11660 Watching for file changes with StatReloader
+INFO 2023-09-12 21:11:54,903 autoreload 5672 11660 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:11:55,546 autoreload 15316 1876 Watching for file changes with StatReloader
+INFO 2023-09-12 21:12:05,234 autoreload 15316 1876 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:12:06,025 autoreload 4668 10712 Watching for file changes with StatReloader
+INFO 2023-09-12 21:12:08,637 autoreload 4668 10712 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:12:09,338 autoreload 18232 11540 Watching for file changes with StatReloader
+INFO 2023-09-12 21:12:22,893 autoreload 18232 11540 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:12:23,527 autoreload 8664 17012 Watching for file changes with StatReloader
+INFO 2023-09-12 21:13:23,958 autoreload 8664 17012 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:13:24,689 autoreload 2980 8228 Watching for file changes with StatReloader
+INFO 2023-09-12 21:13:26,954 autoreload 2980 8228 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:13:27,658 autoreload 18192 9756 Watching for file changes with StatReloader
+INFO 2023-09-12 21:13:31,734 autoreload 18192 9756 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:13:32,370 autoreload 14580 3420 Watching for file changes with StatReloader
+INFO 2023-09-12 21:13:34,632 autoreload 14580 3420 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:13:35,327 autoreload 17220 4960 Watching for file changes with StatReloader
+INFO 2023-09-12 21:13:39,432 autoreload 17220 4960 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:13:40,061 autoreload 2192 1212 Watching for file changes with StatReloader
+INFO 2023-09-12 21:13:46,176 autoreload 2192 1212 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:13:46,807 autoreload 10416 13528 Watching for file changes with StatReloader
+INFO 2023-09-12 21:13:48,943 autoreload 10416 13528 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:13:49,659 autoreload 7084 6152 Watching for file changes with StatReloader
+INFO 2023-09-12 21:16:01,846 autoreload 7084 6152 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:16:02,733 autoreload 13700 2632 Watching for file changes with StatReloader
+INFO 2023-09-12 21:16:19,482 autoreload 13700 2632 D:\Our TAM project\Backend\tam\courses\serializers.py changed, reloading.
+INFO 2023-09-12 21:16:20,219 autoreload 8460 14016 Watching for file changes with StatReloader
+INFO 2023-09-12 21:17:02,660 autoreload 8460 14016 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:17:03,548 autoreload 11216 692 Watching for file changes with StatReloader
+INFO 2023-09-12 21:17:09,574 autoreload 11216 692 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:17:10,202 autoreload 11496 15076 Watching for file changes with StatReloader
+INFO 2023-09-12 21:17:16,367 autoreload 11496 15076 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:17:16,931 autoreload 17956 3300 Watching for file changes with StatReloader
+INFO 2023-09-12 21:17:33,554 autoreload 17956 3300 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:17:34,211 autoreload 18400 4220 Watching for file changes with StatReloader
+INFO 2023-09-12 21:17:36,970 autoreload 18400 4220 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:17:37,539 autoreload 7504 16124 Watching for file changes with StatReloader
+INFO 2023-09-12 21:17:40,208 autoreload 7504 16124 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:17:40,972 autoreload 11436 17312 Watching for file changes with StatReloader
+INFO 2023-09-12 21:17:43,678 autoreload 11436 17312 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:17:44,446 autoreload 8604 16064 Watching for file changes with StatReloader
+INFO 2023-09-12 21:17:50,690 autoreload 8604 16064 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:17:51,615 autoreload 9632 9324 Watching for file changes with StatReloader
+INFO 2023-09-12 21:17:56,240 autoreload 9632 9324 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:17:56,944 autoreload 5264 6932 Watching for file changes with StatReloader
+INFO 2023-09-12 21:18:03,472 autoreload 5264 6932 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:18:04,237 autoreload 10988 9060 Watching for file changes with StatReloader
+INFO 2023-09-12 21:18:08,865 autoreload 10988 9060 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:18:09,626 autoreload 10840 18176 Watching for file changes with StatReloader
+INFO 2023-09-12 21:18:26,881 autoreload 10840 18176 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:18:28,041 autoreload 7212 7124 Watching for file changes with StatReloader
+INFO 2023-09-12 21:18:38,558 autoreload 7212 7124 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:18:39,360 autoreload 9944 9752 Watching for file changes with StatReloader
+INFO 2023-09-12 21:18:41,956 autoreload 9944 9752 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:18:42,611 autoreload 2944 12020 Watching for file changes with StatReloader
+INFO 2023-09-12 21:18:50,434 autoreload 2944 12020 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:18:51,249 autoreload 9024 15036 Watching for file changes with StatReloader
+INFO 2023-09-12 21:20:36,131 basehttp 9024 9900 "GET /course/14021002/uploaded-project-list/ HTTP/1.1" 200 187
+WARNING 2023-09-12 21:21:04,015 log 9024 9900 Forbidden: /course/14021002/get-uploaded-project/
+WARNING 2023-09-12 21:21:04,016 basehttp 9024 9900 "POST /course/14021002/get-uploaded-project/ HTTP/1.1" 403 29
+INFO 2023-09-12 21:21:53,295 basehttp 9024 9900 "GET /course/14021002/uploaded-project-list/ HTTP/1.1" 200 187
+INFO 2023-09-12 21:24:00,922 autoreload 9024 15036 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:24:01,872 autoreload 16060 8480 Watching for file changes with StatReloader
+INFO 2023-09-12 21:24:06,576 autoreload 16060 8480 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:24:07,418 autoreload 9680 1580 Watching for file changes with StatReloader
+INFO 2023-09-12 21:24:11,813 autoreload 9680 1580 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:24:12,393 autoreload 16984 11908 Watching for file changes with StatReloader
+INFO 2023-09-12 21:24:29,298 autoreload 16984 11908 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:24:30,087 autoreload 12004 16792 Watching for file changes with StatReloader
+INFO 2023-09-12 21:24:36,604 autoreload 12004 16792 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:24:37,311 autoreload 1048 6584 Watching for file changes with StatReloader
+INFO 2023-09-12 21:24:39,972 basehttp 1048 3728 "POST /course/14021002/get-uploaded-project/ HTTP/1.1" 200 493
+INFO 2023-09-12 21:25:40,742 autoreload 1048 6584 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
+INFO 2023-09-12 21:25:41,636 autoreload 10920 14920 Watching for file changes with StatReloader
+INFO 2023-09-12 21:26:46,390 basehttp 10920 12736 "GET /admin/ HTTP/1.1" 200 12281

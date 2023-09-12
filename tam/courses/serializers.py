@@ -56,8 +56,39 @@ class ProjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = Project
         exclude = ['created']
+    
+class GetProjectSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Project
+        fields = ['name', 'description', 'project_file']
         
-class UploadProjectTitleSerializer(serializers.ModelSerializer):
+
+class GroupCreatorSerializer(serializers.ModelSerializer):
+    creator = ProfileTitleSerializer(many=False)
+    class Meta:
+        model = Group
+        fields = ['id', 'name', 'creator']
+        
+ 
+class UploadProjectSerializer(serializers.ModelSerializer):
+    sender = ProfileTitleSerializer(many=False)
+    group = GroupCreatorSerializer(many=False)
     class Meta:
         model = UploadProject
-        fields = ['group']
+        fields = '__all__'       
+        
+        
+class UploadProjectTitleSerializer(serializers.ModelSerializer):
+    group = GroupCreatorSerializer(many=False)
+    class Meta:
+        model = UploadProject
+        fields = ['group', 'id']
+        
+        
+        
+class GetUploadProjectSerializer(serializers.ModelSerializer):
+    sender = ProfileTitleSerializer(many=False)
+    class Meta:
+        model = UploadProject
+        fields = ['sender', 'file', 'created']
+        
