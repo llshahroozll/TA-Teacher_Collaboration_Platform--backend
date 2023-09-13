@@ -56,40 +56,40 @@ def check_user_status(request, pk):
         if profile.student_tag and profile.assistant_tag:
             if profile.assistant_courses.filter(id=pk).exists():
                 course = profile.assistant_courses.get(id=pk)
-                group_status = 1      # 1 means user is assistant or teacher
+                group_status = 2      # 2 means user is assistant
                 user_role = "A"
             else:
                 course = profile.student_courses.get(id=pk)
                 if course.group_set.filter(creator=profile):
-                    group_status = 2  # 2 means user is student and has group
-                    user_role = "S"
-                elif course.group_set.filter(members=profile):
                     group_status = 3  # 3 means user is student and has group
                     user_role = "S"
+                elif course.group_set.filter(members=profile):
+                    group_status = 4  # 4 means user is student and has group
+                    user_role = "S"
                 else:
-                    group_status = 4  # 4 means user is student and has not group
+                    group_status = 5  # 5 means user is student and has not group
                     user_role = "S"
                         
         elif profile.student_tag:
             course = profile.student_courses.get(id=pk)
             if course.group_set.filter(creator=profile):
-                group_status = 2  # 2 means user is student and has group
-                user_role = "S"
-            elif course.group_set.filter(members=profile):
                 group_status = 3  # 3 means user is student and has group
                 user_role = "S"
+            elif course.group_set.filter(members=profile):
+                group_status = 4  # 4 means user is student and has group
+                user_role = "S"
             else:
-                group_status = 4  # 4 means user is student and has not group
+                group_status = 5  # 5 means user is student and has not group
                 user_role = "S"
                   
         elif profile.assistant_tag:
             course = profile.assistant_courses.get(id=pk)
-            group_status = 1      # 1 means user is assistant or teacher
+            group_status = 2      # 2 means user is assistant 
             user_role = "A"
             
         else:
             course = profile.course_set.get(id =pk)
-            group_status = 1      # 1 means user is assistant or teacher
+            group_status = 1      # 1 means user is teacher
             user_role = "T"
             
         return course, group_status, user_role
