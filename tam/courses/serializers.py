@@ -86,9 +86,9 @@ class UploadProjectTitleSerializer(serializers.ModelSerializer):
         
         
         
-class GetUploadProjectSerializer(serializers.ModelSerializer):
-    sender = ProfileTitleSerializer(many=False)
-    class Meta:
-        model = UploadProject
-        fields = ['sender', 'file', 'created']
+# class GetUploadProjectSerializer(serializers.ModelSerializer):
+#     sender = ProfileTitleSerializer(many=False)
+#     class Meta:
+#         model = UploadProject
+#         fields = ['sender', 'file', 'created']
         

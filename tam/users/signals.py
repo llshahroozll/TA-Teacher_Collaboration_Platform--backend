@@ -17,19 +17,25 @@ def create_profile(sender, instance, created, **kwargs):
             email = user.email,
             id = user.username,  
         )
-    else:
-        user = instance
-        profile = Profile.objects.get(user=user)
-        if user.first_name != "" or user.last_name != "" :
-            name = format("%s %s" %(user.first_name, user.last_name))
-        else:
-            name = user.username 
+    # else:
+    #     user = instance
+    #     profile = Profile.objects.get(user=user)
+    #     if user.first_name != "" or user.last_name != "" :
+    #         name = format("%s %s" %(user.first_name, user.last_name))
+    #     else:
+    #         name = user.username 
         
-        profile.name = name
-        profile.email = user.email
-        profile.save()
+    #     profile.name = name
+    #     profile.email = user.email
+    #     profile.save()
         
 
+@receiver(post_save, sender=Profile)
+def update_user(sender, instance, **kwargs):
+    profile = instance 
+    user = profile.user
+    user.email = profile.email
+    user.save()
 
 
 

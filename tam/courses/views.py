@@ -542,27 +542,25 @@ def get_project(request, pk):
                 return Response({"error": "project has not been defined yet"}, status=status.HTTP_410_GONE)
             
             project = course.project
-            project_seralizer = GetProjectSerializer(project, many=False)
+            project_serializer = GetProjectSerializer(project, many=False)
             
             if course.group_set.filter(creator=profile):
                 group = course.group_set.get(creator=profile)
-                group_id = group.id
             elif course.group_set.filter(members=profile):
                 group = course.group_set.get(members=profile)
-                group_id = group.id
             else:
-                group_id = None
+                group = None
             
-            if group_id is not None:
+            if group is not None:
                 group_uploaded_project = group.uploadproject_set.all()
-                group_uploaded_project_serializer = GetUploadProjectSerializer(group_uploaded_project, many=True)
-                return Response({"project_detail" : project_seralizer.data,
-                                "group_id" : group_id,
+                group_uploaded_project_serializer = UploadProjectSerializer(group_uploaded_project, many=True)
+                return Response({"project_detail" : project_serializer.data,
                                 "group_uploaded_project" : group_uploaded_project_serializer.data
                                 })
                 
+
             else:
-                return Response({"project_detail" : project_seralizer.data})
+                return Response({"project_detail" : project_serializer.data})
                 
         except:
             return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
