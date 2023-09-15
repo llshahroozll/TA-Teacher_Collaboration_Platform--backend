@@ -13786,3 +13786,28 @@ INFO 2023-09-12 21:25:40,742 autoreload 1048 6584 D:\Our TAM project\Backend\tam
 INFO 2023-09-12 21:25:41,636 autoreload 10920 14920 Watching for file changes with StatReloader
 INFO 2023-09-12 21:26:46,390 basehttp 10920 12736 "GET /admin/ HTTP/1.1" 200 12281
 INFO 2023-09-15 11:05:58,262 autoreload 7590 140652789927936 Watching for file changes with StatReloader
+INFO 2023-09-15 15:56:38,228 autoreload 4509 139642793865216 Watching for file changes with StatReloader
+INFO 2023-09-15 15:56:41,124 basehttp 4509 139642659665472 "GET / HTTP/1.1" 200 5755
+INFO 2023-09-15 15:56:41,136 basehttp 4509 139642659665472 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2023-09-15 15:56:41,138 basehttp 4509 139642651272768 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2023-09-15 15:56:41,139 basehttp 4509 139642633438784 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2023-09-15 15:56:41,143 basehttp 4509 139642641831488 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2023-09-15 15:56:41,145 basehttp 4509 139642625046080 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2023-09-15 15:56:41,147 basehttp 4509 139642633438784 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2023-09-15 15:56:41,148 basehttp 4509 139642651272768 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2023-09-15 15:56:41,148 basehttp 4509 139642641831488 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2023-09-15 15:56:41,148 basehttp 4509 139642625046080 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2023-09-15 15:56:41,149 basehttp 4509 139642616653376 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2023-09-15 15:56:41,189 basehttp 4509 139642651272768 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2023-09-15 15:56:41,321 log 4509 139642651272768 Not Found: /favicon.ico
+WARNING 2023-09-15 15:56:41,321 basehttp 4509 139642651272768 "GET /favicon.ico HTTP/1.1" 404 7677
+INFO 2023-09-15 15:56:54,879 basehttp 4509 139642270643776 "POST /login/ HTTP/1.1" 200 486
+INFO 2023-09-15 16:06:39,658 basehttp 4509 139642270643776 "GET /course/14021002/get-project/ HTTP/1.1" 200 694
+INFO 2023-09-15 16:17:53,507 autoreload 4509 139642793865216 /home/shahrooz/Projects/tam-project_files/tam_project/tam/courses/views.py changed, reloading.
+INFO 2023-09-15 16:17:53,898 autoreload 4947 140373141188608 Watching for file changes with StatReloader
+INFO 2023-09-15 16:17:56,246 autoreload 4947 140373141188608 /home/shahrooz/Projects/tam-project_files/tam_project/tam/courses/views.py changed, reloading.
+INFO 2023-09-15 16:17:56,664 autoreload 4952 139667579805696 Watching for file changes with StatReloader
+INFO 2023-09-15 16:17:59,098 autoreload 4952 139667579805696 /home/shahrooz/Projects/tam-project_files/tam_project/tam/courses/views.py changed, reloading.
+INFO 2023-09-15 16:17:59,426 autoreload 4955 140353335410688 Watching for file changes with StatReloader
+INFO 2023-09-15 16:18:01,802 autoreload 4955 140353335410688 /home/shahrooz/Projects/tam-project_files/tam_project/tam/courses/views.py changed, reloading.
+INFO 2023-09-15 16:18:02,153 autoreload 4957 140107071004672 Watching for file changes with StatReloader

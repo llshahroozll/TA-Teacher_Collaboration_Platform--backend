@@ -537,7 +537,7 @@ def get_project(request, pk):
         try:
             profile = request.user.profile
             course = profile.student_courses.get(id=pk)
-            if not course.project.status:
+            if  course.project.status == False:
                 return Response({"error": "project has not been defined yet"}, status=status.HTTP_410_GONE)
             
             project = course.project
