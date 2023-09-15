@@ -16,7 +16,6 @@ from .serializers import (
     UpdateGroupSerializer,
     ProjectSerializer,
     GetProjectSerializer,
-    GetUploadProjectSerializer,
     UploadProjectTitleSerializer,
     UploadProjectSerializer,
 )

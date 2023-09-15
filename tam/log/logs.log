@@ -13785,3 +13785,4 @@ INFO 2023-09-12 21:24:39,972 basehttp 1048 3728 "POST /course/14021002/get-uploa
 INFO 2023-09-12 21:25:40,742 autoreload 1048 6584 D:\Our TAM project\Backend\tam\courses\views.py changed, reloading.
 INFO 2023-09-12 21:25:41,636 autoreload 10920 14920 Watching for file changes with StatReloader
 INFO 2023-09-12 21:26:46,390 basehttp 10920 12736 "GET /admin/ HTTP/1.1" 200 12281
+INFO 2023-09-15 11:05:58,262 autoreload 7590 140652789927936 Watching for file changes with StatReloader
