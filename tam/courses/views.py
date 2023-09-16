@@ -409,7 +409,11 @@ def add_group_member(request, pk):
             profile = request.user.profile
             course = profile.student_courses.get(id=pk)
             group = profile.group_set.get(course=course)
-            
+            group_members_count = ( group.members.all().count() ) + 1
+
+            if course.group_capacity <=  group_members_count:
+                return Response({"error":"Your group is full"}, status=status.HTTP_406_NOT_ACCEPTABLE)
+
             student_id = request.data["student_id"]
             
             student_profile = Profile.objects.get(id=student_id)
