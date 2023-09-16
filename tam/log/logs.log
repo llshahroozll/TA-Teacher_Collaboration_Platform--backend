@@ -13811,3 +13811,7 @@ INFO 2023-09-15 16:17:59,098 autoreload 4952 139667579805696 /home/shahrooz/Proj
 INFO 2023-09-15 16:17:59,426 autoreload 4955 140353335410688 Watching for file changes with StatReloader
 INFO 2023-09-15 16:18:01,802 autoreload 4955 140353335410688 /home/shahrooz/Projects/tam-project_files/tam_project/tam/courses/views.py changed, reloading.
 INFO 2023-09-15 16:18:02,153 autoreload 4957 140107071004672 Watching for file changes with StatReloader
+INFO 2023-09-15 16:23:59,350 basehttp 4957 140106933466688 "GET /course/14021002/get-project/ HTTP/1.1" 200 694
+INFO 2023-09-16 15:37:28,265 autoreload 5217 140435044941824 Watching for file changes with StatReloader
+INFO 2023-09-16 15:37:33,105 basehttp 5217 140434977322560 "POST /login/ HTTP/1.1" 200 486
+INFO 2023-09-16 15:37:44,878 basehttp 5217 140434977322560 "GET /course/14021002/get-project/ HTTP/1.1" 200 694
