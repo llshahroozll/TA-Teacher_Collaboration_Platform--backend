@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.response import Response
@@ -17,6 +18,7 @@ from .serializers import (
     GetProjectSerializer,
     UploadProjectTitleSerializer,
     UploadProjectSerializer,
+    GetAllUploadProjectSerializer
 )
 
 
@@ -561,9 +563,11 @@ def get_project(request, pk):
             group = check_student_has_group(course, profile)
             
             if group:
+                group_serializer = GroupSerializer(group, many=False)
                 group_uploaded_project = group.uploadproject_set.all()
                 group_uploaded_project_serializer = UploadProjectSerializer(group_uploaded_project, many=True)
                 return Response({"project_detail" : project_serializer.data,
+                                 "group_detail" : group_serializer.data,
                                 "group_uploaded_project" : group_uploaded_project_serializer.data
                                 })
             else:
@@ -578,7 +582,7 @@ def get_project(request, pk):
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def upload_project(request, pk):
-    if request.mehtod == 'POST':
+    if request.method == 'POST':
         try:
             profile = request.user.profile
             course = profile.student_courses.get(id=pk)
@@ -647,10 +651,28 @@ def get_uploaded_project(request, pk):
             return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
             
 
-# @api_view(['POST'])
-# @permission_classes([IsAuthenticated])
-# def project_all(request, pk):
-#     pass
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_all_project(request, pk):
+    if request.method == 'GET':
+        try:
+            profile = request.user.profile
+            if profile.course_set.filter(id=pk):
+                course = profile.course_set.get(id =pk)
+            else:
+                course = profile.assistant_courses.get(id=pk)
+
+            project = course.project
+            project_uploaded_files = project.uploadproject_set.all()
+            serializer = GetAllUploadProjectSerializer(project_uploaded_files, many=True)
+            return Response(serializer.data)
+
+        except:
+            return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+        
+
+
 
 
 

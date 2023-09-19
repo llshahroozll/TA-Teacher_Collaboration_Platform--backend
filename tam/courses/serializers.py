@@ -44,7 +44,7 @@ class GroupSerializer(serializers.ModelSerializer):
     members = ProfileTitleSerializer(many=True)
     class Meta:
         model = Group
-        exclude = ['created', 'course']
+        exclude = ['created']
         
 class UpdateGroupSerializer(serializers.ModelSerializer):
     class Meta:
@@ -86,9 +86,8 @@ class UploadProjectTitleSerializer(serializers.ModelSerializer):
         
         
         
-# class GetUploadProjectSerializer(serializers.ModelSerializer):
-#     sender = ProfileTitleSerializer(many=False)
-#     class Meta:
-#         model = UploadProject
-#         fields = ['sender', 'file', 'created']
+class GetAllUploadProjectSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UploadProject
+        fields = ['file']
         
