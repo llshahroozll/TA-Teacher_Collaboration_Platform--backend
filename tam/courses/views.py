@@ -651,6 +651,10 @@ def get_uploaded_project(request, pk):
             return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
             
 
+import shutil 
+import os
+from tam import settings
+from wsgiref.util import FileWrapper
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
@@ -664,10 +668,27 @@ def get_all_project(request, pk):
                 course = profile.assistant_courses.get(id=pk)
 
             project = course.project
-            project_uploaded_files = project.uploadproject_set.all()
-            serializer = GetAllUploadProjectSerializer(project_uploaded_files, many=True)
-            return Response(serializer.data)
+            if not project.uploadproject_set.filter():
+                return Response({"message": "there are not any uploaded projects"}, status=status.HTTP_406_NOT_ACCEPTABLE)
 
+            zip_file_name = str.format("پروژه آپلود شده دانشجویان درس %s" %(course.name))
+            archive_base_dir = os.path.join(settings.MEDIA_ROOT, "projects/student_projects", course.name)
+            archive_destination_dir = os.path.join(settings.MEDIA_ROOT, "projects/archives/")
+            zip_file = shutil.make_archive(base_name=zip_file_name, base_dir=archive_base_dir, format='zip')
+            zip_file_path = os.path.join(archive_destination_dir, zip_file)            
+            
+            if os.path.exists(zip_file_path):
+                os.remove(os.path.join(zip_file_path))
+            
+            shutil.move(zip_file  , archive_destination_dir)
+
+            
+            file_name = str.format("%s.zip" %zip_file_name)
+            response = HttpResponse(FileWrapper(open(zip_file_path,'rb')), content_type='application/zip')
+            response['Content-Disposition'] = 'attachment; filename="{filename}.zip"'.format(
+                            filename = file_name.replace(" ", "_"))
+
+            return response
         except:
             return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
         
