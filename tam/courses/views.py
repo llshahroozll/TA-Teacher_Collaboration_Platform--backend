@@ -15,10 +15,11 @@ from .serializers import (
     GroupSerializer,
     UpdateGroupSerializer,
     ProjectSerializer,
+    ProjectZipSerializer,
     GetProjectSerializer,
     UploadProjectTitleSerializer,
     UploadProjectSerializer,
-    GetAllUploadProjectSerializer
+
 )
 
 
@@ -656,6 +657,10 @@ import os
 from tam import settings
 from wsgiref.util import FileWrapper
 
+import shutil 
+import os
+from tam import settings
+
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def get_all_project(request, pk):
@@ -672,25 +677,27 @@ def get_all_project(request, pk):
                 return Response({"message": "there are not any uploaded projects"}, status=status.HTTP_406_NOT_ACCEPTABLE)
 
             zip_file_name = str.format("پروژه آپلود شده دانشجویان درس %s" %(course.name))
-            archive_base_dir = os.path.join(settings.MEDIA_ROOT, "projects/student_projects", course.name)
+            zip_file_name_with_format = str.format("پروژه آپلود شده دانشجویان درس %s.zip" %(course.name))
+            archive_base_dir = os.path.join(settings.MEDIA_ROOT, "projects/student_projects/")
             archive_destination_dir = os.path.join(settings.MEDIA_ROOT, "projects/archives/")
-            zip_file = shutil.make_archive(base_name=zip_file_name, base_dir=archive_base_dir, format='zip')
-            zip_file_path = os.path.join(archive_destination_dir, zip_file)            
             
-            if os.path.exists(zip_file_path):
+            zip_file= shutil.make_archive(base_name=zip_file_name, format='zip', root_dir=archive_base_dir, base_dir=course.name)
+            zip_file_path = os.path.join(archive_destination_dir, zip_file_name_with_format)
+
+            if os.path.exists(os.path.join(zip_file_path)):
                 os.remove(os.path.join(zip_file_path))
-            
+
             shutil.move(zip_file  , archive_destination_dir)
 
-            
-            file_name = str.format("%s.zip" %zip_file_name)
-            response = HttpResponse(FileWrapper(open(zip_file_path,'rb')), content_type='application/zip')
-            response['Content-Disposition'] = 'attachment; filename="{filename}.zip"'.format(
-                            filename = file_name.replace(" ", "_"))
+            project.project_uploaded_files_zip = zip_file_path
+            project.save()
+   
+            serializer = ProjectZipSerializer(project, many=False)
+            return Response(serializer.data)
 
-            return response
         except:
             return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+        
         
 
 

@@ -55,8 +55,15 @@ class UpdateGroupSerializer(serializers.ModelSerializer):
 class ProjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = Project
-        exclude = ['created']
-    
+        exclude = ['created', 'project_uploaded_files_zip']
+
+
+class ProjectZipSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Project
+        fields = ['project_uploaded_files_zip']
+
+
 class GetProjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = Project
@@ -85,9 +92,4 @@ class UploadProjectTitleSerializer(serializers.ModelSerializer):
         fields = ['group', 'id']
         
         
-        
-class GetAllUploadProjectSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = UploadProject
-        fields = ['file']
-        
+
