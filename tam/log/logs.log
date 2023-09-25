@@ -15512,3 +15512,91 @@ INFO 2023-09-25 14:13:35,479 basehttp 7443 140094759499328 "GET /admin/jsi18n/ H
 INFO 2023-09-25 14:13:52,338 basehttp 7443 140094759499328 "GET /admin/courses/schedule/b5616743-60a0-4c59-9b04-27cd041c9002/change/ HTTP/1.1" 200 17080
 INFO 2023-09-25 14:13:52,355 basehttp 7443 140094759499328 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
 INFO 2023-09-25 14:13:53,994 basehttp 7443 140094759499328 "GET /admin/courses/schedule/ HTTP/1.1" 200 11144
+INFO 2023-09-25 14:50:57,591 autoreload 8684 140099195301888 Watching for file changes with StatReloader
+INFO 2023-09-25 14:50:59,010 autoreload 8684 140099195301888 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:50:59,318 autoreload 8688 139666281443328 Watching for file changes with StatReloader
+INFO 2023-09-25 14:51:01,670 autoreload 8688 139666281443328 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:51:02,015 autoreload 8692 139696858066944 Watching for file changes with StatReloader
+INFO 2023-09-25 14:51:03,358 autoreload 8692 139696858066944 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:51:03,687 autoreload 8695 139859337711616 Watching for file changes with StatReloader
+INFO 2023-09-25 14:51:10,141 autoreload 8695 139859337711616 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:51:10,444 autoreload 8699 139796097105920 Watching for file changes with StatReloader
+INFO 2023-09-25 14:51:12,798 autoreload 8699 139796097105920 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:51:13,119 autoreload 8703 139793030057984 Watching for file changes with StatReloader
+INFO 2023-09-25 14:51:28,842 autoreload 8703 139793030057984 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:51:29,131 autoreload 8710 140045539610624 Watching for file changes with StatReloader
+INFO 2023-09-25 14:51:33,515 autoreload 8710 140045539610624 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:51:33,826 autoreload 8715 140022893809664 Watching for file changes with StatReloader
+INFO 2023-09-25 14:51:35,209 autoreload 8715 140022893809664 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:51:35,535 autoreload 8718 140255630008320 Watching for file changes with StatReloader
+INFO 2023-09-25 14:51:37,877 autoreload 8718 140255630008320 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:51:38,179 autoreload 8720 139778135252992 Watching for file changes with StatReloader
+INFO 2023-09-25 14:51:39,535 autoreload 8720 139778135252992 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:51:39,883 autoreload 8724 139769133518848 Watching for file changes with StatReloader
+INFO 2023-09-25 14:51:42,284 autoreload 8724 139769133518848 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:51:42,577 autoreload 8727 140224587362304 Watching for file changes with StatReloader
+INFO 2023-09-25 14:51:44,940 autoreload 8727 140224587362304 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:51:45,229 autoreload 8731 139672881205248 Watching for file changes with StatReloader
+INFO 2023-09-25 14:51:46,586 autoreload 8731 139672881205248 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:51:46,944 autoreload 8734 140552269570048 Watching for file changes with StatReloader
+INFO 2023-09-25 14:51:55,430 autoreload 8734 140552269570048 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:51:55,739 autoreload 8739 140498058407936 Watching for file changes with StatReloader
+INFO 2023-09-25 14:52:00,120 autoreload 8739 140498058407936 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:52:00,399 autoreload 8742 139653784809472 Watching for file changes with StatReloader
+INFO 2023-09-25 14:52:03,738 autoreload 8742 139653784809472 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:52:04,028 autoreload 8745 140363623809024 Watching for file changes with StatReloader
+INFO 2023-09-25 14:52:09,486 autoreload 8745 140363623809024 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:52:09,790 autoreload 8749 140409008787456 Watching for file changes with StatReloader
+INFO 2023-09-25 14:52:11,100 autoreload 8749 140409008787456 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:52:11,395 autoreload 8752 139779967574016 Watching for file changes with StatReloader
+INFO 2023-09-25 14:52:32,277 autoreload 8752 139779967574016 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:52:32,636 autoreload 8758 140429560471552 Watching for file changes with StatReloader
+INFO 2023-09-25 14:53:24,245 autoreload 8758 140429560471552 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:53:24,531 autoreload 8769 139703573155840 Watching for file changes with StatReloader
+INFO 2023-09-25 14:53:26,912 autoreload 8769 139703573155840 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:53:27,213 autoreload 8773 140021480460288 Watching for file changes with StatReloader
+INFO 2023-09-25 14:53:40,860 autoreload 8773 140021480460288 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:53:41,173 autoreload 8781 140617242963968 Watching for file changes with StatReloader
+INFO 2023-09-25 14:54:14,540 autoreload 8781 140617242963968 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:54:14,902 autoreload 8788 140621099036672 Watching for file changes with StatReloader
+INFO 2023-09-25 14:54:36,891 autoreload 8788 140621099036672 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/admin.py changed, reloading.
+INFO 2023-09-25 14:54:37,242 autoreload 8797 140691775979520 Watching for file changes with StatReloader
+INFO 2023-09-25 14:54:39,619 autoreload 8797 140691775979520 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/admin.py changed, reloading.
+INFO 2023-09-25 14:54:39,951 autoreload 8801 140600981774336 Watching for file changes with StatReloader
+INFO 2023-09-25 14:54:44,392 autoreload 8801 140600981774336 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/admin.py changed, reloading.
+INFO 2023-09-25 14:54:44,743 autoreload 8805 140418300534784 Watching for file changes with StatReloader
+INFO 2023-09-25 14:55:52,248 autoreload 8805 140418300534784 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:55:52,610 autoreload 8821 140072873525248 Watching for file changes with StatReloader
+INFO 2023-09-25 14:56:02,257 autoreload 8821 140072873525248 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:56:02,613 autoreload 8825 140020971868160 Watching for file changes with StatReloader
+INFO 2023-09-25 14:56:04,079 autoreload 8825 140020971868160 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:56:04,382 autoreload 8829 140490576347136 Watching for file changes with StatReloader
+INFO 2023-09-25 14:57:13,436 autoreload 8838 140081756352512 Watching for file changes with StatReloader
+INFO 2023-09-25 14:57:15,969 basehttp 8838 140081617696320 "GET / HTTP/1.1" 200 5755
+INFO 2023-09-25 14:57:22,160 basehttp 8838 140081617696320 "GET /admin/courses/schedule/ HTTP/1.1" 200 11432
+INFO 2023-09-25 14:57:22,172 basehttp 8838 140081617696320 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-25 14:57:23,630 basehttp 8838 140081617696320 "GET /admin/courses/schedule/b5616743-60a0-4c59-9b04-27cd041c9002/change/ HTTP/1.1" 200 18536
+INFO 2023-09-25 14:57:23,646 basehttp 8838 140081617696320 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-25 14:57:29,678 basehttp 8838 140081617696320 "GET /admin/courses/round/ HTTP/1.1" 200 10138
+INFO 2023-09-25 14:57:29,692 basehttp 8838 140081617696320 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-25 14:57:31,274 basehttp 8838 140081617696320 "GET /admin/courses/round/add/ HTTP/1.1" 200 13749
+INFO 2023-09-25 14:57:31,290 basehttp 8838 140081617696320 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-25 14:58:13,792 basehttp 8838 140081617696320 "POST /admin/courses/round/add/ HTTP/1.1" 200 13956
+INFO 2023-09-25 14:58:13,808 basehttp 8838 140081617696320 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-25 14:58:21,443 basehttp 8838 140081617696320 "POST /admin/courses/round/add/ HTTP/1.1" 302 0
+INFO 2023-09-25 14:58:21,475 basehttp 8838 140081617696320 "GET /admin/courses/round/ HTTP/1.1" 200 11602
+INFO 2023-09-25 14:58:21,546 basehttp 8838 140081617696320 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-25 14:58:23,577 basehttp 8838 140081617696320 "GET /admin/courses/round/add/ HTTP/1.1" 200 13749
+INFO 2023-09-25 14:58:23,594 basehttp 8838 140081617696320 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-25 14:58:27,810 basehttp 8838 140081617696320 "GET /admin/courses/schedule/ HTTP/1.1" 200 11432
+INFO 2023-09-25 14:58:27,825 basehttp 8838 140081617696320 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-25 14:58:30,138 basehttp 8838 140081617696320 "GET /admin/courses/schedule/b5616743-60a0-4c59-9b04-27cd041c9002/change/ HTTP/1.1" 200 18617
+INFO 2023-09-25 14:58:30,154 basehttp 8838 140081617696320 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-25 14:58:35,003 basehttp 8838 140081617696320 "POST /admin/courses/schedule/b5616743-60a0-4c59-9b04-27cd041c9002/change/ HTTP/1.1" 302 0
+INFO 2023-09-25 14:58:35,037 basehttp 8838 140081617696320 "GET /admin/courses/schedule/ HTTP/1.1" 200 11722
+INFO 2023-09-25 14:58:35,096 basehttp 8838 140081617696320 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-25 14:58:36,526 basehttp 8838 140081617696320 "GET /admin/courses/schedule/b5616743-60a0-4c59-9b04-27cd041c9002/change/ HTTP/1.1" 200 18626
+INFO 2023-09-25 14:58:36,540 basehttp 8838 140081617696320 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-25 14:58:38,492 basehttp 8838 140081617696320 "POST /admin/courses/schedule/b5616743-60a0-4c59-9b04-27cd041c9002/change/ HTTP/1.1" 302 0
+INFO 2023-09-25 14:58:38,524 basehttp 8838 140081617696320 "GET /admin/courses/schedule/ HTTP/1.1" 200 11722
+INFO 2023-09-25 14:58:38,610 basehttp 8838 140081617696320 "GET /admin/jsi18n/ HTTP/1.1" 200 3343

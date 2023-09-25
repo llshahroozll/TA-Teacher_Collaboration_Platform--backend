@@ -69,8 +69,22 @@ class UploadProject(models.Model):
     
     def __str__(self):
         return self.group.course.name
+
+
+
+class Round(models.Model):
+    round_name = models.CharField(max_length=250, null=True, blank=True)
+    start_time = models.TimeField()
+    finish_time = models.TimeField()
+    groups = models.ManyToManyField(Group, blank=True)
+    created = models.DateTimeField(auto_now_add=True)
+    id = models.UUIDField(default=uuid.uuid4, primary_key=True, unique=True, editable=False)
+
+    def __str__(self):
+        return self.round_name    
     
-    
+
+
 class Schedule(models.Model):
     PERIODS = (
         (5, '5 minutes'),
@@ -80,6 +94,7 @@ class Schedule(models.Model):
         (30, '30 minutes'),
     )
     project = models.OneToOneField(Project, null=True, blank=True, on_delete=models.CASCADE)
+    rounds = models.ManyToManyField(Round, blank=True)
     date = models.DateField()
     start_time = models.TimeField()
     finish_time = models.TimeField()
