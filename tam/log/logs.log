@@ -15433,3 +15433,82 @@ INFO 2023-09-20 17:07:26,406 basehttp 16055 140657003853376 "POST /login/ HTTP/1
 INFO 2023-09-20 17:07:39,602 basehttp 16055 140657003853376 "GET /course/14021001/get-all-project/ HTTP/1.1" 200 360
 INFO 2023-09-20 17:07:47,488 basehttp 16055 140657003853376 "POST /login/ HTTP/1.1" 200 486
 INFO 2023-09-20 17:08:01,428 basehttp 16055 140657003853376 "GET /course/14021002/get-all-project/ HTTP/1.1" 200 378
+INFO 2023-09-25 14:11:21,160 autoreload 7359 140051645902848 Watching for file changes with StatReloader
+INFO 2023-09-25 14:11:23,443 basehttp 7359 140051501545024 "GET /admin/courses/schedule/ HTTP/1.1" 200 9871
+INFO 2023-09-25 14:11:23,466 basehttp 7359 140051501545024 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-25 14:11:25,289 basehttp 7359 140051501545024 "GET /admin/courses/schedule/ HTTP/1.1" 200 9871
+INFO 2023-09-25 14:11:25,302 basehttp 7359 140051501545024 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-25 14:11:26,565 basehttp 7359 140051501545024 "GET /admin/courses/schedule/add/ HTTP/1.1" 200 16574
+INFO 2023-09-25 14:11:26,581 basehttp 7359 140051501545024 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+ERROR 2023-09-25 14:12:01,681 log 7359 140051501545024 Internal Server Error: /admin/courses/schedule/add/
+Traceback (most recent call last):
+  File "/home/shahrooz/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/shahrooz/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/shahrooz/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/shahrooz/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/shahrooz/.local/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/shahrooz/.local/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/shahrooz/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/shahrooz/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/shahrooz/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/shahrooz/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/shahrooz/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1804, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/shahrooz/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 926, in log_addition
+    object_repr=str(obj),
+  File "/home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py", line 95, in __str__
+    return self.date + self.project.name
+TypeError: unsupported operand type(s) for +: 'datetime.date' and 'str'
+ERROR 2023-09-25 14:12:01,682 basehttp 7359 140051501545024 "POST /admin/courses/schedule/add/ HTTP/1.1" 500 120133
+INFO 2023-09-25 14:12:26,921 autoreload 7359 140051645902848 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:12:27,280 autoreload 7381 140468585492480 Watching for file changes with StatReloader
+INFO 2023-09-25 14:12:31,634 basehttp 7381 140468444722752 "POST /admin/courses/schedule/add/ HTTP/1.1" 302 0
+INFO 2023-09-25 14:12:31,674 basehttp 7381 140468444722752 "GET /admin/courses/schedule/ HTTP/1.1" 200 11400
+INFO 2023-09-25 14:12:31,759 basehttp 7381 140468444722752 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-25 14:12:31,812 basehttp 7381 140468444722752 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2023-09-25 14:12:34,992 basehttp 7381 140468444722752 "GET /admin/courses/schedule/b5616743-60a0-4c59-9b04-27cd041c9002/change/ HTTP/1.1" 200 17032
+INFO 2023-09-25 14:12:35,009 basehttp 7381 140468444722752 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-25 14:12:36,581 basehttp 7381 140468444722752 "GET /admin/courses/schedule/ HTTP/1.1" 200 11128
+INFO 2023-09-25 14:12:43,221 autoreload 7381 140468585492480 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:12:43,557 autoreload 7397 140242268725248 Watching for file changes with StatReloader
+INFO 2023-09-25 14:12:51,114 autoreload 7397 140242268725248 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:12:51,449 autoreload 7402 140524511375360 Watching for file changes with StatReloader
+INFO 2023-09-25 14:12:55,950 autoreload 7402 140524511375360 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:12:56,264 autoreload 7406 140669415579648 Watching for file changes with StatReloader
+INFO 2023-09-25 14:12:57,623 autoreload 7406 140669415579648 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:12:57,996 autoreload 7409 139634556731392 Watching for file changes with StatReloader
+INFO 2023-09-25 14:12:59,312 autoreload 7409 139634556731392 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:12:59,641 autoreload 7413 140041528942592 Watching for file changes with StatReloader
+INFO 2023-09-25 14:13:02,171 autoreload 7413 140041528942592 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:13:02,534 autoreload 7415 139818225127424 Watching for file changes with StatReloader
+INFO 2023-09-25 14:13:10,033 autoreload 7415 139818225127424 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:13:10,352 autoreload 7420 140193097433088 Watching for file changes with StatReloader
+INFO 2023-09-25 14:13:12,741 autoreload 7420 140193097433088 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:13:13,155 autoreload 7423 140395458850816 Watching for file changes with StatReloader
+INFO 2023-09-25 14:13:14,654 autoreload 7423 140395458850816 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:13:14,995 autoreload 7428 140165131583488 Watching for file changes with StatReloader
+INFO 2023-09-25 14:13:16,344 autoreload 7428 140165131583488 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:13:16,731 autoreload 7431 140398427238400 Watching for file changes with StatReloader
+INFO 2023-09-25 14:13:25,180 autoreload 7431 140398427238400 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:13:25,508 autoreload 7433 139680688984064 Watching for file changes with StatReloader
+INFO 2023-09-25 14:13:27,920 autoreload 7433 139680688984064 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:13:28,234 autoreload 7437 139953040785408 Watching for file changes with StatReloader
+INFO 2023-09-25 14:13:29,603 autoreload 7437 139953040785408 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:13:30,006 autoreload 7440 140491572813824 Watching for file changes with StatReloader
+INFO 2023-09-25 14:13:32,437 autoreload 7440 140491572813824 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/models.py changed, reloading.
+INFO 2023-09-25 14:13:32,785 autoreload 7443 140094829518848 Watching for file changes with StatReloader
+INFO 2023-09-25 14:13:35,466 basehttp 7443 140094759499328 "GET /admin/courses/schedule/ HTTP/1.1" 200 11144
+INFO 2023-09-25 14:13:35,479 basehttp 7443 140094759499328 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-25 14:13:52,338 basehttp 7443 140094759499328 "GET /admin/courses/schedule/b5616743-60a0-4c59-9b04-27cd041c9002/change/ HTTP/1.1" 200 17080
+INFO 2023-09-25 14:13:52,355 basehttp 7443 140094759499328 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-25 14:13:53,994 basehttp 7443 140094759499328 "GET /admin/courses/schedule/ HTTP/1.1" 200 11144

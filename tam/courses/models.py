@@ -71,3 +71,25 @@ class UploadProject(models.Model):
         return self.group.course.name
     
     
+class Schedule(models.Model):
+    PERIODS = (
+        (5, '5 minutes'),
+        (10, '10 minutes'),
+        (15, '15 minutes'),
+        (20, '20 minutes'),
+        (30, '30 minutes'),
+    )
+    project = models.OneToOneField(Project, null=True, blank=True, on_delete=models.CASCADE)
+    date = models.DateField()
+    start_time = models.TimeField()
+    finish_time = models.TimeField()
+    period = models.IntegerField(choices=PERIODS)
+    coustomـtype = models.BooleanField(default=False) # if coustom_type is False then The number of recipients = The number of teacher assistants, 
+                                                      # else user can choose a coustom number of recipients
+    number_of_recipints = models.IntegerField()
+    status =models.BooleanField(default=False)
+    created = models.DateTimeField(auto_now_add=True)
+    id = models.UUIDField(default=uuid.uuid4, primary_key=True, unique=True, editable=False)
+    
+    def __str__(self):
+        return str.format("%s > %s" %(self.project.name, self.date))
