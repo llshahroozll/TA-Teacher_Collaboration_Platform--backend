@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.response import Response
-from .models import Course, Group, Project, UploadProject
+from .models import Course, Group, Project, UploadProject, Schedule, Round
 from users.models import Profile
 from users.serializers import ProfileTitleSerializer
 from rest_framework import status
@@ -19,6 +19,8 @@ from .serializers import (
     GetProjectSerializer,
     UploadProjectTitleSerializer,
     UploadProjectSerializer,
+    RoundSerializer,
+    GetStudentRoundSerilaizer,
 
 )
 
@@ -536,7 +538,7 @@ def update_project(request, pk):
         return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
 
 
-#function for check student to has group. it used in these views : get_project, update_project
+#function for check student to has group. it used in these views : get_project, update_project, get_student_round
 def check_student_has_group(course, profile):
     if course.group_set.filter(creator=profile):
         group = course.group_set.get(creator=profile)
@@ -700,7 +702,148 @@ def get_all_project(request, pk):
         
         
 
+###################################################################
+######################### schedule section ########################
+###################################################################
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def create_schedule(request, pk):
+
+    if request.method == 'POST':
+        course = check_teacher_permission(request, pk)
+        if course is None:
+            return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+        
+        try:
+            
+            project = course.project 
+            date = request.data["date"]
+            start_time = request.data["start_time"]
+            finish_time = request.data["finish_time"]
+            period = request.data["period"]
+            customـtype = request.data["custom_type"]
+            if customـtype == "True" or customـtype == True:
+                number_of_recipints = request.data["number_of_recipints"]
+            else:
+                number_of_recipints = course.assistant_profiles.all().count()
+            
+            Schedule.objects.create(
+                project = project,
+                date = date,
+                start_time = start_time,
+                finish_time = finish_time,
+                period = period,
+                customـtype = customـtype,
+                number_of_recipints = number_of_recipints,
+            )
+            
+            return Response({"message":"success"}, status=status.HTTP_200_OK)            
+
+        except:
+            return Response({"error": "Your request Gone"}, status=status.HTTP_410_GONE)
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_manager_round(request, pk):
+    if request.method == 'GET':
+        try:
+            profile = request.user.profile
+            if profile.course_set.filter(id=pk):
+                course = profile.course_set.get(id =pk)
+            else:
+                course = profile.assistant_courses.get(id=pk)
+
+            project = course.project
+            schedule = project.schedule
+            rounds = schedule.rounds.all()
+
+            serializer = RoundSerializer(rounds, many=True)
+            return Response(serializer.data)
+        
+        except:
+            return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def delete_round(request, pk):
+    if request.method == 'POST':
+        course = check_teacher_permission(request, pk)
+        if course is None:
+            return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+        
+        try:
+            round_id = request.data["round_id"]
+            project = course.project
+            schedule = project.schedule
+            round = schedule.rounds.get(id=round_id)
+            round.delete()
+
+            return Response({"message":"success"}, status=status.HTTP_200_OK)            
+
+        except:
+            return Response({"error": "Your request Gone"}, status=status.HTTP_410_GONE)
 
 
 
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_student_round(request, pk):
+    if request.method == 'GET':
+        try:
+            profile = request.user.profile
+            course = profile.student_courses.get(id=pk)
 
+            group = check_student_has_group(course, profile)
+            if group is None:
+                group_id = None
+            else:
+                group_id = group.id
+
+            project = course.project
+            schedule = project.schedule
+            rounds = schedule.rounds.all()
+            
+
+            context={"number_of_recipints":schedule.number_of_recipints,
+                     "group_id":group_id}
+
+            serializer = GetStudentRoundSerilaizer(rounds, many=True, context=context)
+            return Response(serializer.data)
+        
+        except:
+            return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+            
+
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def select_round(request, pk):
+    if request.method == 'POST':
+        try:
+            profile = request.user.profile
+            course = profile.student_courses.get(id=pk)
+            group = course.group_set.get(creator=profile)
+
+            try:
+                round_id = request.data["round_id"]
+                number_of_recipints = course.project.schedule.number_of_recipints
+                
+                #check other rounds to aviod of coflict 
+
+                round = Round.objects.get(id=round_id)
+
+                if round.groups.all().count() < number_of_recipints:
+                    round.groups.add(group)
+                    round.save()
+
+
+            except:
+                return Response({"error": "Your request Gone"}, status=status.HTTP_410_GONE)
+
+        except:
+            return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Course, Group, Project, UploadProject
+from .models import Course, Group, Project, UploadProject, Round, Schedule
 from users.serializers import ProfileTitleSerializer
 
 
@@ -45,7 +45,13 @@ class GroupSerializer(serializers.ModelSerializer):
     class Meta:
         model = Group
         exclude = ['created']
-        
+
+class GroupTitleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Group
+        fields = ['name', 'id']
+
+
 class UpdateGroupSerializer(serializers.ModelSerializer):
     class Meta:
         model = Group
@@ -92,4 +98,33 @@ class UploadProjectTitleSerializer(serializers.ModelSerializer):
         fields = ['group', 'id']
         
         
+class RoundSerializer(serializers.ModelSerializer):
+    groups = GroupTitleSerializer(many=True)
+    class Meta:
+        model = Round
+        exclude = ['created']
 
+
+class GetStudentRoundSerilaizer(serializers.ModelSerializer):
+    round_capacity = serializers.SerializerMethodField('get_round_capacity')
+    selected = serializers.SerializerMethodField('check_selected')
+
+    class Meta:
+        model = Round 
+        fields = ['round_name', 'round_capacity', 'selected', 'id', 'start_time', 'finish_time' ]
+
+    def get_round_capacity(self, round):
+        number_of_recipints = self.context.get("number_of_recipints")
+        number_of_group_in_round = round.groups.all().count()
+        round_capacity = number_of_recipints - number_of_group_in_round
+        return round_capacity
+    
+    
+    def check_selected(self, round):
+        group_id = self.context.get("group_id")
+        if round.groups.filter(id=group_id):
+            return True
+        else:
+            return False
+        
+       
