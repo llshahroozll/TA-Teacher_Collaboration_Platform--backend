@@ -251,7 +251,7 @@ def course_remove_assistant(request, pk):
                 profile.assistant_tag = False
                 profile.save()
                 
-            return Response({"massage":"success"}, status=status.HTTP_200_OK)
+            return Response({"message":"success"}, status=status.HTTP_200_OK)
         except:
             return Response({"error": "faild"}, status=status.HTTP_410_GONE)
         
@@ -707,6 +707,31 @@ def get_all_project(request, pk):
 ###################################################################
 
 
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def schedule(request, pk):
+    if request.method == 'GET':
+        profile = request.user.profile
+        try:
+            if profile.teacher_tag:
+                course = profile.course_set.get(id=pk)
+                
+
+            elif profile.assistant_courses.filter(id=pk):
+                course = profile.assistant_courses.get(id=pk)
+
+
+            else:
+                course = profile.student.courses.get(id=pk)
+
+
+            Response({"message":"requset has not complete yet :)"})
+        except:
+            return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+
+
+
+
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def create_schedule(request, pk):
@@ -723,11 +748,11 @@ def create_schedule(request, pk):
             start_time = request.data["start_time"]
             finish_time = request.data["finish_time"]
             period = request.data["period"]
-            customـtype = request.data["custom_type"]
-            if customـtype == "True" or customـtype == True:
-                number_of_recipints = request.data["number_of_recipints"]
-            else:
+
+            if number_of_recipints == -1 : 
                 number_of_recipints = course.assistant_profiles.all().count()
+            else:
+                number_of_recipints = request.data["number_of_recipints"]
             
             Schedule.objects.create(
                 project = project,
@@ -735,7 +760,6 @@ def create_schedule(request, pk):
                 start_time = start_time,
                 finish_time = finish_time,
                 period = period,
-                customـtype = customـtype,
                 number_of_recipints = number_of_recipints,
             )
             
@@ -812,7 +836,8 @@ def get_student_round(request, pk):
                      "group_id":group_id}
 
             serializer = GetStudentRoundSerilaizer(rounds, many=True, context=context)
-            return Response(serializer.data)
+            return Response({"rounds":serializer.data,
+                             "rounds_capacity":schedule.number_of_recipints})
         
         except:
             return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)

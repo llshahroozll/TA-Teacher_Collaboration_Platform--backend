@@ -31,7 +31,7 @@ urlpatterns = [
     path('course/<str:pk>/get-all-project/', views.get_all_project),
     
 
-    # path('course/<str:pk>/schedule/', views.schedule),
+    path('course/<str:pk>/schedule/', views.schedule),
     path('course/<str:pk>/create-schedule/', views.create_schedule),
     path('course/<str:pk>/get-manager-round/', views.get_manager_round),
     path('course/<str:pk>/delete-round/', views.delete_round),

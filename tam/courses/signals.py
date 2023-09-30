@@ -28,7 +28,7 @@ def create_rounds(sender, instance, created, **kwargs):
         
         schedule_start_time = datetime.combine(date.min, schedule.start_time)
         schedule_finish_time = datetime.combine(date.min, schedule.finish_time)
-        schedule_period = schedule.period.minutes
+        schedule_period = schedule.period
 
         round_number = 1
 
@@ -42,7 +42,8 @@ def create_rounds(sender, instance, created, **kwargs):
                 finish_time = schedule_next_start_time,
             )
             
-            schedule.round.add(round)
+            schedule.rounds.add(round)
+            schedule.save()
 
             schedule_start_time = schedule_next_start_time
             round_number += 1
