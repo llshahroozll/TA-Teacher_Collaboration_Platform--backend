@@ -38,6 +38,7 @@ class Course(models.Model):
         return self.name
 
 
+
 class Group(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
     creator = models.ForeignKey(Profile, on_delete=models.CASCADE)
@@ -54,6 +55,7 @@ class Group(models.Model):
         return self.name + " - " + self.creator.name
     
     
+
 
 
 def get_upload_path(instance, filename):

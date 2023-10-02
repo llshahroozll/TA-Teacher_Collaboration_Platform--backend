@@ -2,7 +2,6 @@ from rest_framework import serializers
 from .models import Course, Group, Project, UploadProject, Round, Schedule
 from users.serializers import ProfileTitleSerializer
 
-
 class CourseTitleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Course

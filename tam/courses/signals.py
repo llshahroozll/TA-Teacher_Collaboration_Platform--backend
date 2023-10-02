@@ -16,34 +16,3 @@ def create_project(sender, instance, created, **kwargs):
         course.project = project
         course.save()
 
-
-
-
-
-
-@receiver(post_save, sender=Schedule)
-def create_rounds(sender, instance, created, **kwargs):
-    if created:
-        schedule = instance
-        
-        schedule_start_time = datetime.combine(date.min, schedule.start_time)
-        schedule_finish_time = datetime.combine(date.min, schedule.finish_time)
-        schedule_period = schedule.period
-
-        round_number = 1
-
-        while(schedule_start_time + timedelta(minutes=schedule_period) <= schedule_finish_time):
-            
-            schedule_next_start_time = schedule_start_time + timedelta(minutes=schedule_period)
-
-            round = Round.objects.create(
-                round_name = str.format("بازه %i" %round_number),
-                start_time = schedule_start_time,
-                finish_time = schedule_next_start_time,
-            )
-            
-            schedule.rounds.add(round)
-            schedule.save()
-
-            schedule_start_time = schedule_next_start_time
-            round_number += 1

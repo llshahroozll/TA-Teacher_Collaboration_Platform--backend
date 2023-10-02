@@ -29,7 +29,6 @@ urlpatterns = [
     path('course/<str:pk>/uploaded-project-list/', views.uploaded_project_list),
     path('course/<str:pk>/get-uploaded-project/', views.get_uploaded_project),
     path('course/<str:pk>/get-all-project/', views.get_all_project),
-    
 
     path('course/<str:pk>/schedule/', views.schedule),
     path('course/<str:pk>/create-schedule/', views.create_schedule),

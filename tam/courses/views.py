@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+from datetime import datetime, date, time, timedelta
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.response import Response
@@ -713,47 +714,88 @@ def schedule(request, pk):
     if request.method == 'GET':
         profile = request.user.profile
         try:
-            if profile.teacher_tag:
-                course = profile.course_set.get(id=pk)
+
+            course, group_status, user_role = check_user_status(request, pk) 
+
+            if not course.project:
+                schedule_status = 0
+
+            elif course.project.schedule:
+                if user_role == "T":
+                    schedule_status = 1
+
+                elif user_role == "A" :
+                    schedule_status = 2
                 
-
-            elif profile.assistant_courses.filter(id=pk):
-                course = profile.assistant_courses.get(id=pk)
-
-
+                elif user_role == "S":
+                    if group_status == 3:
+                        schedule_status = 3
+                    elif group_status == 4:
+                        schedule_status = 4
+                        
             else:
-                course = profile.student.courses.get(id=pk)
+                if user_role == "T":
+                    schedule_status = 5
 
+                else:
+                    schedule_status = 6
 
-            Response({"message":"requset has not complete yet :)"})
+            return Response({"schedule_status":schedule_status})
+        
+
         except:
             return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
 
+
+
+def create_rounds(pk):
+    course = Course.objects.get(id=pk)
+    project = course.project
+    schedule = project.schedule
+
+    schedule_start_time = datetime.combine(date.min, schedule.start_time)
+    schedule_finish_time = datetime.combine(date.min, schedule.finish_time)
+    schedule_period = schedule.period
+
+    round_number = 1
+
+    while(schedule_start_time + timedelta(minutes=schedule_period) <= schedule_finish_time):
+        
+        schedule_next_start_time = schedule_start_time + timedelta(minutes=schedule_period)
+
+        round = Round.objects.create(
+            round_name = str.format("بازه %i" %round_number),
+            start_time = schedule_start_time,
+            finish_time = schedule_next_start_time,
+        )
+        
+        schedule.rounds.add(round)
+
+        schedule_start_time = schedule_next_start_time
+        round_number += 1
 
 
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def create_schedule(request, pk):
-
     if request.method == 'POST':
         course = check_teacher_permission(request, pk)
         if course is None:
             return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
         
         try:
-            
-            project = course.project 
+            project = course.project    
             date = request.data["date"]
             start_time = request.data["start_time"]
             finish_time = request.data["finish_time"]
             period = request.data["period"]
+            number_of_recipints = request.data["number_of_recipints"]
 
             if number_of_recipints == -1 : 
                 number_of_recipints = course.assistant_profiles.all().count()
-            else:
-                number_of_recipints = request.data["number_of_recipints"]
-            
+
+
             Schedule.objects.create(
                 project = project,
                 date = date,
@@ -762,7 +804,9 @@ def create_schedule(request, pk):
                 period = period,
                 number_of_recipints = number_of_recipints,
             )
-            
+
+            create_rounds(pk)
+
             return Response({"message":"success"}, status=status.HTTP_200_OK)            
 
         except:
@@ -785,7 +829,8 @@ def get_manager_round(request, pk):
             rounds = schedule.rounds.all()
 
             serializer = RoundSerializer(rounds, many=True)
-            return Response(serializer.data)
+            return Response({"rounds":serializer.data,
+                             "rounds_capacity":schedule.number_of_recipints})
         
         except:
             return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
@@ -836,8 +881,7 @@ def get_student_round(request, pk):
                      "group_id":group_id}
 
             serializer = GetStudentRoundSerilaizer(rounds, many=True, context=context)
-            return Response({"rounds":serializer.data,
-                             "rounds_capacity":schedule.number_of_recipints})
+            return Response(serializer.data)
         
         except:
             return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
