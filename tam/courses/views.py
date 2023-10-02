@@ -341,7 +341,7 @@ def remove_group(request, pk):
             
             group_id = request.data['id']
             
-            if group_status == 1:
+            if user_role== "T" or user_role == "A":
                 group = course.group_set.get(id=group_id)
                 group.delete()
                 return Response({"message":"success"}, status=status.HTTP_200_OK)
@@ -684,7 +684,10 @@ def get_all_project(request, pk):
             archive_base_dir = os.path.join(settings.MEDIA_ROOT, "projects/student_projects/")
             archive_destination_dir = os.path.join(settings.MEDIA_ROOT, "projects/archives/")
             
+
             zip_file= shutil.make_archive(base_name=zip_file_name, format='zip', root_dir=archive_base_dir, base_dir=course.name)
+            zip_url = os.path.join("projects/archives/", zip_file_name_with_format)
+
             zip_file_path = os.path.join(archive_destination_dir, zip_file_name_with_format)
 
             if os.path.exists(os.path.join(zip_file_path)):
@@ -692,14 +695,14 @@ def get_all_project(request, pk):
 
             shutil.move(zip_file  , archive_destination_dir)
 
-            project.project_uploaded_files_zip = zip_file_path
+            project.project_uploaded_files_zip = zip_url
             project.save()
-   
+
             serializer = ProjectZipSerializer(project, many=False)
             return Response(serializer.data)
 
         except:
-            return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
+            return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)   
         
         
 
