@@ -904,17 +904,37 @@ def select_round(request, pk):
 
             try:
                 round_id = request.data["round_id"]
+                pervious_round_id = request.data["pervious_round_id"]
                 number_of_recipints = course.project.schedule.number_of_recipints
-                
-                #check other rounds to aviod of coflict 
 
                 round = Round.objects.get(id=round_id)
+                
+                if (pervious_round_id == "") or (pervious_round_id is None) :
 
-                if round.groups.all().count() < number_of_recipints:
-                    round.groups.add(group)
-                    round.save()
+                    if round.groups.all().count() < number_of_recipints:
+                        round.groups.add(group)
+                        round.save()
 
+                        return Response({"message":"success"}, status=status.HTTP_200_OK)  
 
+                else:
+                    try:
+                       pervious_round = Round.objects.get(id=pervious_round_id)
+                    except:
+                        return Response({"error": "There is a problem in your pervious Round"}, status=status.HTTP_401_UNAUTHORIZED)
+                   
+
+                    if round.groups.all().count() < number_of_recipints:
+
+                        pervious_round.groups.remove(group)
+                        pervious_round.save()
+
+                        round.groups.add(group)
+                        round.save()
+                        
+                        return Response({"message":"success"}, status=status.HTTP_200_OK)  
+                    
+                    
             except:
                 return Response({"error": "Your request Gone"}, status=status.HTTP_410_GONE)
 

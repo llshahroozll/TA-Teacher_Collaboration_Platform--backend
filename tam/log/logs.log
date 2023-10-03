@@ -23786,3 +23786,214 @@ INFO 2023-10-03 11:59:17,496 autoreload 6594 139943839727616 /home/shahrooz/Proj
 INFO 2023-10-03 11:59:17,830 autoreload 6597 140660102602752 Watching for file changes with StatReloader
 INFO 2023-10-03 11:59:21,668 basehttp 6597 140659963983424 "GET /course/14021003/schedule/ HTTP/1.1" 200 21
 INFO 2023-10-03 11:59:55,624 basehttp 6597 140659963983424 "GET /course/14021001/schedule/ HTTP/1.1" 200 21
+INFO 2023-10-03 12:01:54,571 autoreload 6597 140660102602752 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:01:54,939 autoreload 6652 139946504630272 Watching for file changes with StatReloader
+INFO 2023-10-03 12:07:28,819 autoreload 6652 139946504630272 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:07:29,219 autoreload 6950 140295481659392 Watching for file changes with StatReloader
+INFO 2023-10-03 12:07:30,756 autoreload 6950 140295481659392 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:07:31,089 autoreload 6953 140414957629440 Watching for file changes with StatReloader
+INFO 2023-10-03 12:07:42,800 autoreload 6953 140414957629440 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:07:43,307 autoreload 6960 140309647638528 Watching for file changes with StatReloader
+INFO 2023-10-03 12:07:44,721 autoreload 6960 140309647638528 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:07:45,063 autoreload 6970 140170494803968 Watching for file changes with StatReloader
+INFO 2023-10-03 12:07:49,597 autoreload 6970 140170494803968 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:07:49,927 autoreload 6974 140005440335872 Watching for file changes with StatReloader
+INFO 2023-10-03 12:07:52,323 autoreload 6974 140005440335872 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:07:52,740 autoreload 6978 139888425644032 Watching for file changes with StatReloader
+INFO 2023-10-03 12:07:56,238 autoreload 6978 139888425644032 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:07:56,625 autoreload 6980 139754323034112 Watching for file changes with StatReloader
+INFO 2023-10-03 12:08:04,221 autoreload 6980 139754323034112 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:08:04,596 autoreload 6991 140158549065728 Watching for file changes with StatReloader
+INFO 2023-10-03 12:08:05,994 autoreload 6991 140158549065728 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:08:06,369 autoreload 6993 139812470300672 Watching for file changes with StatReloader
+INFO 2023-10-03 12:08:07,802 autoreload 6993 139812470300672 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:08:08,150 autoreload 6996 140613242548224 Watching for file changes with StatReloader
+INFO 2023-10-03 12:08:11,614 autoreload 6996 140613242548224 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:08:11,963 autoreload 7002 140218595876864 Watching for file changes with StatReloader
+INFO 2023-10-03 12:08:23,690 autoreload 7002 140218595876864 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:08:24,058 autoreload 7008 139644033142784 Watching for file changes with StatReloader
+INFO 2023-10-03 12:08:29,544 autoreload 7008 139644033142784 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:08:29,909 autoreload 7012 139730816200704 Watching for file changes with StatReloader
+INFO 2023-10-03 12:08:33,403 autoreload 7012 139730816200704 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:08:33,788 autoreload 7015 140492298244096 Watching for file changes with StatReloader
+INFO 2023-10-03 12:08:36,236 autoreload 7015 140492298244096 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:08:36,634 autoreload 7019 140549291524096 Watching for file changes with StatReloader
+INFO 2023-10-03 12:12:44,297 autoreload 7019 140549291524096 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:12:44,623 autoreload 7088 140160467894272 Watching for file changes with StatReloader
+INFO 2023-10-03 12:12:49,160 autoreload 7088 140160467894272 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:12:49,592 autoreload 7092 140522892496896 Watching for file changes with StatReloader
+INFO 2023-10-03 12:12:50,822 autoreload 7092 140522892496896 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:12:51,137 autoreload 7095 139919866720256 Watching for file changes with StatReloader
+INFO 2023-10-03 12:12:52,392 autoreload 7095 139919866720256 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:12:52,713 autoreload 7099 140286395330560 Watching for file changes with StatReloader
+INFO 2023-10-03 12:12:55,996 autoreload 7099 140286395330560 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:12:56,326 autoreload 7103 140060991746048 Watching for file changes with StatReloader
+INFO 2023-10-03 12:12:58,600 autoreload 7103 140060991746048 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:12:58,995 autoreload 7107 139719689359360 Watching for file changes with StatReloader
+INFO 2023-10-03 12:13:00,259 autoreload 7107 139719689359360 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:13:00,602 autoreload 7110 140516448636928 Watching for file changes with StatReloader
+INFO 2023-10-03 12:13:01,886 autoreload 7110 140516448636928 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:13:02,221 autoreload 7113 140155751784448 Watching for file changes with StatReloader
+INFO 2023-10-03 12:13:04,498 autoreload 7113 140155751784448 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:13:04,826 autoreload 7116 140010391343104 Watching for file changes with StatReloader
+INFO 2023-10-03 12:13:09,155 autoreload 7116 140010391343104 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:13:09,500 autoreload 7121 140381346004992 Watching for file changes with StatReloader
+INFO 2023-10-03 12:13:10,793 autoreload 7121 140381346004992 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:13:11,157 autoreload 7124 140441339924480 Watching for file changes with StatReloader
+INFO 2023-10-03 12:13:15,501 autoreload 7124 140441339924480 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:13:15,850 autoreload 7128 139798579949568 Watching for file changes with StatReloader
+INFO 2023-10-03 12:13:19,139 autoreload 7128 139798579949568 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:13:19,470 autoreload 7131 140248560918528 Watching for file changes with StatReloader
+INFO 2023-10-03 12:13:20,775 autoreload 7131 140248560918528 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:13:21,107 autoreload 7134 140582311997440 Watching for file changes with StatReloader
+INFO 2023-10-03 12:13:23,379 autoreload 7134 140582311997440 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:13:23,710 autoreload 7138 139839413448704 Watching for file changes with StatReloader
+INFO 2023-10-03 12:13:25,977 autoreload 7138 139839413448704 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:13:26,365 autoreload 7141 140462158344192 Watching for file changes with StatReloader
+INFO 2023-10-03 12:13:29,686 autoreload 7141 140462158344192 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:13:30,083 autoreload 7146 140166864433152 Watching for file changes with StatReloader
+INFO 2023-10-03 12:13:34,424 autoreload 7146 140166864433152 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:13:34,748 autoreload 7150 140295656587264 Watching for file changes with StatReloader
+INFO 2023-10-03 12:14:00,722 autoreload 7150 140295656587264 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:14:01,055 autoreload 7160 140146069843968 Watching for file changes with StatReloader
+INFO 2023-10-03 12:31:41,887 autoreload 7160 140146069843968 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:31:42,235 autoreload 7322 140356160241664 Watching for file changes with StatReloader
+INFO 2023-10-03 12:31:45,643 autoreload 7322 140356160241664 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:31:45,971 autoreload 7326 139685356240896 Watching for file changes with StatReloader
+INFO 2023-10-03 12:31:50,503 autoreload 7326 139685356240896 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:31:50,843 autoreload 7330 140383462457344 Watching for file changes with StatReloader
+INFO 2023-10-03 12:31:54,248 autoreload 7330 140383462457344 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:31:54,583 autoreload 7334 140647193374720 Watching for file changes with StatReloader
+INFO 2023-10-03 12:31:56,032 autoreload 7334 140647193374720 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:31:56,463 autoreload 7337 140203168088064 Watching for file changes with StatReloader
+INFO 2023-10-03 12:32:01,973 autoreload 7337 140203168088064 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:32:02,286 autoreload 7340 140439298523136 Watching for file changes with StatReloader
+INFO 2023-10-03 12:32:19,888 autoreload 7340 140439298523136 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:32:20,213 autoreload 7347 140100028039168 Watching for file changes with StatReloader
+INFO 2023-10-03 12:32:22,495 autoreload 7347 140100028039168 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:32:22,853 autoreload 7351 139739057037312 Watching for file changes with StatReloader
+INFO 2023-10-03 12:32:25,282 autoreload 7351 139739057037312 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:32:25,605 autoreload 7354 140395861929984 Watching for file changes with StatReloader
+INFO 2023-10-03 12:33:51,154 autoreload 7354 140395861929984 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:33:51,465 autoreload 7365 140286650085376 Watching for file changes with StatReloader
+INFO 2023-10-03 12:34:04,056 autoreload 7365 140286650085376 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:34:04,457 autoreload 7369 140694448128000 Watching for file changes with StatReloader
+INFO 2023-10-03 12:34:07,787 autoreload 7369 140694448128000 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:34:08,146 autoreload 7374 140150913458176 Watching for file changes with StatReloader
+INFO 2023-10-03 12:34:09,415 autoreload 7374 140150913458176 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:34:09,739 autoreload 7378 139870186713088 Watching for file changes with StatReloader
+INFO 2023-10-03 12:34:14,066 autoreload 7378 139870186713088 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:34:14,401 autoreload 7382 140540076367872 Watching for file changes with StatReloader
+INFO 2023-10-03 12:34:47,675 autoreload 7382 140540076367872 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:34:48,026 autoreload 7388 140549498830848 Watching for file changes with StatReloader
+INFO 2023-10-03 12:35:06,776 autoreload 7388 140549498830848 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:35:07,087 autoreload 7393 140474193776640 Watching for file changes with StatReloader
+INFO 2023-10-03 12:35:14,462 autoreload 7393 140474193776640 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:35:14,802 autoreload 7397 140015389425664 Watching for file changes with StatReloader
+INFO 2023-10-03 12:35:17,065 autoreload 7397 140015389425664 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:35:17,375 autoreload 7401 140216160178176 Watching for file changes with StatReloader
+INFO 2023-10-03 12:35:57,742 autoreload 7401 140216160178176 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:35:58,049 autoreload 7409 140508804300800 Watching for file changes with StatReloader
+INFO 2023-10-03 12:36:07,466 autoreload 7409 140508804300800 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:36:07,801 autoreload 7413 140501968343040 Watching for file changes with StatReloader
+INFO 2023-10-03 12:36:10,067 autoreload 7413 140501968343040 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:36:10,411 autoreload 7418 139937553809408 Watching for file changes with StatReloader
+INFO 2023-10-03 12:36:13,729 autoreload 7418 139937553809408 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:36:14,051 autoreload 7421 139913806843904 Watching for file changes with StatReloader
+INFO 2023-10-03 12:36:18,339 autoreload 7421 139913806843904 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:36:18,639 autoreload 7425 140570655064064 Watching for file changes with StatReloader
+INFO 2023-10-03 12:36:23,949 autoreload 7425 140570655064064 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:36:24,340 autoreload 7430 140274261377024 Watching for file changes with StatReloader
+INFO 2023-10-03 12:36:27,629 autoreload 7430 140274261377024 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:36:27,989 autoreload 7434 140085128015872 Watching for file changes with StatReloader
+INFO 2023-10-03 12:36:33,378 autoreload 7434 140085128015872 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:36:33,712 autoreload 7436 140292997189632 Watching for file changes with StatReloader
+INFO 2023-10-03 12:36:36,998 autoreload 7436 140292997189632 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:36:37,303 autoreload 7440 140359219232768 Watching for file changes with StatReloader
+INFO 2023-10-03 12:36:58,990 autoreload 7440 140359219232768 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:36:59,353 autoreload 7448 140571342221312 Watching for file changes with StatReloader
+INFO 2023-10-03 12:37:00,607 autoreload 7448 140571342221312 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:37:00,930 autoreload 7452 139629731819520 Watching for file changes with StatReloader
+INFO 2023-10-03 12:37:04,208 autoreload 7452 139629731819520 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:37:04,557 autoreload 7457 140086961061888 Watching for file changes with StatReloader
+INFO 2023-10-03 12:37:10,996 autoreload 7457 140086961061888 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:37:11,322 autoreload 7460 139761683030016 Watching for file changes with StatReloader
+INFO 2023-10-03 12:37:13,604 autoreload 7460 139761683030016 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:37:13,951 autoreload 7464 140598319681536 Watching for file changes with StatReloader
+INFO 2023-10-03 12:37:20,320 autoreload 7464 140598319681536 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:37:20,643 autoreload 7468 139622599585792 Watching for file changes with StatReloader
+INFO 2023-10-03 12:37:27,042 autoreload 7468 139622599585792 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:37:27,406 autoreload 7474 140503779340288 Watching for file changes with StatReloader
+INFO 2023-10-03 12:37:32,720 autoreload 7474 140503779340288 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:37:33,037 autoreload 7477 140438887399424 Watching for file changes with StatReloader
+INFO 2023-10-03 12:37:39,487 autoreload 7477 140438887399424 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:37:39,793 autoreload 7486 140395183091712 Watching for file changes with StatReloader
+INFO 2023-10-03 12:37:43,082 autoreload 7486 140395183091712 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:37:43,438 autoreload 7490 140691664105472 Watching for file changes with StatReloader
+INFO 2023-10-03 12:37:48,766 autoreload 7490 140691664105472 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:37:49,138 autoreload 7495 140059752099840 Watching for file changes with StatReloader
+INFO 2023-10-03 12:37:50,357 autoreload 7495 140059752099840 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:37:50,660 autoreload 7498 140362463158272 Watching for file changes with StatReloader
+INFO 2023-10-03 12:38:04,210 autoreload 7498 140362463158272 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:38:04,516 autoreload 7503 140252641570816 Watching for file changes with StatReloader
+INFO 2023-10-03 12:38:06,777 autoreload 7503 140252641570816 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:38:07,090 autoreload 7507 139746545733632 Watching for file changes with StatReloader
+INFO 2023-10-03 12:38:16,584 autoreload 7507 139746545733632 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:38:16,900 autoreload 7511 139961960759296 Watching for file changes with StatReloader
+INFO 2023-10-03 12:38:19,143 autoreload 7511 139961960759296 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:38:19,467 autoreload 7515 140435371413504 Watching for file changes with StatReloader
+INFO 2023-10-03 12:38:21,725 autoreload 7515 140435371413504 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:38:22,063 autoreload 7519 140659161903104 Watching for file changes with StatReloader
+INFO 2023-10-03 12:38:27,381 autoreload 7519 140659161903104 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:38:27,742 autoreload 7523 139894985248768 Watching for file changes with StatReloader
+INFO 2023-10-03 12:38:28,956 autoreload 7523 139894985248768 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:38:29,292 autoreload 7526 139992552296448 Watching for file changes with StatReloader
+INFO 2023-10-03 12:38:31,539 autoreload 7526 139992552296448 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:38:31,849 autoreload 7530 140492318490624 Watching for file changes with StatReloader
+INFO 2023-10-03 12:38:37,234 autoreload 7530 140492318490624 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:38:37,587 autoreload 7534 140009226825728 Watching for file changes with StatReloader
+INFO 2023-10-03 12:38:42,977 autoreload 7534 140009226825728 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:38:43,313 autoreload 7538 140184816259072 Watching for file changes with StatReloader
+INFO 2023-10-03 12:38:46,631 autoreload 7538 140184816259072 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:38:46,984 autoreload 7542 140642679734272 Watching for file changes with StatReloader
+INFO 2023-10-03 12:38:54,486 autoreload 7542 140642679734272 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:38:54,853 autoreload 7546 140511726116864 Watching for file changes with StatReloader
+INFO 2023-10-03 12:38:57,145 autoreload 7546 140511726116864 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:38:57,535 autoreload 7550 140028247416832 Watching for file changes with StatReloader
+INFO 2023-10-03 12:38:58,911 autoreload 7550 140028247416832 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:38:59,252 autoreload 7553 139779208978432 Watching for file changes with StatReloader
+INFO 2023-10-03 12:39:03,687 autoreload 7553 139779208978432 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:39:03,999 autoreload 7557 140098277814272 Watching for file changes with StatReloader
+INFO 2023-10-03 12:39:25,979 autoreload 7557 140098277814272 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:39:26,322 autoreload 7565 139691304919040 Watching for file changes with StatReloader
+INFO 2023-10-03 12:39:27,702 autoreload 7565 139691304919040 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:39:28,083 autoreload 7568 140640060653568 Watching for file changes with StatReloader
+INFO 2023-10-03 12:39:33,595 autoreload 7568 140640060653568 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:39:33,958 autoreload 7573 140420762812416 Watching for file changes with StatReloader
+INFO 2023-10-03 12:39:37,402 autoreload 7573 140420762812416 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:39:37,769 autoreload 7576 140626794221568 Watching for file changes with StatReloader
+INFO 2023-10-03 12:39:41,226 autoreload 7576 140626794221568 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:39:41,546 autoreload 7579 140015965921280 Watching for file changes with StatReloader
+INFO 2023-10-03 12:39:48,064 autoreload 7579 140015965921280 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:39:48,397 autoreload 7583 140147601526784 Watching for file changes with StatReloader
+INFO 2023-10-03 12:39:50,735 autoreload 7583 140147601526784 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:39:51,125 autoreload 7587 140158547517440 Watching for file changes with StatReloader
+INFO 2023-10-03 12:39:52,563 autoreload 7587 140158547517440 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:39:52,892 autoreload 7590 139664636407808 Watching for file changes with StatReloader
+INFO 2023-10-03 12:40:04,664 autoreload 7590 139664636407808 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:40:05,055 autoreload 7595 140275372990464 Watching for file changes with StatReloader
+INFO 2023-10-03 12:40:10,585 autoreload 7595 140275372990464 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:40:10,921 autoreload 7599 140633138434048 Watching for file changes with StatReloader
+INFO 2023-10-03 12:40:24,715 autoreload 7599 140633138434048 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:40:25,058 autoreload 7604 139657194266624 Watching for file changes with StatReloader
+INFO 2023-10-03 12:40:28,476 autoreload 7604 139657194266624 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:40:28,831 autoreload 7608 140296347643904 Watching for file changes with StatReloader
+INFO 2023-10-03 12:40:32,300 autoreload 7608 140296347643904 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:40:32,651 autoreload 7612 140478422364160 Watching for file changes with StatReloader
+INFO 2023-10-03 12:40:39,239 autoreload 7612 140478422364160 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 12:40:39,582 autoreload 7614 139976665563136 Watching for file changes with StatReloader
+INFO 2023-10-03 12:40:56,178 basehttp 7614 139976527312448 "GET /admin/courses/round/ HTTP/1.1" 200 16682
+INFO 2023-10-03 12:40:56,194 basehttp 7614 139976527312448 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 12:40:57,760 basehttp 7614 139976527312448 "GET /admin/courses/round/4759a880-0788-4994-8fb7-b72978461fa9/change/ HTTP/1.1" 200 14083
+INFO 2023-10-03 12:40:57,780 basehttp 7614 139976527312448 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 12:41:02,403 basehttp 7614 139976527312448 "GET /admin/courses/round/ HTTP/1.1" 200 16682
