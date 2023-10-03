@@ -1,12 +1,14 @@
-from django.http import HttpResponse
-from datetime import datetime, date, time, timedelta
+import shutil 
+import os
+from tam import settings
+from datetime import datetime, date, timedelta
+from rest_framework import status
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.response import Response
-from .models import Course, Group, Project, UploadProject, Schedule, Round
 from users.models import Profile
 from users.serializers import ProfileTitleSerializer
-from rest_framework import status
+from .models import Course, Group, UploadProject, Schedule, Round
 from .serializers import (
     CourseSerializer, 
     CourseMembersSerializer, 
@@ -22,7 +24,6 @@ from .serializers import (
     UploadProjectSerializer,
     RoundSerializer,
     GetStudentRoundSerilaizer,
-
 )
 
 
@@ -113,9 +114,14 @@ def check_teacher_permission(request, pk):
 
 
 
-####################################### views ####################################
+####################################################################################################################
+##################################################### views ########################################################
+####################################################################################################################
 
 
+####################################################################################################################
+################################################ course section ####################################################
+####################################################################################################################
 
 @api_view(['GET'])
 @permission_classes([IsAdminUser])
@@ -256,7 +262,12 @@ def course_remove_assistant(request, pk):
         except:
             return Response({"error": "faild"}, status=status.HTTP_410_GONE)
         
-        
+
+
+####################################################################################################################
+################################################ group section #####################################################
+####################################################################################################################
+
         
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
@@ -505,7 +516,13 @@ def leave_member(request, pk):
             return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
             
 
-################# project section #########################
+
+
+####################################################################################################################
+################################################ project section ###################################################
+####################################################################################################################
+
+
 
 
 @api_view(['GET', 'POST'])
@@ -653,16 +670,9 @@ def get_uploaded_project(request, pk):
             
         except:
             return Response({"error": "Permission Denied"}, status=status.HTTP_403_FORBIDDEN)
-            
 
-import shutil 
-import os
-from tam import settings
-from wsgiref.util import FileWrapper
 
-import shutil 
-import os
-from tam import settings
+
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
@@ -706,9 +716,9 @@ def get_all_project(request, pk):
         
         
 
-###################################################################
-######################### schedule section ########################
-###################################################################
+####################################################################################################################
+################################################ schedule section ##################################################
+####################################################################################################################
 
 
 @api_view(['GET'])

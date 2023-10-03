@@ -2,8 +2,6 @@ from django.db import models
 from users.models import Profile
 import uuid
 import os
-from datetime import time
-# Create your models here.
 
 class Project(models.Model):
     name = models.CharField(max_length=300)

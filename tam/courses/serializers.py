@@ -89,19 +89,22 @@ class UploadProjectSerializer(serializers.ModelSerializer):
         model = UploadProject
         fields = '__all__'       
         
+ 
         
 class UploadProjectTitleSerializer(serializers.ModelSerializer):
     group = GroupCreatorSerializer(many=False)
     class Meta:
         model = UploadProject
         fields = ['group', 'id']
-        
+
+
         
 class RoundSerializer(serializers.ModelSerializer):
     groups = GroupTitleSerializer(many=True)
     class Meta:
         model = Round
         exclude = ['created']
+
 
 
 class GetStudentRoundSerilaizer(serializers.ModelSerializer):
