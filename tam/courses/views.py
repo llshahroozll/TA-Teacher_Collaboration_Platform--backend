@@ -720,10 +720,11 @@ def schedule(request, pk):
 
             course, group_status, user_role = check_user_status(request, pk) 
 
-            if not course.project:
+            if course.project.status  == False :
                 schedule_status = 0
+                
 
-            elif course.project.schedule:
+            elif hasattr(course.project, "schedule") :
                 if user_role == "T":
                     schedule_status = 1
 
@@ -738,7 +739,7 @@ def schedule(request, pk):
                         
             else:
                 if user_role == "T":
-                    schedule_status = 5
+                    schedule_status = 5             
 
                 else:
                     schedule_status = 6
