@@ -806,9 +806,8 @@ def create_schedule(request, pk):
             period = request.data["period"]
             number_of_recipints = request.data["number_of_recipints"]
 
-            if number_of_recipints == -1 : 
+            if number_of_recipints == "-1" or  number_of_recipints== -1: 
                 number_of_recipints = course.assistant_profiles.all().count()
-
 
             Schedule.objects.create(
                 project = project,
@@ -943,8 +942,7 @@ def select_round(request, pk):
                         round.save()
                         
                         return Response({"message":"success"}, status=status.HTTP_200_OK)  
-                    
-                    
+
             except:
                 return Response({"error": "Your request Gone"}, status=status.HTTP_410_GONE)
 

@@ -23999,3 +23999,216 @@ INFO 2023-10-03 12:40:57,780 basehttp 7614 139976527312448 "GET /admin/jsi18n/ H
 INFO 2023-10-03 12:41:02,403 basehttp 7614 139976527312448 "GET /admin/courses/round/ HTTP/1.1" 200 16682
 INFO 2023-10-03 12:53:35,278 autoreload 9210 140507898306560 Watching for file changes with StatReloader
 INFO 2023-10-03 12:53:37,730 basehttp 9210 140507760031296 "POST /login/ HTTP/1.1" 200 486
+INFO 2023-10-03 16:14:32,248 autoreload 3820 140531005054976 Watching for file changes with StatReloader
+INFO 2023-10-03 16:15:30,708 basehttp 3820 140530860160576 "GET / HTTP/1.1" 200 5755
+WARNING 2023-10-03 16:15:30,863 log 3820 140530860160576 Not Found: /favicon.ico
+WARNING 2023-10-03 16:15:30,863 basehttp 3820 140530860160576 "GET /favicon.ico HTTP/1.1" 404 8963
+INFO 2023-10-03 16:15:37,107 basehttp 3820 140530860160576 "GET /admin/ HTTP/1.1" 200 12887
+INFO 2023-10-03 16:15:41,148 basehttp 3820 140530860160576 "GET /admin/courses/group/ HTTP/1.1" 200 11695
+INFO 2023-10-03 16:15:41,170 basehttp 3820 140530860160576 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:15:43,185 basehttp 3820 140530860160576 "GET /admin/courses/group/7a973589-bcc7-4e79-98e5-574c0f92b0d7/change/ HTTP/1.1" 200 17357
+INFO 2023-10-03 16:15:43,203 basehttp 3820 140530860160576 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:15:47,605 basehttp 3820 140530860160576 "GET /admin/courses/group/ HTTP/1.1" 200 11695
+INFO 2023-10-03 16:15:48,826 basehttp 3820 140530860160576 "GET /admin/ HTTP/1.1" 200 12887
+INFO 2023-10-03 16:16:09,702 basehttp 3820 140530843375168 "POST /login/ HTTP/1.1" 200 486
+INFO 2023-10-03 16:16:30,616 basehttp 3820 140530860160576 "GET /admin/courses/round/ HTTP/1.1" 200 16682
+INFO 2023-10-03 16:16:30,634 basehttp 3820 140530860160576 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:16:34,032 basehttp 3820 140530860160576 "GET /admin/ HTTP/1.1" 200 12887
+INFO 2023-10-03 16:16:58,178 basehttp 3820 140530843375168 "GET /course/14021002/get-student-round/ HTTP/1.1" 200 1582
+INFO 2023-10-03 16:18:24,129 basehttp 3820 140530860160576 "GET /admin/courses/schedule/ HTTP/1.1" 200 11756
+INFO 2023-10-03 16:18:24,151 basehttp 3820 140530860160576 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:18:25,802 basehttp 3820 140530860160576 "GET /admin/courses/schedule/dfea3fe3-cbd7-4051-8e23-63b086b94643/change/ HTTP/1.1" 200 19083
+INFO 2023-10-03 16:18:25,821 basehttp 3820 140530860160576 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:18:54,068 autoreload 3820 140531005054976 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:18:54,494 autoreload 4444 140629330104320 Watching for file changes with StatReloader
+INFO 2023-10-03 16:18:55,831 autoreload 4444 140629330104320 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:18:56,205 autoreload 4447 139804616806400 Watching for file changes with StatReloader
+INFO 2023-10-03 16:18:57,580 autoreload 4447 139804616806400 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:18:57,903 autoreload 4450 140405782790144 Watching for file changes with StatReloader
+INFO 2023-10-03 16:19:00,277 autoreload 4450 140405782790144 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:19:00,633 autoreload 4454 140554471718912 Watching for file changes with StatReloader
+INFO 2023-10-03 16:19:03,962 autoreload 4454 140554471718912 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:19:04,323 autoreload 4458 140131975696384 Watching for file changes with StatReloader
+INFO 2023-10-03 16:19:45,229 autoreload 4458 140131975696384 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:19:45,741 autoreload 4467 140607303630848 Watching for file changes with StatReloader
+INFO 2023-10-03 16:19:47,115 autoreload 4467 140607303630848 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:19:47,462 autoreload 4470 140126547443712 Watching for file changes with StatReloader
+INFO 2023-10-03 16:19:49,899 autoreload 4470 140126547443712 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:19:50,244 autoreload 4473 139892391485440 Watching for file changes with StatReloader
+INFO 2023-10-03 16:19:52,664 autoreload 4473 139892391485440 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:19:53,015 autoreload 4479 140584029765632 Watching for file changes with StatReloader
+INFO 2023-10-03 16:20:28,709 autoreload 4479 140584029765632 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:20:29,144 autoreload 4493 140456385937408 Watching for file changes with StatReloader
+INFO 2023-10-03 16:20:30,431 autoreload 4493 140456385937408 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:20:30,767 autoreload 4496 140583222996992 Watching for file changes with StatReloader
+INFO 2023-10-03 16:20:32,263 autoreload 4496 140583222996992 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:20:32,604 autoreload 4500 140321736646656 Watching for file changes with StatReloader
+INFO 2023-10-03 16:20:50,523 autoreload 4500 140321736646656 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:20:50,867 autoreload 4505 139662474690560 Watching for file changes with StatReloader
+INFO 2023-10-03 16:20:56,382 autoreload 4505 139662474690560 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:20:56,752 autoreload 4510 140466453299200 Watching for file changes with StatReloader
+INFO 2023-10-03 16:21:09,529 basehttp 4510 140466382173760 "GET /admin/courses/schedule/dfea3fe3-cbd7-4051-8e23-63b086b94643/delete/ HTTP/1.1" 200 11072
+INFO 2023-10-03 16:21:12,955 basehttp 4510 140466382173760 "GET /admin/courses/schedule/dfea3fe3-cbd7-4051-8e23-63b086b94643/change/ HTTP/1.1" 200 19083
+INFO 2023-10-03 16:21:14,430 basehttp 4510 140466382173760 "GET /admin/courses/round/ HTTP/1.1" 200 16682
+INFO 2023-10-03 16:21:14,446 basehttp 4510 140466382173760 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:21:18,315 basehttp 4510 140466382173760 "GET /admin/courses/round/ HTTP/1.1" 200 16682
+INFO 2023-10-03 16:21:18,353 basehttp 4510 140466382173760 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:21:22,032 basehttp 4510 140466382173760 "GET /admin/courses/round/474ae3bc-6c57-42b5-b442-fff81f5bbfbb/change/ HTTP/1.1" 200 14083
+INFO 2023-10-03 16:21:22,049 basehttp 4510 140466382173760 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:21:23,833 basehttp 4510 140466382173760 "GET /admin/courses/round/ HTTP/1.1" 200 16682
+INFO 2023-10-03 16:21:24,565 basehttp 4510 140466382173760 "GET /admin/courses/round/37a4f378-88a1-4637-976b-80f9f70d1b4d/change/ HTTP/1.1" 200 14083
+INFO 2023-10-03 16:21:24,582 basehttp 4510 140466382173760 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:21:25,371 basehttp 4510 140466382173760 "GET /admin/courses/round/ HTTP/1.1" 200 16682
+INFO 2023-10-03 16:21:26,241 basehttp 4510 140466382173760 "GET /admin/courses/round/2cb89633-8ab5-4271-b05c-7510b9f3efcb/change/ HTTP/1.1" 200 14083
+INFO 2023-10-03 16:21:26,261 basehttp 4510 140466382173760 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:21:28,087 basehttp 4510 140466382173760 "GET /admin/courses/round/ HTTP/1.1" 200 16682
+INFO 2023-10-03 16:21:35,042 basehttp 4510 140466382173760 "GET /admin/courses/round/ HTTP/1.1" 200 16682
+INFO 2023-10-03 16:21:35,057 basehttp 4510 140466382173760 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:21:36,442 basehttp 4510 140466382173760 "GET /admin/courses/schedule/ HTTP/1.1" 200 11756
+INFO 2023-10-03 16:21:36,457 basehttp 4510 140466382173760 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:21:37,537 basehttp 4510 140466382173760 "GET /admin/courses/project/ HTTP/1.1" 200 12032
+INFO 2023-10-03 16:21:37,551 basehttp 4510 140466382173760 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:21:40,614 basehttp 4510 140466382173760 "GET /admin/courses/schedule/ HTTP/1.1" 200 11756
+INFO 2023-10-03 16:21:40,629 basehttp 4510 140466382173760 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:21:41,650 basehttp 4510 140466382173760 "GET /admin/courses/schedule/dfea3fe3-cbd7-4051-8e23-63b086b94643/change/ HTTP/1.1" 200 19083
+INFO 2023-10-03 16:21:41,669 basehttp 4510 140466382173760 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:21:43,289 basehttp 4510 140466382173760 "GET /admin/courses/schedule/dfea3fe3-cbd7-4051-8e23-63b086b94643/delete/ HTTP/1.1" 200 11072
+INFO 2023-10-03 16:21:48,390 basehttp 4510 140466382173760 "POST /admin/courses/schedule/dfea3fe3-cbd7-4051-8e23-63b086b94643/delete/ HTTP/1.1" 302 0
+INFO 2023-10-03 16:21:48,423 basehttp 4510 140466382173760 "GET /admin/courses/schedule/ HTTP/1.1" 200 11633
+INFO 2023-10-03 16:21:48,509 basehttp 4510 140466382173760 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:22:37,464 basehttp 4510 140466301433408 "POST /login/ HTTP/1.1" 200 486
+WARNING 2023-10-03 16:22:52,300 log 4510 140466301433408 Forbidden: /course/14021002/get-student-round/
+WARNING 2023-10-03 16:22:52,301 basehttp 4510 140466301433408 "GET /course/14021002/get-student-round/ HTTP/1.1" 403 29
+INFO 2023-10-03 16:23:07,039 basehttp 4510 140466301433408 "POST /course/14021002/create-schedule/ HTTP/1.1" 200 21
+WARNING 2023-10-03 16:23:12,440 log 4510 140466301433408 Gone: /course/14021002/select-round/
+WARNING 2023-10-03 16:23:12,440 basehttp 4510 140466301433408 "POST /course/14021002/select-round/ HTTP/1.1" 410 29
+WARNING 2023-10-03 16:23:23,202 log 4510 140466301433408 Gone: /course/14021002/select-round/
+WARNING 2023-10-03 16:23:23,202 basehttp 4510 140466301433408 "POST /course/14021002/select-round/ HTTP/1.1" 410 29
+INFO 2023-10-03 16:23:32,803 basehttp 4510 140466301433408 "GET /course/14021002/get-student-round/ HTTP/1.1" 200 1582
+INFO 2023-10-03 16:24:16,514 autoreload 4510 140466453299200 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:24:16,916 autoreload 4563 140445859033088 Watching for file changes with StatReloader
+INFO 2023-10-03 16:24:22,399 autoreload 4563 140445859033088 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:24:22,790 autoreload 4569 140559797026816 Watching for file changes with StatReloader
+INFO 2023-10-03 16:24:27,280 autoreload 4569 140559797026816 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:24:27,724 autoreload 4572 140585840001024 Watching for file changes with StatReloader
+INFO 2023-10-03 16:24:31,195 autoreload 4572 140585840001024 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:24:31,544 autoreload 4576 139761811103744 Watching for file changes with StatReloader
+INFO 2023-10-03 16:25:05,959 basehttp 4576 139761740150336 "GET /admin/courses/schedule/ HTTP/1.1" 200 11756
+INFO 2023-10-03 16:25:05,975 basehttp 4576 139761740150336 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:25:07,224 basehttp 4576 139761740150336 "GET /admin/courses/schedule/29e3370e-e003-4a4e-8f7d-f1f98467f569/change/ HTTP/1.1" 200 19844
+INFO 2023-10-03 16:25:07,241 basehttp 4576 139761740150336 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:25:11,930 basehttp 4576 139761740150336 "GET /admin/courses/schedule/29e3370e-e003-4a4e-8f7d-f1f98467f569/delete/ HTTP/1.1" 200 11072
+INFO 2023-10-03 16:25:13,292 basehttp 4576 139761740150336 "POST /admin/courses/schedule/29e3370e-e003-4a4e-8f7d-f1f98467f569/delete/ HTTP/1.1" 302 0
+INFO 2023-10-03 16:25:13,327 basehttp 4576 139761740150336 "GET /admin/courses/schedule/ HTTP/1.1" 200 11633
+INFO 2023-10-03 16:25:13,413 basehttp 4576 139761740150336 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:25:17,421 basehttp 4576 139761649968704 "POST /course/14021002/create-schedule/ HTTP/1.1" 200 21
+INFO 2023-10-03 16:25:21,195 basehttp 4576 139761649968704 "GET /course/14021002/get-student-round/ HTTP/1.1" 200 1572
+INFO 2023-10-03 16:25:42,733 autoreload 4576 139761811103744 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:25:43,147 autoreload 4605 140450694643712 Watching for file changes with StatReloader
+INFO 2023-10-03 16:25:53,941 basehttp 4605 140450624173632 "GET /admin/courses/course/ HTTP/1.1" 200 11812
+INFO 2023-10-03 16:25:53,956 basehttp 4605 140450624173632 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:25:54,870 basehttp 4605 140450624173632 "GET /admin/courses/course/14021002/change/ HTTP/1.1" 200 22609
+INFO 2023-10-03 16:25:54,888 basehttp 4605 140450624173632 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:25:56,133 basehttp 4605 140450624173632 "GET /admin/courses/course/ HTTP/1.1" 200 11812
+INFO 2023-10-03 16:26:44,747 basehttp 4605 140450396632640 "POST /course/14021002/select-round/ HTTP/1.1" 200 21
+INFO 2023-10-03 16:26:56,885 basehttp 4605 140450396632640 "GET /course/14021002/get-student-round/ HTTP/1.1" 200 1571
+INFO 2023-10-03 16:28:17,521 basehttp 4605 140450396632640 "POST /course/14021002/select-round/ HTTP/1.1" 200 21
+INFO 2023-10-03 16:28:44,060 basehttp 4605 140450396632640 "GET /course/14021002/get-student-round/ HTTP/1.1" 200 1571
+INFO 2023-10-03 16:29:24,359 basehttp 4605 140450624173632 "GET /admin/courses/group/ HTTP/1.1" 200 11695
+INFO 2023-10-03 16:29:24,376 basehttp 4605 140450624173632 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:29:25,504 basehttp 4605 140450624173632 "GET /admin/courses/project/ HTTP/1.1" 200 12032
+INFO 2023-10-03 16:29:25,518 basehttp 4605 140450624173632 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:29:29,091 basehttp 4605 140450624173632 "GET /admin/courses/project/ HTTP/1.1" 200 12032
+INFO 2023-10-03 16:29:29,106 basehttp 4605 140450624173632 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:29:30,334 basehttp 4605 140450624173632 "GET /admin/courses/round/ HTTP/1.1" 200 22284
+INFO 2023-10-03 16:29:30,352 basehttp 4605 140450624173632 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:29:37,626 basehttp 4605 140450624173632 "POST /admin/courses/round/ HTTP/1.1" 200 20207
+INFO 2023-10-03 16:29:40,827 basehttp 4605 140450624173632 "POST /admin/courses/round/ HTTP/1.1" 302 0
+INFO 2023-10-03 16:29:40,854 basehttp 4605 140450624173632 "GET /admin/courses/round/ HTTP/1.1" 200 10275
+INFO 2023-10-03 16:29:40,930 basehttp 4605 140450624173632 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:29:42,828 basehttp 4605 140450624173632 "GET /admin/courses/schedule/ HTTP/1.1" 200 11756
+INFO 2023-10-03 16:29:42,842 basehttp 4605 140450624173632 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:29:46,597 basehttp 4605 140450624173632 "GET /admin/courses/schedule/add/ HTTP/1.1" 200 16980
+INFO 2023-10-03 16:29:46,613 basehttp 4605 140450624173632 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:29:49,354 basehttp 4605 140450624173632 "GET /admin/courses/schedule/ HTTP/1.1" 200 11756
+INFO 2023-10-03 16:29:52,550 basehttp 4605 140450624173632 "POST /admin/courses/schedule/ HTTP/1.1" 200 10592
+INFO 2023-10-03 16:29:53,447 basehttp 4605 140450624173632 "POST /admin/courses/schedule/ HTTP/1.1" 302 0
+INFO 2023-10-03 16:29:53,478 basehttp 4605 140450624173632 "GET /admin/courses/schedule/ HTTP/1.1" 200 10298
+INFO 2023-10-03 16:29:53,572 basehttp 4605 140450624173632 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:34:49,890 autoreload 4605 140450694643712 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:34:50,372 autoreload 4716 140012805009408 Watching for file changes with StatReloader
+INFO 2023-10-03 16:34:51,785 autoreload 4716 140012805009408 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:34:52,134 autoreload 4719 140448191807488 Watching for file changes with StatReloader
+INFO 2023-10-03 16:34:53,586 autoreload 4719 140448191807488 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:34:53,927 autoreload 4723 140659028377600 Watching for file changes with StatReloader
+INFO 2023-10-03 16:34:55,370 autoreload 4723 140659028377600 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:34:55,706 autoreload 4727 140320666107904 Watching for file changes with StatReloader
+INFO 2023-10-03 16:35:14,792 autoreload 4727 140320666107904 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:35:15,141 autoreload 4736 139914037006336 Watching for file changes with StatReloader
+INFO 2023-10-03 16:35:30,112 autoreload 4736 139914037006336 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:35:30,478 autoreload 4743 140495618289664 Watching for file changes with StatReloader
+INFO 2023-10-03 16:35:43,296 autoreload 4743 140495618289664 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:35:43,668 autoreload 4746 140505986170880 Watching for file changes with StatReloader
+INFO 2023-10-03 16:35:47,141 autoreload 4746 140505986170880 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:35:47,533 autoreload 4750 139756595232768 Watching for file changes with StatReloader
+INFO 2023-10-03 16:36:21,172 autoreload 4750 139756595232768 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:36:21,533 autoreload 4759 139782932123648 Watching for file changes with StatReloader
+INFO 2023-10-03 16:36:25,948 autoreload 4759 139782932123648 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:36:26,301 autoreload 4764 139918266740736 Watching for file changes with StatReloader
+INFO 2023-10-03 16:36:27,670 autoreload 4764 139918266740736 /home/shahrooz/Projects/tam_project_files/tam_backend/tam/courses/views.py changed, reloading.
+INFO 2023-10-03 16:36:28,012 autoreload 4766 140403667058688 Watching for file changes with StatReloader
+INFO 2023-10-03 16:37:21,111 basehttp 4766 140403595540032 "GET /admin/courses/schedule/ HTTP/1.1" 200 10159
+INFO 2023-10-03 16:37:21,128 basehttp 4766 140403595540032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:37:23,239 basehttp 4766 140403595540032 "GET /admin/courses/round/ HTTP/1.1" 200 10138
+INFO 2023-10-03 16:37:23,254 basehttp 4766 140403595540032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:37:24,358 basehttp 4766 140403595540032 "GET /admin/courses/schedule/ HTTP/1.1" 200 10159
+INFO 2023-10-03 16:37:24,376 basehttp 4766 140403595540032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:37:26,832 basehttp 4766 140403595540032 "GET /admin/courses/schedule/add/ HTTP/1.1" 200 16980
+INFO 2023-10-03 16:37:26,850 basehttp 4766 140403595540032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:37:59,063 basehttp 4766 140403595540032 "POST /admin/courses/schedule/add/ HTTP/1.1" 302 0
+INFO 2023-10-03 16:37:59,096 basehttp 4766 140403595540032 "GET /admin/courses/schedule/ HTTP/1.1" 200 11720
+INFO 2023-10-03 16:37:59,167 basehttp 4766 140403595540032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:38:00,866 basehttp 4766 140403595540032 "GET /admin/courses/schedule/e2f8ce97-5c88-4f41-ab88-12134b270263/change/ HTTP/1.1" 200 17471
+INFO 2023-10-03 16:38:00,883 basehttp 4766 140403595540032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:38:05,941 basehttp 4766 140403595540032 "GET /admin/courses/round/ HTTP/1.1" 200 10138
+INFO 2023-10-03 16:38:05,956 basehttp 4766 140403595540032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:38:06,818 basehttp 4766 140403595540032 "GET /admin/courses/schedule/e2f8ce97-5c88-4f41-ab88-12134b270263/change/ HTTP/1.1" 200 17471
+INFO 2023-10-03 16:38:20,239 basehttp 4766 140403595540032 "GET /admin/courses/schedule/e2f8ce97-5c88-4f41-ab88-12134b270263/delete/ HTTP/1.1" 200 10326
+INFO 2023-10-03 16:38:21,512 basehttp 4766 140403595540032 "POST /admin/courses/schedule/e2f8ce97-5c88-4f41-ab88-12134b270263/delete/ HTTP/1.1" 302 0
+INFO 2023-10-03 16:38:21,545 basehttp 4766 140403595540032 "GET /admin/courses/schedule/ HTTP/1.1" 200 10366
+INFO 2023-10-03 16:38:21,629 basehttp 4766 140403595540032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:38:41,076 basehttp 4766 140403575608896 "POST /course/14021002/create-schedule/ HTTP/1.1" 200 21
+INFO 2023-10-03 16:38:43,528 basehttp 4766 140403595540032 "GET /admin/courses/schedule/ HTTP/1.1" 200 11432
+INFO 2023-10-03 16:38:43,542 basehttp 4766 140403595540032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:38:44,256 basehttp 4766 140403595540032 "GET /admin/courses/schedule/48eef0ed-1826-470e-9d16-2ea19cd44d45/change/ HTTP/1.1" 200 18321
+INFO 2023-10-03 16:38:44,272 basehttp 4766 140403595540032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:38:52,552 basehttp 4766 140403595540032 "GET /admin/courses/schedule/ HTTP/1.1" 200 11432
+INFO 2023-10-03 16:38:52,567 basehttp 4766 140403595540032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:38:58,004 basehttp 4766 140403575608896 "GET /course/14021002/get-student-round/ HTTP/1.1" 200 1572
+INFO 2023-10-03 16:42:44,288 basehttp 4766 140403575608896 "POST /login/ HTTP/1.1" 200 486
+WARNING 2023-10-03 16:47:13,683 log 4766 140403575608896 Forbidden: /course/14021002/create-schedule/
+WARNING 2023-10-03 16:47:13,683 basehttp 4766 140403575608896 "POST /course/14021002/create-schedule/ HTTP/1.1" 403 29
+INFO 2023-10-03 16:47:19,771 basehttp 4766 140403575608896 "POST /course/14021001/create-schedule/ HTTP/1.1" 200 21
+INFO 2023-10-03 16:47:25,081 basehttp 4766 140403575608896 "GET /course/14021002/get-student-round/ HTTP/1.1" 200 1572
+WARNING 2023-10-03 16:47:37,886 log 4766 140403575608896 Forbidden: /course/14021001/get-student-round/
+WARNING 2023-10-03 16:47:37,887 basehttp 4766 140403575608896 "GET /course/14021001/get-student-round/ HTTP/1.1" 403 29
+INFO 2023-10-03 16:47:45,945 basehttp 4766 140403595540032 "GET /admin/courses/group/ HTTP/1.1" 200 11695
+INFO 2023-10-03 16:47:45,962 basehttp 4766 140403595540032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:47:46,793 basehttp 4766 140403595540032 "GET /admin/courses/course/ HTTP/1.1" 200 11812
+INFO 2023-10-03 16:47:46,808 basehttp 4766 140403595540032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:47:47,995 basehttp 4766 140403595540032 "GET /admin/courses/course/14021001/change/ HTTP/1.1" 200 22547
+INFO 2023-10-03 16:47:48,014 basehttp 4766 140403595540032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:47:51,214 basehttp 4766 140403595540032 "POST /admin/courses/course/14021001/change/ HTTP/1.1" 302 0
+INFO 2023-10-03 16:47:51,250 basehttp 4766 140403595540032 "GET /admin/courses/course/ HTTP/1.1" 200 12037
+INFO 2023-10-03 16:47:51,311 basehttp 4766 140403595540032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+WARNING 2023-10-03 16:48:19,105 log 4766 140403575608896 Forbidden: /course/14021002/get-manager-round/
+WARNING 2023-10-03 16:48:19,105 basehttp 4766 140403575608896 "GET /course/14021002/get-manager-round/ HTTP/1.1" 403 29
+INFO 2023-10-03 16:48:36,017 basehttp 4766 140403575608896 "GET /course/14021001/get-manager-round/ HTTP/1.1" 200 830
+INFO 2023-10-03 16:49:18,821 basehttp 4766 140403595540032 "GET /admin/courses/schedule/ HTTP/1.1" 200 11756
+INFO 2023-10-03 16:49:18,837 basehttp 4766 140403595540032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:49:19,993 basehttp 4766 140403595540032 "GET /admin/courses/schedule/7b9f827c-2ecd-46eb-adfc-0e140178d1ec/change/ HTTP/1.1" 200 18723
+INFO 2023-10-03 16:49:20,012 basehttp 4766 140403595540032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:49:21,274 basehttp 4766 140403595540032 "GET /admin/courses/schedule/ HTTP/1.1" 200 11756
+INFO 2023-10-03 16:49:22,629 basehttp 4766 140403595540032 "GET /admin/courses/schedule/7b9f827c-2ecd-46eb-adfc-0e140178d1ec/change/ HTTP/1.1" 200 18723
+INFO 2023-10-03 16:49:22,646 basehttp 4766 140403595540032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-10-03 16:49:23,377 basehttp 4766 140403595540032 "GET /admin/courses/schedule/ HTTP/1.1" 200 11756
